@@ -58,16 +58,11 @@ function loadCompaniesForGroup(group: RankingGroup): CompanyWithProducts[] {
 
       const products = loadProductsForCompany(group, baseCompany);
 
-      if (products.length === 0) {
-        return null;
-      }
-
       return {
         ...baseCompany,
         products,
       } satisfies CompanyWithProducts;
-    })
-    .filter(Boolean) as CompanyWithProducts[];
+    }) as CompanyWithProducts[];
 }
 
 function loadProductsForCompany(group: RankingGroup, company: Company): ProductRecord[] {
