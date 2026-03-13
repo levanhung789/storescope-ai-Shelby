@@ -1,223 +1,387 @@
-Retail Image Intelligence Platform
-AI-powered retail visibility for FMCG and distribution workflows, built on Shelby
-Overview
+Dưới đây là bản **technical GitHub README chuẩn open-source** cho dự án của bạn, viết theo phong cách rõ cấu trúc, giống một repo kỹ thuật thật.
 
-Retail teams generate massive amounts of operational data every day through shelf photos, warehouse photos, execution reports, Excel sheets, and field documents. Most of this information remains fragmented, unstructured, and difficult to convert into timely decisions.
+````markdown
+# Retail Image Intelligence Platform
 
-This project builds a Retail Image Intelligence Platform that transforms raw retail images and business documents into structured, decision-ready intelligence for FMCG brands, distributors, and store operations teams.
+AI-powered retail visibility for FMCG and distribution workflows, built on Shelby.
 
-The platform allows users to upload:
+## Introduction
 
-Shelf photos from stores
+Retail operations generate a large volume of unstructured data through shelf photos, warehouse photos, field execution reports, spreadsheets, and supporting business documents. In most organizations, these assets are stored across disconnected systems and reviewed manually, which makes it difficult to produce reliable, timely business insights.
 
-Warehouse photos
+The Retail Image Intelligence Platform is designed to convert raw retail images and operational files into structured, decision-ready data. It supports product detection, inventory observation, competitor visibility analysis, and store-level recommendation workflows.
 
-Excel files
+The platform uses **Shelby** as its storage layer for raw uploads, processed assets, AI outputs, and business documents. This architecture is well suited for image-heavy and analysis-heavy workflows that require frequent retrieval and downstream processing.
 
-Word documents
+---
 
-Supporting operational assets
+## Problem Statement
 
-All raw files and processed assets are stored on Shelby, a high-performance decentralized storage network designed for demanding read-heavy workloads such as AI, media, and large-scale data processing. Shelby is a strong fit for this product because the workflow depends on fast storage, fast retrieval, and scalable handling of image and document assets across repeated AI analysis cycles.
+Retail and distribution teams often face the following challenges:
 
-Problem
+- Shelf photos are collected but not transformed into structured insights
+- Warehouse images are stored without operational analytics
+- Competitor visibility changes are not detected early
+- Low-stock and overstock situations are identified too late
+- Image evidence and business files are managed in separate systems
+- Manual review slows decision-making and reduces reporting consistency
 
-In traditional retail operations, field images and inventory evidence are often collected manually but rarely converted into reliable business intelligence.
+As a result, valuable retail execution data remains underutilized.
 
-This leads to familiar problems:
+---
 
-Shelf audits are slow and inconsistent
+## Objectives
 
-Competitor shelf expansion is discovered too late
+This project aims to build a production-oriented platform that can:
 
-Low-stock and overstock situations are not flagged early enough
+- Ingest retail images and business files from multiple sources
+- Store raw and processed assets in a scalable retrieval layer
+- Detect products from shelf and warehouse imagery
+- Distinguish client products from competitor products
+- Convert detections into structured business records
+- Generate analytics for stock movement, replenishment, and shelf share
+- Provide user confirmation for low-confidence detections
+- Support reporting and recommendation workflows for FMCG operations
 
-Warehouse visibility is fragmented
+---
 
-Business files and image evidence live in separate systems
+## Core Features
 
-Teams spend too much time reviewing photos instead of acting on insights
+### Asset ingestion
+The platform accepts:
 
-Retail execution generates data continuously, but without the right storage and AI pipeline, that data never becomes operational value.
+- Shelf photos
+- Warehouse photos
+- Excel files
+- Word documents
+- Supporting operational assets
+
+### Shelby-backed storage
+All raw uploads, transformed assets, and AI outputs are stored on Shelby to support repeatable processing and fast retrieval.
 
-Solution
+### Product detection and classification
+The image intelligence pipeline identifies:
 
-This platform turns visual retail data into measurable business outcomes.
+- Brand
+- SKU
+- Packaging type
+- Units per case
+- Quantity
+- Client vs competitor products
 
-After users upload retail images and supporting files, AI models analyze the content to identify products and convert detections into structured records that can be used across reporting, replenishment, and sales workflows.
+### Structured data transformation
+Detections are transformed into normalized business records for downstream analytics.
 
-The system is designed to identify:
+### Recommendation engine
+The platform generates operational recommendations such as:
 
-Brand
+- Low-stock alerts
+- Overstock alerts
+- Competitor share-of-shelf growth signals
+- Store-level anomaly warnings
+- Replenishment insights
 
-SKU
+### Human-in-the-loop review
+If image quality is poor or model confidence is below threshold, the result is routed for user confirmation before entering the official dataset.
 
-Packaging type
+---
 
-Units per case
+## Target Use Cases
 
-Quantity
+This platform is designed for:
 
-Client products vs competitor products
+- FMCG brands
+- Distributors
+- Retail execution teams
+- Store operations teams
+- Field audit workflows
+- Warehouse verification workflows
 
-It is especially useful for categories such as:
+Example product categories include:
 
-Dairy
+- Dairy
+- Soft drinks
+- Consumer packaged goods
+- Other high-volume retail categories
+
+---
+
+## System Architecture
+
+```text
+[ Client App / Web Dashboard ]
+            |
+            v
+[ Upload API / Ingestion Service ]
+            |
+            v
+[ Shelby Storage Layer ]
+  |         |         |
+  |         |         |
+  v         v         v
+Raw Files  Processed Assets  Business Documents
+            |
+            v
+[ AI Vision Pipeline ]
+            |
+            v
+[ Detection Output Layer ]
+            |
+            v
+[ Validation / Review Service ]
+            |
+            v
+[ Structured Data Pipeline ]
+            |
+            v
+[ Analytics + Recommendation Engine ]
+            |
+            v
+[ Dashboard / Alerts / Reports ]
+````
+
+---
+
+## High-Level Workflow
+
+1. A user uploads shelf photos, warehouse photos, and optional business files
+2. Raw assets are stored on Shelby
+3. The AI pipeline retrieves the uploaded image assets for inference
+4. Products are detected and classified from the image
+5. The system identifies client products and competitor products
+6. Detection outputs are converted into structured business records
+7. Analytics are computed over daily, weekly, and monthly windows
+8. Recommendations and anomaly signals are generated
+9. Low-confidence results are reviewed by the user before finalization
+
+---
+
+## Data Flow
+
+### Input layer
+
+Unstructured inputs include:
+
+* Image files from retail shelves
+* Image files from warehouse environments
+* Excel sheets containing inventory or sales data
+* Word documents containing supporting business context
+
+### Processing layer
+
+The processing layer performs:
+
+* Asset retrieval
+* Image preprocessing
+* Object detection
+* Product classification
+* Confidence scoring
+* Entity normalization
+
+### Output layer
+
+Structured outputs may include:
+
+* SKU-level counts
+* Brand-level visibility
+* Shelf share observations
+* Stock movement snapshots
+* Replenishment behavior indicators
+* Store anomaly records
+
+---
+
+## Why Shelby
+
+This platform depends on a storage layer that can support:
+
+* Large volumes of raw image uploads
+* Fast retrieval for repeated AI analysis
+* Persistent storage of processed outputs
+* Mixed file types including documents and images
+* Scalable integration into data pipelines
+
+Shelby is a strong fit because the workflow is not limited to archival storage. The system continuously reads, analyzes, transforms, and references stored assets throughout its lifecycle.
+
+In this project, Shelby is used for:
+
+* Raw image ingestion
+* Document storage
+* Processed asset persistence
+* AI output retention
+* Retrieval support for downstream analysis
+
+---
+
+## Repository Structure
 
-Soft drinks
+```text
+retail-image-intelligence/
+├── apps/
+│   ├── web/                  # Frontend dashboard
+│   └── api/                  # API gateway / backend services
+├── services/
+│   ├── ingestion/            # File upload and asset registration
+│   ├── storage/              # Shelby integration layer
+│   ├── vision/               # Image detection and classification
+│   ├── validation/           # Human review workflows
+│   ├── analytics/            # Metrics, trends, anomaly detection
+│   └── recommendation/       # Alert and recommendation engine
+├── packages/
+│   ├── schemas/              # Shared data models and types
+│   ├── utils/                # Shared utilities
+│   └── config/               # Shared configuration
+├── docs/
+│   ├── architecture.md
+│   ├── api.md
+│   └── roadmap.md
+├── examples/
+│   └── sample-data/
+├── .env.example
+├── README.md
+└── LICENSE
+```
 
-Consumer packaged goods
+---
 
-Other high-velocity FMCG categories
+## Suggested Tech Stack
 
-By combining image intelligence with business context, the platform enables teams to move from photo collection to store-level decision support.
+The exact implementation may vary, but a practical stack could include:
 
-Core Capabilities
-1. Retail image ingestion
+### Frontend
 
-Users upload shelf photos, warehouse photos, and supporting business files.
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Charting library for dashboards
 
-2. Shelby-powered asset storage
+### Backend
 
-Raw files, processed images, AI outputs, and derived datasets are stored on Shelby for fast retrieval and repeatable downstream analysis. Shelby provides APIs, SDKs, and CLI tooling that make it practical to integrate into production data workflows.
+* Node.js or Python services
+* REST or GraphQL APIs
+* Queue-based async processing
 
-3. AI product recognition
+### AI / ML
 
-The system detects and classifies visible products in retail and warehouse imagery.
+* Vision model for product detection
+* Classification pipeline for SKU and packaging recognition
+* Confidence scoring and review thresholds
 
-4. Structured business transformation
+### Storage and data
 
-Image detections are converted into operational data models that support retail reporting and analytics.
+* Shelby for raw and processed asset storage
+* Relational database for structured business data
+* Cache / queue for processing pipelines
 
-5. Recommendation engine
+### Analytics
 
-The platform generates actionable recommendations such as:
+* Scheduled aggregation jobs
+* Recommendation engine
+* Alerting pipeline
 
-Low-stock warnings
+---
 
-Overstock warnings
+## Example Analytical Outputs
 
-Competitor share-of-shelf growth alerts
+Once structured, detections can support the following metrics:
 
-Store-level anomalies
+* Daily stock movement
+* Weekly stock movement
+* Monthly stock movement
+* Sales movement estimates
+* Replenishment timing
+* Competitor shelf expansion
+* Store compliance anomalies
+* Outlier detection across regions or stores
 
-Replenishment behavior insights
+---
 
-6. Human-in-the-loop validation
+## Validation Strategy
 
-When image quality is poor or model confidence is low, the platform asks the user to confirm or correct the result before it becomes part of the official dataset.
+Data quality is critical in retail intelligence systems.
 
-This protects data quality and ensures that downstream analytics remain trustworthy.
+The platform should support:
 
-Why Shelby
+* Confidence thresholds for automated acceptance
+* Manual confirmation for blurry or ambiguous images
+* Correction workflows for false positives
+* Audit logs for changes made after review
+* Feedback loops for model improvement
 
-This project is not just storing files. It is building a continuous AI workflow around them.
+This helps prevent weak detections from polluting the official dataset.
 
-That means the storage layer must support:
+---
 
-Raw image uploads at scale
+## Roadmap
 
-Fast retrieval for repeated AI inference
+### Phase 1
 
-Processed asset management
+* File ingestion
+* Shelby storage integration
+* Basic image upload workflow
+* Initial product detection pipeline
 
-Persistent storage for structured outputs
+### Phase 2
 
-Mixed content types, including media and business documents
+* SKU normalization
+* Client vs competitor classification
+* Structured output generation
+* Manual review interface
 
-Developer-friendly integration into applications and pipelines
+### Phase 3
 
-Shelby is well aligned with this architecture because it is built as a high-performance decentralized blob storage system for read-heavy workloads, with fast retrieval, global distributed availability, and integration paths through CLI, APIs, and SDKs. Shelby’s documentation also positions it directly for workloads such as AI training and inference, video/media, and large-scale analytics.
+* Trend analytics
+* Recommendation engine
+* Alerting workflows
+* Dashboard reporting
 
-For this platform, Shelby serves as the foundation for:
+### Phase 4
 
-Image and document ingestion
+* Multi-store comparison
+* Advanced anomaly detection
+* Forecasting support
+* Model feedback and retraining workflow
 
-Asset persistence
+---
 
-Retrieval for AI analysis pipelines
+## Non-Goals
 
-Versionable business evidence
+At the current stage, this repository does not aim to:
 
-Scalable storage for retail intelligence workloads
+* Replace ERP systems
+* Provide final accounting-grade sales truth
+* Fully automate all uncertain detections without review
+* Support every retail category from day one
 
-Example Workflow
+The initial focus is operational visibility and decision support.
 
-A field rep uploads shelf photos from a retail store
+---
 
-A warehouse manager uploads stock photos and related Excel files
+## Design Principles
 
-Raw assets are stored on Shelby
+* **Operational clarity**: convert images into measurable business signals
+* **Reliability**: validate uncertain results before acceptance
+* **Scalability**: support large asset volumes and repeated inference
+* **Actionability**: generate recommendations, not just detections
+* **Modularity**: keep storage, AI, analytics, and validation separable
 
-AI models detect products and classify inventory signals
+---
 
-The system separates client SKUs from competitor SKUs
+## Future Work
 
-Detections are transformed into structured business records
+Potential extensions include:
 
-Daily, weekly, and monthly movement trends are calculated
+* OCR for price tags and shelf labels
+* Store planogram compliance analysis
+* Time-series forecasting for replenishment
+* Mobile field app integration
+* Multi-language document understanding
+* Regional benchmarking dashboards
 
-Alerts and recommendations are generated for operations teams
+---
 
-Low-confidence detections are reviewed by the user before final approval
+## Mission
 
-Business Outputs
+To help FMCG and distribution teams transform photos from passive evidence into active retail intelligence.
 
-Once detections are structured, the platform can support analysis such as:
 
-Stock movement over time
-
-Sales movement trends
-
-Replenishment frequency
-
-Shelf share comparison
-
-Competitor visibility growth
-
-Store compliance anomalies
-
-Outlier detection across locations
-
-The result is a clearer and faster decision loop for brands and distributors operating in complex retail environments.
-
-Design Principles
-
-This project is built around five principles:
-
-Operational clarity: turn images into measurable retail signals
-
-Speed: reduce manual review and reporting delays
-
-Reliability: validate uncertain detections before official use
-
-Scalability: support large volumes of retail media and documents
-
-Actionability: produce recommendations, not just detections
-
-Vision
-
-We believe the future of retail operations is built on a simple transformation:
-
-Images → detections → structured data → business decisions
-
-This project aims to become the infrastructure layer for that transformation in FMCG and distribution environments.
-
-By combining AI analysis with Shelby’s high-performance storage foundation, the platform helps retail teams move from fragmented visual evidence to intelligent, store-level execution.
-
-Tech Direction
-
-Shelby for decentralized hot storage and asset retrieval
-
-AI vision pipelines for product detection and classification
-
-Data transformation layer for structured business outputs
-
-Human review workflows for low-confidence results
-
-Analytics and alerting layer for retail recommendations
-
-Mission
-
-To help FMCG and distribution teams stop collecting photos as passive evidence
-and start using them as active retail intelligence.
