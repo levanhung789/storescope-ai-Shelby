@@ -1,6 +1,4 @@
-Dưới đây là bản **technical GitHub README chuẩn open-source** cho dự án của bạn, viết theo phong cách rõ cấu trúc, giống một repo kỹ thuật thật.
 
-````markdown
 # Retail Image Intelligence Platform
 
 AI-powered retail visibility for FMCG and distribution workflows, built on Shelby.
