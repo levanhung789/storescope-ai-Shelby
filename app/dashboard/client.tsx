@@ -512,7 +512,7 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
                   {productCards.length > 0 ? (
                     productCards.map((product) => (
                       <div
-                        key={`${currentCompany.companyKey}-${product.sku}`}
+                        key={`${currentCompany.companyKey}-${product.productFolder}`}
                         data-testid="product-card"
                         className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                       >
