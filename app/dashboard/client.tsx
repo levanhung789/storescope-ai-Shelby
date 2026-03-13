@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState, type ChangeEvent } from "react";
 
-import type { GroupWithProducts, ProductRecord } from "./load-products";
+import type { CompanyWithProducts, GroupWithProducts, ProductRecord } from "./types";
 
 type Language = "en" | "vi" | "zh";
 
@@ -260,7 +260,7 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
 
   const t = useMemo(() => content[language], [language]);
 
-  const currentGroup = useMemo(() => {
+  const currentGroup = useMemo<GroupWithProducts | undefined>(() => {
     if (!manifest.length) {
       return undefined;
     }
@@ -268,7 +268,7 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
     return manifest.find((item) => item.groupKey === selectedGroupKey) ?? manifest[0];
   }, [manifest, selectedGroupKey]);
 
-  const currentCompany = useMemo(() => {
+  const currentCompany = useMemo<CompanyWithProducts | undefined>(() => {
     if (!currentGroup) {
       return undefined;
     }

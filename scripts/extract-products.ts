@@ -1,13 +1,13 @@
-const fs = require("node:fs");
-const path = require("node:path");
+import fs from "node:fs";
+import path from "node:path";
 
-const GROUP_LABELS = {
+const GROUP_LABELS: Record<string, string> = {
   "dau-an-nuoc-cham-gia-vi": "Dầu ăn, nước chấm, gia vị",
 };
 
 const ROOT = path.join(process.cwd(), "public", "companies");
 
-function prettifyName(folderName) {
+function prettifyName(folderName: string): string {
   return folderName
     .split(/[-_]+/)
     .filter(Boolean)
@@ -15,7 +15,7 @@ function prettifyName(folderName) {
     .join(" ");
 }
 
-function toCompanyKey(folderName) {
+function toCompanyKey(folderName: string): string {
   return folderName
     .trim()
     .toLowerCase()
@@ -23,16 +23,27 @@ function toCompanyKey(folderName) {
     .replace(/^_+|_+$/g, "");
 }
 
-const products = [];
+const products: Array<{
+  groupKey: string;
+  groupName: string;
+  companyKey: string;
+  companyName: string;
+  productFolder: string;
+  productName: string;
+}> = [];
 
-const groupEntries = fs.readdirSync(ROOT, { withFileTypes: true }).filter((entry) => entry.isDirectory());
+const groupEntries = fs
+  .readdirSync(ROOT, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory());
 
 for (const groupEntry of groupEntries) {
   const groupKey = groupEntry.name;
   const groupName = GROUP_LABELS[groupKey] ?? prettifyName(groupKey);
   const groupPath = path.join(ROOT, groupEntry.name);
 
-  const companyEntries = fs.readdirSync(groupPath, { withFileTypes: true }).filter((entry) => entry.isDirectory());
+  const companyEntries = fs
+    .readdirSync(groupPath, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory());
 
   for (const companyEntry of companyEntries) {
     const companyFolder = companyEntry.name;
@@ -40,7 +51,9 @@ for (const groupEntry of groupEntries) {
     const companyKey = toCompanyKey(companyFolder);
     const companyName = prettifyName(companyFolder);
 
-    const productEntries = fs.readdirSync(companyPath, { withFileTypes: true }).filter((entry) => entry.isDirectory());
+    const productEntries = fs
+      .readdirSync(companyPath, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory());
 
     for (const productEntry of productEntries) {
       const productFolder = productEntry.name;

@@ -2,27 +2,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 import type { Company, RankingGroup } from "./groups-data";
+import type { CompanyWithProducts, GroupWithProducts, ProductRecord } from "./types";
 
 const COMPANIES_ROOT = path.join(process.cwd(), "public", "companies");
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", ".jfif"]);
-
-export type ProductRecord = {
-  productFolder: string;
-  name: string;
-  images: string[];
-  sku: string;
-  category: string;
-  packSpec?: string;
-  aiStatus: "Matched" | "Review" | "Missing";
-};
-
-export type CompanyWithProducts = Company & {
-  products: ProductRecord[];
-};
-
-export type GroupWithProducts = RankingGroup & {
-  companies: CompanyWithProducts[];
-};
 
 export function buildProductManifest(groups: RankingGroup[]): GroupWithProducts[] {
   return groups.map((group) => ({
@@ -45,16 +28,18 @@ function loadCompaniesForGroup(group: RankingGroup): CompanyWithProducts[] {
 
   return directories
     .map((entry) => {
-      const preset = group.companies?.find(
-        (company) =>
-          company.companyFolder === entry.name || company.companyKey === toCompanyKey(entry.name)
-      );
+      const matchedCompany =
+        group.companies?.find(
+          (company) =>
+            company.companyFolder === entry.name || company.companyKey === toCompanyKey(entry.name)
+        ) ?? null;
 
-      const baseCompany: Company = preset ?? {
-        companyKey: toCompanyKey(entry.name),
-        companyName: preset?.companyName ?? prettifyCompanyName(entry.name),
-        companyFolder: entry.name,
-      };
+      const baseCompany: Company =
+        matchedCompany ?? {
+          companyKey: toCompanyKey(entry.name),
+          companyName: prettifyCompanyName(entry.name),
+          companyFolder: entry.name,
+        };
 
       const products = loadProductsForCompany(group, baseCompany);
 
