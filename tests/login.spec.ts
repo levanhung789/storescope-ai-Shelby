@@ -50,3 +50,12 @@ test("switching companies updates product list", async ({ page }) => {
 
   await expect(page.getByTestId("product-title").first()).not.toHaveText(ajinomotoFirst ?? "");
 });
+
+test("Cong Ty Co Phan Dh Foods shows its catalog", async ({ page }) => {
+  await loginDemo(page);
+
+  const companySelect = page.locator("select").nth(1);
+  await companySelect.selectOption({ label: "Cong Ty Co Phan Dh Foods" });
+
+  await expect(page.getByTestId("product-title").first()).toContainText(/dh foods/i);
+});
