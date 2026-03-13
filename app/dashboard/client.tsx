@@ -513,6 +513,7 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
                     productCards.map((product) => (
                       <div
                         key={`${currentCompany.companyKey}-${product.sku}`}
+                        data-testid="product-card"
                         className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                       >
                         <ProductImageViewer
@@ -524,7 +525,10 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
 
                         <div className="p-5">
                           <div className="mb-3 flex items-start justify-between gap-3">
-                            <h4 className="line-clamp-2 text-base font-bold text-slate-900">
+                            <h4
+                              data-testid="product-title"
+                              className="line-clamp-2 text-base font-bold text-slate-900"
+                            >
                               {product.name}
                             </h4>
                             <span
