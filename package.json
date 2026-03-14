@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:manifest": "ts-node --project tsconfig.scripts.json scripts/extract-products.ts"
+    "generate:manifest": "ts-node --project tsconfig.scripts.json scripts/extract-products.ts",
+    "collect:prices": "ts-node --project tsconfig.scripts.json scripts/collect-prices.ts"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",

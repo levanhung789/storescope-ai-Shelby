@@ -378,6 +378,12 @@ Potential extensions include:
 
 ---
 
+## Price Monitoring (internal tooling)
+
+To capture weekly retail prices for oil / sauce / seasoning SKUs, maintain `data/price-watch.json` with the product URLs + CSS selectors per retailer, then run `npm run collect:prices` (headless Chromium via Playwright). Each run writes timestamped snapshots under `data/prices/`. See `docs/price-monitoring.md` for the full workflow and scheduling notes.
+
+---
+
 ## Mission
 
 To help FMCG and distribution teams transform photos from passive evidence into active retail intelligence.

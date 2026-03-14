@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bhx-ajinomoto-100g",
+    "skuKey": "bot-ngot-hat-lon-ajinomoto-goi-100g",
+    "productName": "Bột ngọt Hạt Lớn Ajinomoto gói 100g",
+    "retailer": "BachHoaXanh",
+    "url": "",
+    "priceSelector": "",
+    "notes": "Điền URL sản phẩm BHX cùng bộ chọn CSS thể hiện giá"
+  },
+  {
+    "id": "winmart-nam-ngu-15l",
+    "skuKey": "nuoc-mam-nam-ngu-15l",
+    "productName": "Nước mắm Nam Ngư 1,5L",
+    "retailer": "WinMart",
+    "url": "",
+    "priceSelector": "",
+    "notes": "Thêm URL WinMart Online + selector"
+  },
+  {
+    "id": "coop-tuong-an-1l",
+    "skuKey": "dau-an-tuong-an-chai-1l",
+    "productName": "Dầu ăn Tường An 1L",
+    "retailer": "CoopOnline",
+    "url": "",
+    "priceSelector": "",
+    "notes": "Bổ sung URL Co.op Online"
+  },
+  {
+    "id": "aeon-cholimex-chinsu",
+    "skuKey": "nuoc-tuong-cholimex-chai-500ml",
+    "productName": "Nước tương Cholimex chai 500ml",
+    "retailer": "AeonEshop",
+    "url": "",
+    "priceSelector": "",
+    "notes": "URL AEON Eshop + selector"
+  }
+]
