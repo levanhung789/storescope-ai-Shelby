@@ -1,0 +1,3418 @@
+[
+  {
+    "groupKey": "condiments_oil",
+    "groupName": "Dầu ăn, nước chấm, gia vị",
+    "groupFolder": "dau-an-nuoc-cham-gia-vi",
+    "companies": [
+      {
+        "companyKey": "ajinomoto",
+        "companyName": "Công ty Ajinomoto Việt Nam",
+        "companyFolder": "cong-ty-ajinomoto-viet-nam",
+        "products": [
+          {
+            "productFolder": "bot-ngot-hat-lon-ajinomoto-goi-100g",
+            "name": "Bot Ngot Hat Lon Ajinomoto Goi 100g",
+            "images": [
+              "bot-ngot-ajinomoto-goi-100g-202006200905580100.jpg",
+              "bot-ngot-ajinomoto-goi-100g-202006200905589866.jpg",
+              "bot-ngot-ajinomoto-goi-100g-202006200905599332.jpg",
+              "bot-ngot-ajinomoto-goi-100g-202006200906007317.jpg",
+              "bot-ngot-hat-lon-ajinomoto-goi-100g-202202110757420757.jpg"
+            ],
+            "sku": "AJIN-100G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "100G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "bot-ngot-hat-lon-ajinomoto-goi-1kg",
+            "name": "Bot Ngot Hat Lon Ajinomoto Goi 1kg",
+            "images": [
+              "bot-ngot-ajinomoto-goi-1kg-201912111050340356.jpg",
+              "bot-ngot-ajinomoto-goi-1kg-201912111050342848.jpg",
+              "bot-ngot-ajinomoto-goi-1kg-201912111050344759.jpg",
+              "bot-ngot-ajinomoto-goi-1kg-201912111050346970.jpg",
+              "bot-ngot-ajinomoto-goi-1kg-201912111050349172.jpg",
+              "bot-ngot-hat-lon-ajinomoto-goi-1kg-202202110748243423.jpg"
+            ],
+            "sku": "AJIN-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "bot-ngot-hat-lon-ajinomoto-goi-454g",
+            "name": "Bot Ngot Hat Lon Ajinomoto Goi 454g",
+            "images": [
+              "bot-ngot-ajinomoto-goi-454g-202006172147088307.jpg",
+              "bot-ngot-ajinomoto-goi-454g-202006172147094901.jpg",
+              "bot-ngot-ajinomoto-goi-454g-202006172147105798.jpg",
+              "bot-ngot-ajinomoto-goi-454g-202006172147111232.jpg",
+              "bot-ngot-ajinomoto-hat-lon-goi-454g_202511031322533742.jpg",
+              "bot-ngot-ajinomoto-hat-lon-goi-454g_202511031327519972.jpg"
+            ],
+            "sku": "AJIN-454G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "454G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "gia-vi-lau-nam-aji-quick-goi-44g",
+            "name": "Gia Vi Lau Nam Aji Quick Goi 44g",
+            "images": [
+              "nuoc-lau-lau-nam-aji-quick-goi-544g_202506231035136200.jpg"
+            ],
+            "sku": "AJIN-I44G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "44G",
+            "aiStatus": "Missing"
+          },
+          {
+            "productFolder": "gia-vi-nem-san-bun-rieu-cua-aji-quick-goi-54g",
+            "name": "Gia Vi Nem San Bun Rieu Cua Aji Quick Goi 54g",
+            "images": [
+              "gia-vi-nem-san-bun-rieu-cua-aji-quick-goi-54g-202310231400231271.jpg",
+              "gia-vi-nem-san-bun-rieu-cua-aji-quick-goi-54g-202310231400235137.jpg",
+              "gia-vi-nem-san-bun-rieu-cua-aji-quick-goi-54g-202310310958367972.jpg",
+              "gia-vi-nem-san-bun-rieu-cua-aji-quick-goi-54g-202310310958372127.jpg",
+              "gia-vi-nem-san-bun-rieu-cua-aji-quick-goi-54g-202310310958376136.jpg"
+            ],
+            "sku": "AJIN-I54G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "54G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "gia-vi-nem-san-ca-kho-aji-quick-goi-31g",
+            "name": "Gia Vi Nem San Ca Kho Aji Quick Goi 31g",
+            "images": [
+              "206064-ksp_202408290905550253.jpg",
+              "gia-vi-nem-san-ca-kho-aji-quick-goi-31g-202407091321136757.jpg",
+              "gia-vi-nem-san-ca-kho-aji-quick-goi-31g-202407091321142987.jpg",
+              "gia-vi-nem-san-ca-kho-aji-quick-goi-31g-202407091321148878.jpg",
+              "gia-vi-nem-san-ca-kho-aji-quick-goi-31g-202407091321157181.jpg",
+              "gia-vi-nem-san-ca-kho-aji-quick-goi-31g-202407091321164273.jpg"
+            ],
+            "sku": "AJIN-I31G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "31G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "gia-vi-nem-san-nau-bun-bo-hue-aji-quick-goi-59g",
+            "name": "Gia Vi Nem San Nau Bun Bo Hue Aji Quick Goi 59g",
+            "images": [
+              "gia-vi-nem-san-nau-bun-bo-hue-aji-quick-goi-59g-201909251523183669.jpg",
+              "gia-vi-nem-san-nau-bun-bo-hue-aji-quick-goi-59g-201909251523247009.jpg",
+              "gia-vi-nem-san-nau-bun-bo-hue-aji-quick-goi-59g-201909251523282841.jpg",
+              "gia-vi-nem-san-nau-bun-bo-hue-aji-quick-goi-59g-201909251523328570.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "AJIN-I59G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "59G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "gia-vi-nem-san-thit-kho-aji-quick-goi-31g",
+            "name": "Gia Vi Nem San Thit Kho Aji Quick Goi 31g",
+            "images": [
+              "gia-vi-nem-san-thit-kho-aji-quick-goi-31g-202312051438481310.jpg",
+              "gia-vi-nem-san-thit-kho-aji-quick-goi-31g-202407091135077531.jpg",
+              "gia-vi-nem-san-thit-kho-aji-quick-goi-31g-202407091135087156.jpg",
+              "gia-vi-nem-san-thit-kho-aji-quick-goi-31g-202407091135097311.jpg",
+              "gia-vi-nem-san-thit-kho-aji-quick-goi-31g-202407091135106847.jpg"
+            ],
+            "sku": "AJIN-I31G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "31G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "giam-gao-len-men-ajinomoto-chai-400ml",
+            "name": "Giam Gao Len Men Ajinomoto Chai 400ml",
+            "images": [
+              "giam-gao-len-men-ajinomoto-chai-400ml-202006271626193612.jpg",
+              "giam-gao-len-men-ajinomoto-chai-400ml-202006271626197385.jpg",
+              "giam-gao-len-men-ajinomoto-chai-400ml-202006271626200607.jpg",
+              "giam-gao-len-men-ajinomoto-chai-400ml-202006271626203859.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "AJIN-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "400ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "hat-nem-aji-ngon-vi-heo-goi-170g",
+            "name": "Hat Nem Aji Ngon Vi Heo Goi 170g",
+            "images": [
+              "177826-slide-moi_202409271647007891.jpg",
+              "hat-nem-aji-ngon-vi-heo-goi-170g-202006172145128407.jpg",
+              "hat-nem-aji-ngon-vi-heo-goi-170g-202407021018299777.jpg"
+            ],
+            "sku": "AJIN-170G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "170G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "hat-nem-aji-ngon-vi-heo-goi-400g",
+            "name": "Hat Nem Aji Ngon Vi Heo Goi 400g",
+            "images": [
+              "82259-mat-sau_202409300935243227.jpg",
+              "82259-slide_202409300935247986.jpg",
+              "82259-slide-moi_202409300935251423.jpg",
+              "hat-nem-vi-heo-aji-ngon-goi-400g-202303281033540192.jpg"
+            ],
+            "sku": "AJIN-400G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "400G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "hat-nem-aji-ngon-vi-heo-goi-900g",
+            "name": "Hat Nem Aji Ngon Vi Heo Goi 900g",
+            "images": [
+              "77238-slide_202409300925114415.jpg",
+              "77238-slide-moi_202409300922444575.jpg",
+              "77238-slidee_202409300922440802.jpg",
+              "77238-tem_202411191421591446.jpg",
+              "77238-tem-2_202411191422000074.jpg"
+            ],
+            "sku": "AJIN-900G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "900G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-130g",
+            "name": "Xot Mayonnaise Ajinomoto Aji Mayo Chua Beo Chai 130g",
+            "images": [
+              "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-130g-202407121516090787.jpg",
+              "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-130g-202407121516092767.jpg",
+              "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-130g-202407121516094683.jpg",
+              "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-130g-202407121516096578.jpg",
+              "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-130g-202407121516098318.jpg"
+            ],
+            "sku": "AJIN-130G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "130G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-260g",
+            "name": "Xot Mayonnaise Ajinomoto Aji Mayo Chua Beo Chai 260g",
+            "images": [
+              "xot-mayonnaise-ajinomoto-vi-chua-beo-chai-260g-202304241647567247.jpg",
+              "xot-mayonnaise-ajinomoto-vi-chua-beo-chai-260g-202304241648090871.jpg",
+              "xot-mayonnaise-ajinomoto-vi-chua-beo-chai-260g-202304241648093197.jpg",
+              "xot-mayonnaise-ajinomoto-vi-chua-beo-chai-260g-202304241648095255.jpg",
+              "xot-mayonnaise-ajinomoto-vi-chua-beo-chai-260g-202308091620330952.jpg"
+            ],
+            "sku": "AJIN-260G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "260G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "xot-mayonnaise-ajinomoto-aji-mayo-chua-beo-chai-430g",
+            "name": "Xot Mayonnaise Ajinomoto Aji Mayo Chua Beo Chai 430g",
+            "images": [
+              "330057-slide_202409191354134317.jpg"
+            ],
+            "sku": "AJIN-430G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "430G",
+            "aiStatus": "Missing"
+          },
+          {
+            "productFolder": "xot-mayonnaise-ajinomoto-aji-mayo-ngot-diu-chai-130g",
+            "name": "Xot Mayonnaise Ajinomoto Aji Mayo Ngot Diu Chai 130g",
+            "images": [
+              "sot-mayonnaise-aji-mayo-ajinomoto-ngot-diu-chai-130g-202006200920242937.jpg",
+              "sot-mayonnaise-aji-mayo-ajinomoto-ngot-diu-chai-130g-202006200920249161.jpg",
+              "sot-mayonnaise-aji-mayo-ajinomoto-ngot-diu-chai-130g-202006200920258897.jpg",
+              "sot-mayonnaise-aji-mayo-ajinomoto-ngot-diu-chai-130g-202006200920263780.jpg",
+              "sot-mayonnaise-aji-mayo-ajinomoto-ngot-diu-chai-130g-202202162253503063.jpg"
+            ],
+            "sku": "AJIN-130G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "130G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "golden_farm",
+        "companyName": "Công ty Cánh Đồng Vàng (Golden Farm)",
+        "companyFolder": "cong-ty-canh-dong-vang-golden-farm",
+        "products": [
+          {
+            "productFolder": "Xốt mì Spaghetti truyền thống Golden Farm hũ 370g",
+            "name": "Xốt mì Spaghetti truyền thống Golden Farm hũ 370g",
+            "images": [
+              "xot-mi-golden-farm-spaghetti-truyen-thong-hu-370g-201901251055445952.jpg",
+              "xot-mi-golden-farm-spaghetti-truyen-thong-hu-370g-201901251055450625.jpg",
+              "xot-mi-golden-farm-spaghetti-truyen-thong-hu-370g-201901251055520916.jpg",
+              "xot-mi-spaghetti-golden-farm-truyen-thong-hu-370g-201903181027112167.jpg",
+              "xot-mi-spaghetti-truyen-thong-golden-farm-hu-370g-202202162325017010.jpg"
+            ],
+            "sku": "GOLD-370G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "370G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "acecook",
+        "companyName": "Công ty Cổ phần Acecook Việt Nam",
+        "companyFolder": "cong-ty-co-phan-acecook-viet-nam",
+        "products": [
+          {
+            "productFolder": "Muối chấm Hảo Hảo tôm chua cay hũ 120g",
+            "name": "Muối chấm Hảo Hảo tôm chua cay hũ 120g",
+            "images": [
+              "muoi-cham-hao-hao-tom-chua-cay-hu-120g_202506041108209886.jpg",
+              "muoi-cham-hao-hao-tom-chua-cay-hu-120g_202506041317140629.jpg",
+              "muoi-cham-hao-hao-tom-chua-cay-hu-120g_202506111117327991.jpg",
+              "muoi-cham-hao-hao-tom-chua-cay-hu-120g_202506111117331431.jpg",
+              "muoi-cham-hao-hao-tom-chua-cay-hu-120g_202506111117334070.jpg"
+            ],
+            "sku": "ACEC-120G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "120G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "lien_thanh",
+        "companyName": "Công ty Cổ phần Chế biến Thủy hải sản Liên Thành",
+        "companyFolder": "cong-ty-co-phan-che-bien-thuy-hai-san-lien-thanh",
+        "products": [
+          {
+            "productFolder": "Nước mắm chay Liên Thành 5 độ đạm chai 300ml",
+            "name": "Nước mắm chay Liên Thành 5 độ đạm chai 300ml",
+            "images": [
+              "nuoc-mam-chay-lien-thanh-chai-300ml_202512021046033755.jpg",
+              "nuoc-mam-chay-lien-thanh-chai-300ml_202512021046037431.jpg"
+            ],
+            "sku": "LIEN-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "300ML",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "afotech",
+        "companyName": "Công ty Cổ phần Công nghệ thực phẩm Châu Á (AFOTECH)",
+        "companyFolder": "cong-ty-co-phan-cong-nghe-thuc-pham-chau-a-afotech",
+        "products": [
+          {
+            "productFolder": "Nước mắm Madame Lân 16 độ đạm chai 410ml",
+            "name": "Nước mắm Madame Lân 16 độ đạm chai 410ml",
+            "images": [
+              "nuoc-mam-lien-thanh-16-do-dam-chai-500ml_202503210928544693.jpg",
+              "nuoc-mam-madame-lan-16-do-dam-chai-410ml_202505211403248481.jpg",
+              "nuoc-mam-madame-lan-16-do-dam-chai-410ml_202505211403251284.jpg"
+            ],
+            "sku": "AFOT-10ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "410ML",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "d_shining",
+        "companyName": "Công ty Cổ phần D-SHINING",
+        "companyFolder": "cong-ty-co-phan-d-shining",
+        "products": [
+          {
+            "productFolder": "Nước chấm Đầu Bếp Tôm chai 800ml",
+            "name": "Nước chấm Đầu Bếp Tôm chai 800ml",
+            "images": [
+              "nuoc-cham-dau-bep-tom-chai-900ml-202211040839259637.jpg",
+              "nuoc-cham-dau-bep-tom-chai-900ml-202211040839261824.jpg",
+              "nuoc-cham-dau-bep-tom-chai-900ml-202211040839264012.jpg",
+              "nuoc-cham-dau-bep-tom-chai-900ml-202211040839266093.jpg",
+              "nuoc-cham-dau-bep-tom-chai-900ml-202211040840378549.png"
+            ],
+            "sku": "DSHI-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "800ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm cao cấp cốt nhĩ tôm Đầu Bếp Tôm 18 độ đạm chai 500ml",
+            "name": "Nước mắm cao cấp cốt nhĩ tôm Đầu Bếp Tôm 18 độ đạm chai 500ml",
+            "images": [
+              "nuoc-mam-cao-cap-cot-nhi-tom-dau-bep-tom-18-do-dam-chai-500ml-202402201005393540.jpg",
+              "nuoc-mam-cao-cap-cot-nhi-tom-dau-bep-tom-18-do-dam-chai-500ml-202403 (1).jpg",
+              "nuoc-mam-cao-cap-cot-nhi-tom-dau-bep-tom-18-do-dam-chai-500ml-202403 (2).jpg",
+              "nuoc-mam-cao-cap-cot-nhi-tom-dau-bep-tom-18-do-dam-chai-500ml-202403 (3).jpg",
+              "nuoc-mam-cao-cap-cot-nhi-tom-dau-bep-tom-18-do-dam-chai-500ml-202403 (4).jpg",
+              "nuoc-mam-cao-cap-cot-nhi-tom-dau-bep-tom-18-do-dam-chai-500ml-202403 (5).jpg",
+              "nuoc-mam-cao-cap-cot-nhi-tom-dau-bep-tom-18-do-dam-chai-500ml-2024031213.jpg"
+            ],
+            "sku": "DSHI-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm cốt nhĩ tôm Đầu Bếp Tôm 14 độ đạm chai 500ml",
+            "name": "Nước mắm cốt nhĩ tôm Đầu Bếp Tôm 14 độ đạm chai 500ml",
+            "images": [
+              "nuoc-cham-nam-ngu-sieu-tiet-kiem-chai-800ml-clone_202505271640187580.jpg"
+            ],
+            "sku": "DSHI-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Missing"
+          },
+          {
+            "productFolder": "Thùng 12 chai nước mắm cốt nhĩ tôm Đầu Bếp Tôm 18 độ đạm chai 500ml",
+            "name": "Thùng 12 chai nước mắm cốt nhĩ tôm Đầu Bếp Tôm 18 độ đạm chai 500ml",
+            "images": [
+              "331154-slide_202410161624555709.jpg",
+              "cdntgddvnproductsimages2289310177bhxnuoc-m49_202410161627597988.jpg",
+              "cdntgddvnproductsimages2289310177bhxnuoc-ma202403121309463395_2024.jpg",
+              "cdntgddvnproductsimages2289310177bhxnuoc-mam-cao-cap-cot-202402201.jpg",
+              "cdntgddvnproductsimages2289310177bhxnuoc-mam-cao-cap-cot-nhi-tomm-.jpg",
+              "cdntgddvnproductsimages2289310ml-202403121309466019_20241016162759.jpg"
+            ],
+            "sku": "DSHI-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Thùng 15 chai nước chấm Đầu Bếp Tôm chai 800ml",
+            "name": "Thùng 15 chai nước chấm Đầu Bếp Tôm chai 800ml",
+            "images": [
+              "cdntgddvnproductsimages2289260185bhxnuoc-cham-dau-bep-tom-chai-900ml-202211040839259637.jpg",
+              "cdntgddvnproductsimages2289260185bhxnuoc-cham-dau-bep-tom-chai-900ml-202211040839261824.jpg",
+              "cdntgddvnproductsimages2289260185bhxnuoc-cham-dau-bep-tom-chai-900ml-202211040839264012.jpg",
+              "cdntgddvnproductsimages2289260185bhxnuoc-cham-dau-bep-tom-chai-900ml-202211040840378549.png",
+              "thung-15-chai-nuoc-cham-dau-bep-tom-chai-900ml_202507151609057933.jpg"
+            ],
+            "sku": "DSHI-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "800ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "tuong_an",
+        "companyName": "Công ty Cổ phần Dầu Thực Vật Tường An",
+        "companyFolder": "cong-ty-co-phan-dau-thuc-vat-tuong-an",
+        "products": [
+          {
+            "productFolder": "Bơ thực vật Tường An hũ 200g",
+            "name": "Bơ thực vật Tường An hũ 200g",
+            "images": [
+              "91785-slide_202409251027171547.jpg",
+              "91785-slidee_202409251027167831.jpg",
+              "bo-thuc-vat-tuong-an-hu-200g-202212011022285054.jpg",
+              "bo-thuc-vat-tuong-an-hu-200g-202308081904231533.jpg",
+              "bs9a7885_202409251026092485.jpg",
+              "bs9a7890_202409251026095011.jpg"
+            ],
+            "sku": "TUON-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Bơ thực vật Tường An hũ 80g",
+            "name": "Bơ thực vật Tường An hũ 80g",
+            "images": [
+              "113237-slide_202409241657545363.jpg",
+              "113237-slidee_202409241657542558.jpg",
+              "bo-thuc-vat-tuong-an-hu-80g-202308081908481652.jpg",
+              "bs9a7872_202409241656344646.jpg",
+              "bs9a7875_202409241656350965.jpg"
+            ],
+            "sku": "TUON-H80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu đậu nành 100% nguyên chất Tường An chai 1 lít",
+            "name": "Dầu đậu nành 100% nguyên chất Tường An chai 1 lít",
+            "images": [
+              "85143-slide-moi_202410111019065952.jpg",
+              "85143-tem_202410111307277960.jpg",
+              "85143-tem2_202410111307281439.jpg",
+              "dau-dau-nanh-100-nguyen-chat-tuong-an-chai-1-lit-202105201334278723.jpg",
+              "dau-dau-nanh-100-nguyen-chat-tuong-an-chai-1-lit-202212031555518566.jpg",
+              "dau-dau-nanh-100-nguyen-chat-tuong-an-chai-1-lit-202308081902436577.jpg"
+            ],
+            "sku": "TUON-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu gấc cho bé Vio Extra Tường An chai 250ml",
+            "name": "Dầu gấc cho bé Vio Extra Tường An chai 250ml",
+            "images": [
+              "dau-gac-cho-be-vio-extra-tuong-an-chai-250ml-202407121733395548.jpg",
+              "dau-gac-cho-be-vio-extra-tuong-an-chai-250ml-202407121733397425.jpg",
+              "dau-gac-cho-be-vio-extra-tuong-an-chai-250ml-202407121733399165.jpg",
+              "dau-gac-cho-be-vio-extra-tuong-an-chai-250ml-202407121733401037.jpg",
+              "dau-gac-cho-be-vio-extra-tuong-an-chai-250ml-202407121733403610.jpg",
+              "dau-gac-cho-be-vio-extra-tuong-an-chai-250ml-202407121733405857.jpg"
+            ],
+            "sku": "TUON-50ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "250ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu thực vật Tường An Cooking Oil can 2 lít",
+            "name": "Dầu thực vật Tường An Cooking Oil can 2 lít",
+            "images": [
+              "dau-thuc-vat-tuong-an-cooking-oil-can-2-lit-202212031341070283.png",
+              "dau-thuc-vat-tuong-an-cooking-oil-can-2-lit-202212031341082127.png",
+              "dau-thuc-vat-tuong-an-cooking-oil-can-2-lit-202212031344184629.png",
+              "dau-thuc-vat-tuong-an-cooking-oil-can-2-lit-202301271722083809.jpg",
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-2-lit-202105201323255221.jpg",
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-2-lit-202105201323261715.jpg"
+            ],
+            "sku": "TUON-N2LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu thực vật Tường An Cooking Oil chai 1 lít",
+            "name": "Dầu thực vật Tường An Cooking Oil chai 1 lít",
+            "images": [
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-1-lit-202105201322134036.jpg",
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-1-lit-202105201322141641.jpg",
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-1-lit-202105201322144043.jpg",
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-1-lit-202105201322146485.jpg",
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-1-lit-202212031648567252.png",
+              "dau-thuc-vat-tuong-an-cooking-oil-chai-1-lit-202308081904021096.jpg"
+            ],
+            "sku": "TUON-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_dh_foods",
+        "companyName": "Cong Ty Co Phan Dh Foods",
+        "companyFolder": "cong-ty-co-phan-dh-foods",
+        "products": [
+          {
+            "productFolder": "Dầu màu điều Dh Foods chai 90ml",
+            "name": "Dầu màu điều Dh Foods chai 90ml",
+            "images": [
+              "dau-mau-dieu-dh-foods-chai-100ml_202504041014014387.jpg",
+              "dau-mau-dieu-dh-foods-chai-100ml_202504041014017866.jpg",
+              "dau-mau-dieu-dh-foods-chai-100ml-202404030946077879.jpg",
+              "dau-mau-dieu-dh-foods-chai-100ml-202408011014449362.jpg"
+            ],
+            "sku": "CONG-90ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Muối ớt Tây Ninh Dh Foods hũ 120g",
+            "name": "Muối ớt Tây Ninh Dh Foods hũ 120g",
+            "images": [
+              "muoi-ot-kieu-tay-ninh-dh-foods-hu-120g-201903012315341038.jpg",
+              "muoi-ot-tay-ninh-120-g-2-700x467.jpg",
+              "muoi-ot-tay-ninh-120-g-3-700x467.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-120G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "120G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Muối tôm kiểu Tây Ninh Dh Foods hũ 110g",
+            "name": "Muối tôm kiểu Tây Ninh Dh Foods hũ 110g",
+            "images": [
+              "muoi-tom-kieu-tay-ninh-dh-foods-hu-120g-202405200759420668.jpg",
+              "muoi-tom-kieu-tay-ninh-dh-foods-hu-120g-202405200759422739.jpg",
+              "muoi-tom-kieu-tay-ninh-dh-foods-hu-120g-202405200759424464.jpg"
+            ],
+            "sku": "CONG-110G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "110G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Sốt phô mai Dh Foods chai 100g",
+            "name": "Sốt phô mai Dh Foods chai 100g",
+            "images": [
+              "sot-pho-mai-dh-foods-chai-100g-202404030948377350.jpg",
+              "sot-pho-mai-dh-foods-chai-100g-202404030948379630.jpg",
+              "sot-pho-mai-dh-foods-chai-100g-202404030948381655.jpg",
+              "sot-pho-mai-dh-foods-chai-100g-202404030948384824.jpg",
+              "sot-pho-mai-dh-foods-chai-100g-202404030948387318.jpg",
+              "sot-pho-mai-dh-foods-chai-100g-202406280941103319.jpg"
+            ],
+            "sku": "CONG-100G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "100G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Sốt tiêu đen Dh Foods chai 200g",
+            "name": "Sốt tiêu đen Dh Foods chai 200g",
+            "images": [
+              "323044-ksp_202408290904231287.jpg",
+              "sot-tieu-den-dh-foods-chai-200g-202404030936333211.jpg",
+              "sot-tieu-den-dh-foods-chai-200g-202404030936335523.jpg",
+              "sot-tieu-den-dh-foods-chai-200g-202404030936338502.jpg",
+              "sot-tieu-den-dh-foods-chai-200g-202404030936342208.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Sốt trứng muối Dh Foods chai 100g",
+            "name": "Sốt trứng muối Dh Foods chai 100g",
+            "images": [
+              "sot-trung-muoi-dh-foods-chai-100g-202404030947371689.jpg",
+              "sot-trung-muoi-dh-foods-chai-100g-202404030947374251.jpg",
+              "sot-trung-muoi-dh-foods-chai-100g-202404030947376616.jpg",
+              "sot-trung-muoi-dh-foods-chai-100g-202404030947379486.jpg",
+              "sot-trung-muoi-dh-foods-chai-100g-202404030947381855.jpg",
+              "sot-trung-muoi-dh-foods-chai-100g-202406280941424092.jpg"
+            ],
+            "sku": "CONG-100G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "100G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt thái sả tắc Dh Foods chai 200g",
+            "name": "Xốt thái sả tắc Dh Foods chai 200g",
+            "images": [
+              "xot-muoi-tieu-tac-dh-foods-chai-120g-clone_202505301646235766.jpg",
+              "xot-muoi-tieu-tac-dh-foods-chai-120g-clone_202505301646238468.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_duong_quang_ngai",
+        "companyName": "Cong Ty Co Phan Duong Quang Ngai",
+        "companyFolder": "cong-ty-co-phan-duong-quang-ngai",
+        "products": [
+          {
+            "productFolder": "Đường vàng Quảng Ngãi gói 1kg",
+            "name": "Đường vàng Quảng Ngãi gói 1kg",
+            "images": [
+              "duong-vang-quang-ngai-goi-1kg-202401251130536710.jpg",
+              "duong-vang-quang-ngai-goi-1kg-202401251130539737.jpg",
+              "duong-vang-quang-ngai-goi-1kg-202403121131038324.jpg",
+              "duong-vang-quang-ngai-goi-1kg-202403121131041775.jpg",
+              "duong-vang-quang-ngai-goi-1kg-202403121131046591.jpg",
+              "duong-vang-quang-ngai-goi-1kg-202403121131050993.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_duong_quang_ngai_nmd_an_khe",
+        "companyName": "Cong Ty Co Phan Duong Quang Ngai Nmd An Khe",
+        "companyFolder": "cong-ty-co-phan-duong-quang-ngai-nmd-an-khe",
+        "products": [
+          {
+            "productFolder": "Đường kính trắng An Khê gói 1kg",
+            "name": "Đường kính trắng An Khê gói 1kg",
+            "images": [
+              "duong-kinh-trang-an-khe-goi-1kg-202401251039206282.jpg",
+              "duong-kinh-trang-an-khe-goi-1kg-202401251039210559.jpg",
+              "duong-kinh-trang-an-khe-goi-1kg-202403091524026760.jpg",
+              "duong-kinh-trang-an-khe-goi-1kg-202403091524029311.jpg",
+              "duong-kinh-trang-an-khe-goi-1kg-202403091524031499.jpg",
+              "duong-kinh-trang-an-khe-goi-1kg-202403091524033772.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Đường kính trắng An Khê gói 500g",
+            "name": "Đường kính trắng An Khê gói 500g",
+            "images": [
+              "duong-kinh-trang-an-khe-goi-500g-202403301439162132.jpg",
+              "duong-kinh-trang-an-khe-goi-500g-202403301439164383.jpg",
+              "duong-kinh-trang-an-khe-goi-500g-202403301439166439.jpg",
+              "duong-kinh-trang-an-khe-goi-500g-202403301439168736.jpg"
+            ],
+            "sku": "CONG-500G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_hang_tieu_dung_bien_hoa",
+        "companyName": "Cong Ty Co Phan Hang Tieu Dung Bien Hoa",
+        "companyFolder": "cong-ty-co-phan-hang-tieu-dung-bien-hoa",
+        "products": [
+          {
+            "productFolder": "Đường lỏng Biên Hòa Syrup mía chai 400ml",
+            "name": "Đường lỏng Biên Hòa Syrup mía chai 400ml",
+            "images": [
+              "duong-long-bien-hoa-syrup-mia-chai-400ml_202504041001351682.jpg",
+              "duong-long-bien-hoa-syrup-mia-chai-400ml_202504041001353939.jpg",
+              "duong-long-bien-hoa-syrup-mia-chai-400ml_202504041001357286.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "400ML",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Đường mía thiên nhiên Biên Hòa gói 1kg",
+            "name": "Đường mía thiên nhiên Biên Hòa gói 1kg",
+            "images": [
+              "duong-mia-thien-nhien-bien-hoa-goi-1kg-202202141526330176.jpg",
+              "duong-vang-thien-nhien-bien-hoa-goi-1kg_202506041047178929.jpg",
+              "duong-vang-thien-nhien-bien-hoa-gold-goi-1kg-202104230135249977.jpeg",
+              "duong-vang-thien-nhien-bien-hoa-gold-goi-1kg-202104230135254630.jpeg",
+              "duong-vang-thien-nhien-bien-hoa-gold-goi-1kg-202104230135257892.jpeg",
+              "duong-vang-thien-nhien-bien-hoa-gold-goi-1kg-202104230135260971.jpeg",
+              "duong-vang-thien-nhien-bien-hoa-gold-goi-1kg-202104230135263782.jpeg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Đường mía thượng hạng Biên Hòa gói 1kg",
+            "name": "Đường mía thượng hạng Biên Hòa gói 1kg",
+            "images": [
+              "85200-tem_202411191419597954.jpg",
+              "85200-tem-2_202411191420008489.jpg",
+              "duong-mia-thuong-hang-bien-hoa-goi-1kg-202408191656044421.jpg",
+              "duong-mia-thuong-hang-bien-hoa-goi-1kg-202408191656065177.jpg",
+              "duong-tinh-luyen-bien-hoa-pure-goi-1kg-202104230133434892.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_hang_tieu_dung_masan_masan_consumer",
+        "companyName": "Cong Ty Co Phan Hang Tieu Dung Masan Masan Consumer",
+        "companyFolder": "cong-ty-co-phan-hang-tieu-dung-masan-masan-consumer",
+        "products": [
+          {
+            "productFolder": "2 chai nước chấm Nam Ngư Siêu Tiết Kiệm 800ml",
+            "name": "2 chai nước chấm Nam Ngư Siêu Tiết Kiệm 800ml",
+            "images": [
+              "nuoc-cham-nam-ngu-sieu-tiet-kiem-chai-800ml_202510061352406931.jpg",
+              "nuoc-cham-nam-ngu-sieu-tiet-kiem-chai-800ml_202510061358127491.jpg",
+              "nuoc-cham-nam-ngu-sieu-tiet-kiem-chai-800ml-clone_202506271017036151.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "800ML",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Gia vị hoàn chỉnh dạng xốt gà chiên nước mắm Chinsu hộp 700g",
+            "name": "Gia vị hoàn chỉnh dạng xốt gà chiên nước mắm Chinsu hộp 700g",
+            "images": [
+              "gia-vi-hoan-chinh-dang-xot-ga-chien-nuoc-mam-chinsu-hop-700g-202207251427102381.jpg",
+              "gia-vi-hoan-chinh-dang-xot-ga-chien-nuoc-mam-chinsu-hop-700g-202310131037064308.jpg",
+              "gia-vi-hoan-chinh-dang-xot-ga-chien-nuoc-mam-chinsu-hop-700g-202310131037069390.jpg",
+              "gia-vi-hoan-chinh-dang-xot-ga-chien-nuoc-mam-chinsu-hop-700g-202310131037073688.jpg",
+              "gia-vi-hoan-chinh-dang-xot-ga-chien-nuoc-mam-chinsu-hop-700g-202310131037076947.jpg",
+              "gia-vi-hoan-chinh-dang-xot-ga-chien-nuoc-mam-chinsu-hop-700g-202310131037080140.jpg"
+            ],
+            "sku": "CONG-700G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "700G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Gia vị hoàn chỉnh dạng xốt thịt kho Chinsu gói 70g",
+            "name": "Gia vị hoàn chỉnh dạng xốt thịt kho Chinsu gói 70g",
+            "images": [
+              "gia-vi-hoan-chinh-dang-xot-thit-kho-chinsu-goi-70g-202310131035059318.jpg",
+              "gia-vi-hoan-chinh-dang-xot-thit-kho-chinsu-goi-70g-202310131035062016.jpg",
+              "gia-vi-hoan-chinh-dang-xot-thit-kho-chinsu-goi-70g-202310131035065514.jpg",
+              "gia-vi-hoan-chinh-dang-xot-thit-kho-chinsu-goi-70g-202310131035071531.jpg",
+              "gia-vi-hoan-chinh-dang-xot-thit-kho-chinsu-goi-70g-202310131035076756.jpg",
+              "gia-vi-hoan-chinh-dang-xot-thit-kho-trung-chinsu-goi-70g-202203111002136667.png"
+            ],
+            "sku": "CONG-I70G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "70G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm Chinsu ngọt tôm thơm thịt gói 900g",
+            "name": "Hạt nêm Chinsu ngọt tôm thơm thịt gói 900g",
+            "images": [
+              "hat-nem-chinsu-ngot-tom-thom-thit-goi-900g-202308051850002856.jpg",
+              "hat-nem-chinsu-ngot-tom-thom-thit-goi-900g-202308181104413992.jpg",
+              "hat-nem-chinsu-ngot-tom-thom-thit-goi-900g-202308181104417074.jpg",
+              "hat-nem-chinsu-ngot-tom-thom-thit-goi-900g-202308181104419477.jpg",
+              "hat-nem-chinsu-ngot-tom-thom-thit-goi-900g-202308181104421604.jpg",
+              "hat-nem-chinsu-ngot-tom-thom-thit-goi-900g-202308181104424097.jpg"
+            ],
+            "sku": "CONG-900G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "900G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Kho quẹt Nam Ngư hũ 200g",
+            "name": "Kho quẹt Nam Ngư hũ 200g",
+            "images": [
+              "329784-slide_202409111352220036.jpg",
+              "329784-tem_202409111352227967.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Nước chấm chua ngọt Nam Ngư ớt tỏi Lý Sơn chai 300ml",
+            "name": "Nước chấm chua ngọt Nam Ngư ớt tỏi Lý Sơn chai 300ml",
+            "images": [
+              "nuoc-cham-chua-ngot-nam-ngu-ot-toi-ly-son-chai-300ml-202310231431301720.jpg",
+              "nuoc-cham-chua-ngot-nam-ngu-ot-toi-ly-son-chai-300ml-202310241028032775.jpg",
+              "nuoc-cham-chua-ngot-nam-ngu-ot-toi-ly-son-chai-300ml-202311010943356635.jpg",
+              "nuoc-cham-chua-ngot-nam-ngu-ot-toi-ly-son-chai-300ml-202311010943359650.jpg",
+              "nuoc-cham-chua-ngot-nam-ngu-ot-toi-ly-son-chai-300ml-202311010943363080.jpg",
+              "nuoc-cham-chua-ngot-nam-ngu-ot-toi-ly-son-chai-300ml-202311041308092150.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "300ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước chấm Nam Ngư Đệ Nhị chai 900ml",
+            "name": "Nước chấm Nam Ngư Đệ Nhị chai 900ml",
+            "images": [
+              "nuoc-cham-nam-ngu-de-nhi-chai-900ml_202601091555024918.jpg",
+              "nuoc-cham-nam-ngu-de-nhi-chai-900ml_202601091555030503.jpg",
+              "nuoc-cham-nam-ngu-de-nhi-chai-900ml_202601091555033070.jpg",
+              "nuoc-mam-nam-ngu-de-nhi-900ml-15-4-700x467.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "900ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước chấm Nam Ngư Siêu Tiết Kiệm chai 800ml",
+            "name": "Nước chấm Nam Ngư Siêu Tiết Kiệm chai 800ml",
+            "images": [
+              "nuoc-cham-nam-ngu-sieu-tiet-kiem-chai-800ml_202510061352406931.jpg",
+              "nuoc-cham-nam-ngu-sieu-tiet-kiem-chai-800ml_202510061358127491.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "800ML",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Nước mắm cá cơm Nam Ngư 15 độ đạm chai 500ml",
+            "name": "Nước mắm cá cơm Nam Ngư 15 độ đạm chai 500ml",
+            "images": [
+              "nmam-nam-ngu-chai-pet-500ml-24_202510021517059193.jpg",
+              "nmam-nam-ngu-chai-pet-500ml-24_202512021114241740.jpg",
+              "nmam-nam-ngu-chai-pet-500ml-24_202512021114245171.jpg",
+              "nmam-nam-ngu-chai-pet-500ml-24_202512021124102616.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm cá cơm Nam Ngư 15 độ đạm chai 900ml",
+            "name": "Nước mắm cá cơm Nam Ngư 15 độ đạm chai 900ml",
+            "images": [
+              "nuoc-mam-nam-ngu-10-do-dam-chai-900ml-202304131744097593.jpg",
+              "nuoc-mam-nam-ngu-chai-pet-900ml-15_202510021539425193.jpg",
+              "nuoc-mam-nam-ngu-chai-pet-900ml-15_202512021334100695.jpg",
+              "nuoc-mam-nam-ngu-chai-pet-900ml-15_202512021334260236.jpg",
+              "nuoc-mam-nam-ngu-chai-pet-900ml-15_202512021334267545.jpg",
+              "nuoc-mam-nam-ngu-chai-pet-900ml-15_202512021334271000.jpg",
+              "nuoc-mam-nam-ngu-chai-pet-900ml-15_202512021334274331.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "900ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm Chinsu cá cơm biển đông 25 độ đạm chai 720ml",
+            "name": "Nước mắm Chinsu cá cơm biển đông 25 độ đạm chai 720ml",
+            "images": [
+              "260183-slide-mau-moi_202501211043294970.jpg",
+              "bs9a3968_202501231144011934.jpg",
+              "bs9a3969_202501231144008519.jpg",
+              "nuoc-mam-chinsu-ca-com-bien-dong-20-do-dam-chai-720ml-202407181130191704.jpg",
+              "nuoc-mam-chinsu-ca-com-bien-dong-20-do-dam-chai-720ml-202407181130197079.jpg",
+              "nuoc-mam-chinsu-ca-com-bien-dong-20-do-dam-chai-720ml-202407181130201398.jpg",
+              "nuoc-mam-chinsu-ca-com-bien-dong-20-do-dam-chai-720ml-202407181130210372.jpg",
+              "nuoc-mam-chinsu-ca-com-bien-dong-20-do-dam-chai-720ml-202407181130216067.jpg",
+              "nuoc-mam-chinsu-ca-com-bien-dong-20-do-dam-chai-720ml-202407181130223509.jpg"
+            ],
+            "sku": "CONG-20ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "720ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm hương cá hồi hảo hạng Chinsu 16 độ đạm chai 500ml",
+            "name": "Nước mắm hương cá hồi hảo hạng Chinsu 16 độ đạm chai 500ml",
+            "images": [
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050421242.jpg",
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050423407.jpg",
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050425195.jpg",
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050427696.jpg",
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050430262.jpg",
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050432162.jpg",
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-12-do-dam-chai-500ml-202309211050434133.jpg",
+              "nuoc-mam-huong-ca-hoi-hao-hang-chinsu-chai-500ml_202507251054208135.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương Chinsu tỏi ớt chai 330ml",
+            "name": "Nước tương Chinsu tỏi ớt chai 330ml",
+            "images": [
+              "nuoc-tuong-chinsu-toi-ot-chai-330ml-202205060918487846.jpg",
+              "nuoc-tuong-chinsu-toi-ot-chai-330ml-202205060918497567.jpg",
+              "nuoc-tuong-chinsu-toi-ot-chai-330ml-202205060918500880.jpg",
+              "nuoc-tuong-chinsu-toi-ot-chai-330ml-202205060918503635.jpg",
+              "nuoc-tuong-chinsu-toi-ot-chai-330ml-202205060918506095.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-30ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "330ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương Nhất Ca Tam Thái Tử chai 500ml",
+            "name": "Nước tương Nhất Ca Tam Thái Tử chai 500ml",
+            "images": [
+              "82802-slide-mau-moi_202501211043008763.jpg",
+              "82802-tem_202411191446576068.jpg",
+              "82802-tem-1_202411191446585378.jpg",
+              "82802-tem-2_202411191447003908.jpg",
+              "nuoc-tuong-nhat-ca-tam-thai-tu-chai-500ml-202308111729325157.jpg",
+              "nuoc-tuong-nhat-ca-tam-thai-tu-chai-500ml-202308111729327061.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương Tam Thái Tử Nhất Ca sánh đậm chai 500ml",
+            "name": "Nước tương Tam Thái Tử Nhất Ca sánh đậm chai 500ml",
+            "images": [
+              "326670-tem_202411191551444403.jpg",
+              "326670-tem2_202411191551448216.jpg",
+              "nuoc-tuong-tam-thai-tu-nhat-ca-sanh-dam-chai-500ml-202407150947498320.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Tương cà Chinsu chai 250g",
+            "name": "Tương cà Chinsu chai 250g",
+            "images": [
+              "tuong-ca-chinsu-250gx24-201908311403142287.jpg",
+              "tuong-ca-chinsu-250gx24-201908311403143849.jpg",
+              "tuong-ca-chinsu-250gx24-201908311403146781.jpg",
+              "tuong-ca-chinsu-250gx24-201908311403202029.jpg",
+              "tuong-ca-chinsu-chai-250g-202202161412340045.jpg"
+            ],
+            "sku": "CONG-250G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "250G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Chinsu chai 1kg",
+            "name": "Tương ớt Chinsu chai 1kg",
+            "images": [
+              "tuong-ot-chinsu-chai-1kg-202301041155409872.jpg",
+              "tuong-ot-chinsu-chai-1kg-202301061115529307.jpg",
+              "tuong-ot-chinsu-chai-1kg-202301061115532529.jpg",
+              "tuong-ot-chinsu-chai-1kg-202301061115535405.jpg",
+              "tuong-ot-chinsu-chai-1kg-202301061115538419.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Chinsu chai 250g",
+            "name": "Tương ớt Chinsu chai 250g",
+            "images": [
+              "tuong-ot-chinsu-250g-24-2-700x467.jpg",
+              "tuong-ot-chinsu-250g-24-3-700x467.jpg",
+              "tuong-ot-chinsu-250g-24-4-700x467.jpg",
+              "tuong-ot-chinsu-chai-250g-202202161409182658.jpg",
+              "tuong-ot-chinsu-chai-250g-202204271019287843.jpg"
+            ],
+            "sku": "CONG-250G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "250G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Chinsu chai 500g",
+            "name": "Tương ớt Chinsu chai 500g",
+            "images": [
+              "tuong-ot-chinsu-chai-500g-201911011615532253.jpg",
+              "tuong-ot-chinsu-chai-500g-201911011615535074.jpg",
+              "tuong-ot-chinsu-chai-500g-201911011615537684.jpg",
+              "tuong-ot-chinsu-chai-500g-201911011615540234.jpg",
+              "tuong-ot-chinsu-chai-500g-202202161409526384.jpg"
+            ],
+            "sku": "CONG-500G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Chinsu Sriracha chai 250g",
+            "name": "Tương ớt Chinsu Sriracha chai 250g",
+            "images": [
+              "tuong-ot-chinsu-sriracha-chai-250g_202503191532167810.jpg",
+              "tuong-ot-chinsu-sriracha-chai-250g_202503191532170817.jpg",
+              "tuong-ot-chinsu-sriracha-chai-250g_202504082131093544.jpg"
+            ],
+            "sku": "CONG-250G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "250G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Xốt gia vị nêm sẵn lẩu Thái Chinsu gói 80g",
+            "name": "Xốt gia vị nêm sẵn lẩu Thái Chinsu gói 80g",
+            "images": [
+              "xot-gia-vi-nem-san-lau-thai-chinsu-goi-180g-clone_202509091014442737.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Missing"
+          },
+          {
+            "productFolder": "Xốt gia vị nêm sẵn thịt nướng Chinsu gói 80g",
+            "name": "Xốt gia vị nêm sẵn thịt nướng Chinsu gói 80g",
+            "images": [
+              "xot-gia-vi-nem-san-thit-nuong-chinsu-goi-80g-202311041321040291.jpg",
+              "xot-gia-vi-nem-san-thit-nuong-chinsu-goi-80g-202311041321042691.jpg",
+              "xot-gia-vi-nem-san-thit-nuong-chinsu-goi-80g-202311041321044935.jpg",
+              "xot-gia-vi-nem-san-thit-nuong-chinsu-goi-80g-202311041321047534.jpg",
+              "xot-gia-vi-nem-san-thit-nuong-chinsu-goi-80g-202311041321050105.jpg",
+              "xot-gia-vi-nem-san-thit-nuong-chinsu-goi-80g-202406270916585997.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt nhà hàng thịt nướng muối ớt Chinsu gói 80g",
+            "name": "Xốt nhà hàng thịt nướng muối ớt Chinsu gói 80g",
+            "images": [
+              "326682-slide_202409251030245671.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Missing"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_huu_han_vedan_viet_nam",
+        "companyName": "Cong Ty Co Phan Huu Han Vedan Viet Nam",
+        "companyFolder": "cong-ty-co-phan-huu-han-vedan-viet-nam",
+        "products": [
+          {
+            "productFolder": "Bột ngọt hạt lớn Vedan gói 454g",
+            "name": "Bột ngọt hạt lớn Vedan gói 454g",
+            "images": [
+              "bot-ngot-hat-lon-vedan-goi-454g-202202110748506168.jpg",
+              "bot-ngot-vedan-goi-454g-201912111056540087.jpg",
+              "bot-ngot-vedan-goi-454g-201912111056543279.jpg",
+              "bot-ngot-vedan-goi-454g-201912111056546691.jpg",
+              "bot-ngot-vedan-goi-454g-201912111056550223.jpg"
+            ],
+            "sku": "CONG-454G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "454G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Bột ngọt hạt nhỏ Vedan gói 1kg",
+            "name": "Bột ngọt hạt nhỏ Vedan gói 1kg",
+            "images": [
+              "bot-ngot-hat-nho-vedan-goi-1kg-202202121346216590.jpg",
+              "bot-ngot-vedan-goi-1kg-201907160021336720.jpg",
+              "bot-ngot-vedan-goi-1kg-201907160021342101.jpg",
+              "bot-ngot-vedan-goi-1kg-201907160021345960.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_janbee",
+        "companyName": "Cong Ty Co Phan Janbee",
+        "companyFolder": "cong-ty-co-phan-janbee",
+        "products": [
+          {
+            "productFolder": "Dầu đậu nành tinh luyện Janbee can 2 lít",
+            "name": "Dầu đậu nành tinh luyện Janbee can 2 lít",
+            "images": [
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034239176.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034242270.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034245023.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034247787.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034250423.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034254838.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034259131.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034264356.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202407091034267369.jpg"
+            ],
+            "sku": "CONG-N2LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu đậu nành tinh luyện Janbee chai 1 lít",
+            "name": "Dầu đậu nành tinh luyện Janbee chai 1 lít",
+            "images": [
+              "dau-dau-nanh-tinh-luyen-janbee-chai-1-lit_202511261703098790.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-chai-1-lit-202405271438244348.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-chai-1-lit-202405271438246251.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-chai-1-lit-202405271438248157.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-chai-1-lit-202405271438250669.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-chai-1-lit-202405271438253330.jpg",
+              "dau-dau-nanh-tinh-luyen-janbee-chai-1-lit-202405271438255383.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_marico_south_east_asia_marico_sea",
+        "companyName": "Cong Ty Co Phan Marico South East Asia Marico Sea",
+        "companyFolder": "cong-ty-co-phan-marico-south-east-asia-marico-sea",
+        "products": [
+          {
+            "productFolder": "Nước mắm cá cơm Thuận Phát 40 độ đạm chai 610ml",
+            "name": "Nước mắm cá cơm Thuận Phát 40 độ đạm chai 610ml",
+            "images": [
+              "nuoc-mam-ca-com-thuan-phat-40-do-dam-chai-610ml-2023020310233.jpg",
+              "nuoc-mam-ca-com-thuan-phat-40-do-dam-chai-610ml-20230217 (1).jpg",
+              "nuoc-mam-ca-com-thuan-phat-40-do-dam-chai-610ml-20230217 (2).jpg",
+              "nuoc-mam-ca-com-thuan-phat-40-do-dam-chai-610ml-202302170949.jpg",
+              "nuoc-mam-ca-com-thuan-phat-40-do-dam-chai-610ml-202302170950.jpg",
+              "nuoc-mam-ca-com-thuan-phat-40-do-dam-chai-610ml-202302171040.jpg",
+              "nuoc-mam-ca-com-thuan-phat-40-do-dam-chai-610ml-202302171042.jpg"
+            ],
+            "sku": "CONG-10ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "610ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_nam_phuong_nam_phuong_food",
+        "companyName": "Cong Ty Co Phan Nam Phuong Nam Phuong Food",
+        "companyFolder": "cong-ty-co-phan-nam-phuong-nam-phuong-food",
+        "products": [
+          {
+            "productFolder": "Nước dùng hoàn chỉnh lẩu Thái Barona gói 180g",
+            "name": "Nước dùng hoàn chỉnh lẩu Thái Barona gói 180g",
+            "images": [
+              "nuoc-dung-hoan-chinh-lau-thai-barona-goi-180g-201901212033263720.jpg",
+              "nuoc-dung-hoan-chinh-lau-thai-barona-goi-180g-201901212033268803.jpg",
+              "nuoc-dung-hoan-chinh-lau-thai-barona-goi-180g-201901212033276445.jpg",
+              "nuoc-dung-hoan-chinh-lau-thai-barona-goi-180g-202204271416399804.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-180G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "180G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt gia vị hoàn chỉnh gà chiên nước mắm Barona gói 80g",
+            "name": "Xốt gia vị hoàn chỉnh gà chiên nước mắm Barona gói 80g",
+            "images": [
+              "xot-gia-vi-hoan-chinh-ga-chien-nuoc-mam-barona-goi-80g-2 (1).jpg",
+              "xot-gia-vi-hoan-chinh-ga-chien-nuoc-mam-barona-goi-80g-2 (2).jpg",
+              "xot-gia-vi-hoan-chinh-ga-chien-nuoc-mam-barona-goi-80g-2 (3).jpg",
+              "xot-gia-vi-hoan-chinh-ga-chien-nuoc-mam-barona-goi-80g-20220.jpg",
+              "xot-gia-vi-hoan-chinh-ga-chien-nuoc-mam-barona-goi-80g-2022081610422.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt gia vị hoàn chỉnh nướng BBQ Barona gói 80g",
+            "name": "Xốt gia vị hoàn chỉnh nướng BBQ Barona gói 80g",
+            "images": [
+              "xot-gia-vi-hoan-chinh-nuong-bbq-barona-goi-80g-202210201751018424.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-bbq-barona-goi-80g-202210271037520697.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-bbq-barona-goi-80g-202210271038156527.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-bbq-barona-goi-80g-202210271038163836.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-bbq-barona-goi-80g-202210271038174541.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-bbq-barona-goi-80g-202210271038202527.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt gia vị hoàn chỉnh nướng muối ớt Barona gói 80g",
+            "name": "Xốt gia vị hoàn chỉnh nướng muối ớt Barona gói 80g",
+            "images": [
+              "xot-gia-vi-hoan-chinh-nuong-muoi-ot-barona-goi-80g-202208161 (1).jpg",
+              "xot-gia-vi-hoan-chinh-nuong-muoi-ot-barona-goi-80g-202208161.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-muoi-ot-barona-goi-80g-2022081610460.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-muoi-ot-barona-goi-80g-2022081610461.jpg",
+              "xot-gia-vi-hoan-chinh-nuong-muoi-ot-barona-goi-80g-2022081610462.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt gia vị nấu canh chua Barona gói 80g",
+            "name": "Xốt gia vị nấu canh chua Barona gói 80g",
+            "images": [
+              "sellingpoint (1).jpg",
+              "sot-gia-vi-hoan-chinh-canh-chua-nam-bo-barona-goi-3-700x467.jpg",
+              "xot-gia-vi-hoan-chinh-nau-canh-chua-barona-goi-80g-201902281019125842.jpg",
+              "xot-gia-vi-hoan-chinh-nau-canh-chua-barona-goi-80g-201902281019159026.jpg",
+              "xot-gia-vi-hoan-chinh-nau-canh-chua-barona-goi-80g-201903181455054445.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_nosafood_nosafood_jsc",
+        "companyName": "Cong Ty Co Phan Nosafood Nosafood Jsc",
+        "companyFolder": "cong-ty-co-phan-nosafood-nosafood-jsc",
+        "products": [
+          {
+            "productFolder": "Gia vị nấu lẩu cà chua Tứ Xuyên Ông Chà Và gói 150g",
+            "name": "Gia vị nấu lẩu cà chua Tứ Xuyên Ông Chà Và gói 150g",
+            "images": [
+              "gia-vi-nau-lau-ca-chua-tu-xuyen-ong-cha-va-goi-150g_202503051633178219.jpg",
+              "gia-vi-nau-lau-ca-chua-tu-xuyen-ong-cha-va-goi-150g_2025030516331814.jpg",
+              "gia-vi-nau-lau-ca-chua-tu-xuyen-ong-cha-va-goi-150g_2025042409162057.jpg"
+            ],
+            "sku": "CONG-150G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "150G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Gia vị nấu phở Ông Chà Và gói 25g",
+            "name": "Gia vị nấu phở Ông Chà Và gói 25g",
+            "images": [
+              "329013-ksp_202409271115524739.jpg",
+              "bs9a2182_202411191637093987.jpg",
+              "bs9a2183_202411191637089105.jpg",
+              "gia-vi-nau-pho-ong-cha-va-goi-25g-202408191049529605.jpg"
+            ],
+            "sku": "CONG-I25G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "25G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Muối hạt thiên nhiên Ông Chà Và gói 1kg",
+            "name": "Muối hạt thiên nhiên Ông Chà Và gói 1kg",
+            "images": [
+              "328643-tem_202409131524181300.jpg",
+              "muoi-hat-thien-nhien-ong-cha-va-goi-1kg-202408051352267322.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Nước tương Ông Chà Và 707 vị thanh dịu chai 500ml",
+            "name": "Nước tương Ông Chà Và 707 vị thanh dịu chai 500ml",
+            "images": [
+              "nuoc-tuong-707-ong-cha-va-vi-thanh-diu-chai-500ml_202504041331597554.jpg",
+              "nuoc-tuong-707-ong-cha-va-vi-thanh-diu-chai-500ml_202504041332000799.jpg",
+              "nuoc-tuong-707-ong-cha-va-vi-thanh-diu-chai-500ml_202504041332005206.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Sốt đậu hũ Tứ Xuyên Ông Chà Và gói 90g",
+            "name": "Sốt đậu hũ Tứ Xuyên Ông Chà Và gói 90g",
+            "images": [
+              "sot-dau-hu-tu-xuyen-ong-cha-va-goi-90g-202405171441468178.jpg"
+            ],
+            "sku": "CONG-I90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Missing"
+          },
+          {
+            "productFolder": "Sốt sườn xào chua ngọt Ông Chà Và gói 90g",
+            "name": "Sốt sườn xào chua ngọt Ông Chà Và gói 90g",
+            "images": [
+              "sot-suon-xao-chua-ngot-ong-cha-va-goi-90g-202308151010326583.jpg",
+              "sot-suon-xao-chua-ngot-ong-cha-va-goi-90g-202308151010330061.jpg",
+              "sot-suon-xao-chua-ngot-ong-cha-va-goi-90g-202308151010332950.jpg",
+              "sot-suon-xao-chua-ngot-ong-cha-va-goi-90g-202308151010336288.jpg",
+              "sot-suon-xao-chua-ngot-ong-cha-va-goi-90g-202308172225411427.jpg"
+            ],
+            "sku": "CONG-I90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Sốt ướp xá xíu Ông Chà Và gói 90g",
+            "name": "Sốt ướp xá xíu Ông Chà Và gói 90g",
+            "images": [
+              "sot-uop-xa-xiu-ong-cha-va-goi-90g-202308151009175647.jpg",
+              "sot-uop-xa-xiu-ong-cha-va-goi-90g-202308151009179037.jpg",
+              "sot-uop-xa-xiu-ong-cha-va-goi-90g-202308151009182444.jpg",
+              "sot-uop-xa-xiu-ong-cha-va-goi-90g-202308151009185583.jpg",
+              "sot-uop-xa-xiu-ong-cha-va-goi-90g-202308172224225703.jpg"
+            ],
+            "sku": "CONG-I90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương đen chai dẹp Ông Chà Và 300g",
+            "name": "Tương đen chai dẹp Ông Chà Và 300g",
+            "images": [
+              "tuong-den-chai-dep-ong-cha-va-250g-202307071641075739.jpg",
+              "tuong-den-chai-dep-ong-cha-va-250g-202307071641078317.jpg",
+              "tuong-den-chai-dep-ong-cha-va-250g-202307071641080573.jpg",
+              "tuong-den-chai-dep-ong-cha-va-250g-202307071641083039.jpg",
+              "tuong-den-chai-dep-ong-cha-va-250g-202307071641085411.jpg"
+            ],
+            "sku": "CONG-300G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "300G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Ông Chà Và chai 700g",
+            "name": "Tương ớt Ông Chà Và chai 700g",
+            "images": [
+              "bs9a3763_202411201423478617.jpg",
+              "bs9a3764_202411201423475063.jpg",
+              "bs9a3765_202411201423483749.jpg"
+            ],
+            "sku": "CONG-700G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "700G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Tương ớt xanh Ông Chà Và chai 210g",
+            "name": "Tương ớt xanh Ông Chà Và chai 210g",
+            "images": [
+              "tuong-ot-xanh-ong-cha-va-chai-210g-201907310853277194.jpg",
+              "tuong-ot-xanh-ong-cha-va-chai-210g-201907310853278299.jpg",
+              "tuong-ot-xanh-ong-cha-va-chai-210g-201907310853279489.jpg",
+              "tuong-ot-xanh-ong-cha-va-chai-210g-201907310853283024.jpg",
+              "tuong-ot-xanh-ong-cha-va-chai-210g-202203172332301557.jpg"
+            ],
+            "sku": "CONG-210G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "210G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_sai_gon_food",
+        "companyName": "Cong Ty Co Phan Sai Gon Food",
+        "companyFolder": "cong-ty-co-phan-sai-gon-food",
+        "products": [
+          {
+            "productFolder": "Nước dùng cô đặc lẩu Thái chay SG Food gói 180g",
+            "name": "Nước dùng cô đặc lẩu Thái chay SG Food gói 180g",
+            "images": [
+              "nuoc-dung-lau-co-dac-vi-thai-chay-sgf-150g_202503250919588971.jpg",
+              "nuoc-dung-lau-co-dac-vi-thai-chay-sgf-150g_202503250919593818.jpg",
+              "nuoc-dung-lau-co-dac-vi-thai-chay-sgf-150g_202504241413151371.jpg"
+            ],
+            "sku": "CONG-180G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "180G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Nước dùng cô đặc lẩu Thái SG Food gói 180g",
+            "name": "Nước dùng cô đặc lẩu Thái SG Food gói 180g",
+            "images": [
+              "nuoc-dung-lau-co-dac-vi-thai-sgf-150g_202503241653185842.jpg",
+              "nuoc-dung-lau-co-dac-vi-thai-sgf-150g_202503241653190309.jpg",
+              "nuoc-dung-lau-co-dac-vi-thai-sgf-150g_202504241418484259.jpg"
+            ],
+            "sku": "CONG-180G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "180G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Xốt gia vị hoàn chỉnh gà chiên mắm tỏi SG Food gói 70g",
+            "name": "Xốt gia vị hoàn chỉnh gà chiên mắm tỏi SG Food gói 70g",
+            "images": [
+              "330569-mat-sau_202411040902090537.jpg",
+              "330569-slide_202411040857332306.jpg",
+              "330569-tem22_202411191540345302.jpg"
+            ],
+            "sku": "CONG-I70G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "70G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Xốt gia vị hoàn chỉnh sườn xào chua ngọt SG Food gói 70g",
+            "name": "Xốt gia vị hoàn chỉnh sườn xào chua ngọt SG Food gói 70g",
+            "images": [
+              "330568-mat-sau_202411040858367264.jpg",
+              "330568-slide_202411040858360798.jpg",
+              "330568-tem2_202411191540098732.jpg"
+            ],
+            "sku": "CONG-I70G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "70G",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_tap_doan_muoi_mien_nam",
+        "companyName": "Cong Ty Co Phan Tap Doan Muoi Mien Nam",
+        "companyFolder": "cong-ty-co-phan-tap-doan-muoi-mien-nam",
+        "products": [
+          {
+            "productFolder": "Muối sấy I-ốt Sosal Group gói 1kg",
+            "name": "Muối sấy I-ốt Sosal Group gói 1kg",
+            "images": [
+              "muoi-tinh-say-bo-sung-i-ot-sosal-group-goi-1kg-202202160850504901.jpg",
+              "muoi-tinh-say-bo-sung-i-ot-sosal-group-goi-1kg-202308172241152732.jpg",
+              "muoi-tinh-say-bo-sung-i-ot-sosal-group-goi-1kg-202308172241155731.jpg",
+              "muoi-tinh-say-bo-sung-i-ot-sosal-group-goi-1kg-202308172241158311.jpg",
+              "muoi-tinh-say-bo-sung-i-ot-sosal-group-goi-1kg-202308172241160636.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_thuc_pham_an_long",
+        "companyName": "Cong Ty Co Phan Thuc Pham An Long",
+        "companyFolder": "cong-ty-co-phan-thuc-pham-an-long",
+        "products": [
+          {
+            "productFolder": "Dầu ăn cao cấp Happi Koki can 2 lít",
+            "name": "Dầu ăn cao cấp Happi Koki can 2 lít",
+            "images": [
+              "dau-an-cao-cap-happi-koki-can-2-lit-202208170955171161.jpg",
+              "dau-an-cao-cap-happi-koki-can-2-lit-202208170955191455.jpg",
+              "dau-an-cao-cap-happi-koki-can-2-lit-202208170955218313.jpg",
+              "dau-an-cao-cap-happi-koki-can-2-lit-202208170955326191.jpg",
+              "dau-an-cao-cap-happi-koki-can-2-lit-202208170956026669.jpg",
+              "dau-an-cao-cap-happi-koki-can-2-lit-202208171002051856.jpg"
+            ],
+            "sku": "CONG-N2LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu ăn cao cấp Happi Koki chai 1 lít",
+            "name": "Dầu ăn cao cấp Happi Koki chai 1 lít",
+            "images": [
+              "dau-an-cao-cap-happi-koki-chai-1-lit-202006262304264575.jpg",
+              "dau-an-cao-cap-happy-koki-1-lit-201902120857279173.jpg",
+              "dau-an-happi-koki-1l-2-700x467.jpg",
+              "dau-an-happi-koki-1l-3-700x467.jpg",
+              "dau-an-happi-koki-1l-4-700x467.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu ăn cao cấp Happi Koki chai 400ml",
+            "name": "Dầu ăn cao cấp Happi Koki chai 400ml",
+            "images": [
+              "dau-an-cao-cap-happi-koki-chai-400ml-202208170950076896.jpg",
+              "dau-an-cao-cap-happi-koki-chai-400ml-202208170950176054.jpg",
+              "dau-an-cao-cap-happi-koki-chai-400ml-202208170950541646.jpg",
+              "dau-an-cao-cap-happi-koki-chai-400ml-202208170951053214.jpg",
+              "dau-an-cao-cap-happi-koki-chai-400ml-202208171004456914.jpg",
+              "dau-an-cao-cap-happi-koki-chai-400ml-202208181008378218.jpeg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "400ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cholimex",
+        "companyName": "Công ty Cổ phần Thực phẩm Cholimex",
+        "companyFolder": "cong-ty-co-phan-thuc-pham-cholimex",
+        "products": [
+          {
+            "productFolder": "Dầu dấm trộn salad Cholimex chai 270g",
+            "name": "Dầu dấm trộn salad Cholimex chai 270g",
+            "images": [
+              "dau-dam-tron-salad-cholimex-chai-270g-3-700x467.jpg",
+              "dau-dam-tron-salad-cholimex-chai-270g-4-700x467.jpg",
+              "dau-giam-pha-san-cholimex-chai-270g-201902282217098191.jpg",
+              "dau-giam-pha-san-cholimex-chai-270g-201902282217099910.jpg",
+              "dau-giam-pha-san-cholimex-chai-270g-201903201330052541.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CHOL-270G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "270G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương đậu nành hảo vị Hương Việt chai 500ml",
+            "name": "Nước tương đậu nành hảo vị Hương Việt chai 500ml",
+            "images": [
+              "nuoc-tuong-dau-nanh-hao-vi-huong-viet-chai-500ml-202110192020313699.jpeg",
+              "nuoc-tuong-dau-nanh-hao-vi-huong-viet-chai-500ml-202110192020321429.jpeg",
+              "nuoc-tuong-dau-nanh-hao-vi-huong-viet-chai-500ml-202110192020325284.jpeg",
+              "nuoc-tuong-dau-nanh-hao-vi-huong-viet-chai-500ml-202110192020329411.jpeg",
+              "nuoc-tuong-dau-nanh-hao-vi-huong-viet-chai-500ml-202203152202446077.jpg"
+            ],
+            "sku": "CHOL-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương đậu nành Hương Việt thanh vị chai 500ml",
+            "name": "Nước tương đậu nành Hương Việt thanh vị chai 500ml",
+            "images": [
+              "nuoc-tuong-dau-nanh-thanh-vi-huong-viet-chai-500ml-202202161523346802.jpg",
+              "nuoc-tuong-thanh-vi-huong-viet-chai-500ml-201908211329055614.jpg",
+              "nuoc-tuong-thanh-vi-huong-viet-chai-500ml-201908211329056905.jpg",
+              "nuoc-tuong-thanh-vi-huong-viet-chai-500ml-201908211329058916.jpg",
+              "nuoc-tuong-thanh-vi-huong-viet-chai-500ml-201908211329115892.jpg",
+              "nuoc-tuong-thanh-vi-huong-viet-chai-500ml-201908211329116883.jpg"
+            ],
+            "sku": "CHOL-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương cà Cholimex chai 270g",
+            "name": "Tương cà Cholimex chai 270g",
+            "images": [
+              "tuong-ca-cholimex-chai-270g-202209131023014131.png",
+              "tuong-ca-pet-270gnhan24-2-700x467.jpg",
+              "tuong-ca-pet-270gnhan24-3-700x467.jpg",
+              "tuong-ca-pet-270gnhan24-4-700x467.jpg"
+            ],
+            "sku": "CHOL-270G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "270G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt cay nồng Cholimex chai 270g",
+            "name": "Tương ớt cay nồng Cholimex chai 270g",
+            "images": [
+              "tuong-ot-cay-nong-cholimex-chai-270g-202202161414421585.jpg",
+              "tuong-ot-cholimex-cay-nong-chai-270g-2-700x467.jpg",
+              "tuong-ot-cholimex-cay-nong-chai-270g-3-700x467.jpg",
+              "tuong-ot-cholimex-cay-nong-chai-270g-4-700x467.jpg",
+              "tuong-ot-cholimex-cay-nong-chai-270g-5-700x467.jpg"
+            ],
+            "sku": "CHOL-270G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "270G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Cholimex chai 830g",
+            "name": "Tương ớt Cholimex chai 830g",
+            "images": [
+              "tuong-ot-cholimex-830gam-2-700x467.jpg",
+              "tuong-ot-cholimex-830gam-3-700x467.jpg",
+              "tuong-ot-cholimex-830gam-4-700x467.jpg",
+              "tuong-ot-cholimex-chai-830g-202202161410254238.jpg"
+            ],
+            "sku": "CHOL-830G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "830G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Cholimex chai nhựa 270g",
+            "name": "Tương ớt Cholimex chai nhựa 270g",
+            "images": [
+              "tuong-ot-cholimex-chai-270g-201901141335178661.jpg",
+              "tuong-ot-cholimex-chai-270g-201901141335179622.jpg",
+              "tuong-ot-cholimex-chai-270g-201901141335183255.jpg",
+              "tuong-ot-cholimex-chai-270g-201901141335244072.jpg",
+              "tuong-ot-cholimex-chai-270g-202202161408159721.jpg"
+            ],
+            "sku": "CHOL-270G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "270G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt chua ngọt Cholimex chai thủy tinh 270g",
+            "name": "Tương ớt chua ngọt Cholimex chai thủy tinh 270g",
+            "images": [
+              "tuong-ot-chua-ngot-270g-2-700x467.jpg",
+              "tuong-ot-chua-ngot-270g-3-700x467.jpg",
+              "tuong-ot-chua-ngot-270g-4-700x467.jpg",
+              "tuong-ot-chua-ngot-cholimex-chai-thuy-tinh-270g-202203172154160203.jpg"
+            ],
+            "sku": "CHOL-270G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "270G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt gà chiên nước mắm Cholimex gói 90g",
+            "name": "Xốt gà chiên nước mắm Cholimex gói 90g",
+            "images": [
+              "324436-ksp_202409251014510911.jpg",
+              "xot-ga-chien-nuoc-mam-cholimex-goi-90g-202403291555155029.jpg",
+              "xot-ga-chien-nuoc-mam-cholimex-goi-90g-202407311012519272.jpg"
+            ],
+            "sku": "CHOL-I90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Xốt lẩu kim chi Cholimex chai 280g",
+            "name": "Xốt lẩu kim chi Cholimex chai 280g",
+            "images": [
+              "324434-tem_202409121559136390.jpg",
+              "324434-temm_202409121559132813.jpg",
+              "324434-temmm_202409121559129336.jpg",
+              "324434-temmmm_202409121559121488.jpg",
+              "xot-lau-kim-chi-cholimex-chai-280g-202403291518003895.jpg"
+            ],
+            "sku": "CHOL-280G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "280G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt nấu bò kho Cholimex gói 90g",
+            "name": "Xốt nấu bò kho Cholimex gói 90g",
+            "images": [
+              "xot-bo-kho-cholimex-goi-90g-202011051451333922.jpg",
+              "xot-bo-kho-cholimex-goi-90g-202011051451337224.jpg",
+              "xot-bo-kho-cholimex-goi-90g-202011051451340676.jpg",
+              "xot-bo-kho-cholimex-goi-90g-202011051451346120.jpg",
+              "xot-bo-kho-cholimex-goi-90g-202011051451349772.jpg",
+              "xot-bo-kho-cholimex-goi-90g-202203110855378192.jpg"
+            ],
+            "sku": "CHOL-I90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt nấu bún bò Cholimex gói 90g",
+            "name": "Xốt nấu bún bò Cholimex gói 90g",
+            "images": [
+              "xot-bun-bo-cholimex-goi-90g-202011051450111555.jpg",
+              "xot-bun-bo-cholimex-goi-90g-202011051450114596.jpg",
+              "xot-bun-bo-cholimex-goi-90g-202011051450116968.jpg",
+              "xot-bun-bo-cholimex-goi-90g-202011051450120000.jpg",
+              "xot-bun-bo-cholimex-goi-90g-202011051450122782.jpg",
+              "xot-bun-bo-cholimex-goi-90g-202206091114522187.jpg"
+            ],
+            "sku": "CHOL-I90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt sườn xào chua ngọt Cholimex gói 90g",
+            "name": "Xốt sườn xào chua ngọt Cholimex gói 90g",
+            "images": [
+              "sot-suon-xao-chua-ngot-cholimex-goi-90g-202403291531164009.jpg",
+              "xot-suon-xao-chua-ngot-cholimex-goi-90g-202407311010542418.jpg",
+              "xot-suon-xao-chua-ngot-cholimex-goi-90g-202408261041253397.jpg"
+            ],
+            "sku": "CHOL-I90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_thuy_san_584_nha_trang",
+        "companyName": "Cong Ty Co Phan Thuy San 584 Nha Trang",
+        "companyFolder": "cong-ty-co-phan-thuy-san-584-nha-trang",
+        "products": [
+          {
+            "productFolder": "Nước mắm nhỉ 584 Nha Trang 35 độ đạm chai 510ml",
+            "name": "Nước mắm nhỉ 584 Nha Trang 35 độ đạm chai 510ml",
+            "images": [
+              "nuoc-mam-nhi-584-nha-trang-35-do-dam-chai-510ml-202201112226060177.jpg",
+              "nuoc-mam-nhi-584-nha-trang-35-do-dam-chai-510ml-202201112226063317.jpg",
+              "nuoc-mam-nhi-584-nha-trang-35-do-dam-chai-510ml-202201112226072910.jpg",
+              "nuoc-mam-nhi-584-nha-trang-35-do-dam-chai-510ml-202201112226081233.jpg",
+              "nuoc-mam-nhi-584-nha-trang-35-do-dam-chai-510ml-202212071354133193.png",
+              "nuoc-mam-nhi-584-nha-trang-35-do-dam-chai-510ml-202212071354136178.png",
+              "nuoc-mam-nhi-584-nha-trang-35-do-dam-chai-510ml-202212071354138548.png",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-10ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "510ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm nhỉ cá cơm 584 Nha Trang 25 độ đạm chai 1 lít",
+            "name": "Nước mắm nhỉ cá cơm 584 Nha Trang 25 độ đạm chai 1 lít",
+            "images": [
+              "nuoc-mam-nhi-ca-com-584-nha-trang-25-do-dam-chai-1-lit-2023031 (1).jpg",
+              "nuoc-mam-nhi-ca-com-584-nha-trang-25-do-dam-chai-1-lit-2023031 (2).jpg",
+              "nuoc-mam-nhi-ca-com-584-nha-trang-25-do-dam-chai-1-lit-2023031 (3).jpg",
+              "nuoc-mam-nhi-ca-com-584-nha-trang-25-do-dam-chai-1-lit-2023031 (4).jpg",
+              "nuoc-mam-nhi-ca-com-584-nha-trang-25-do-dam-chai-1-lit-2023031 (5).jpg",
+              "nuoc-mam-nhi-ca-com-584-nha-trang-25-do-dam-chai-1-lit-20230314132.jpg",
+              "nuoc-mam-nhi-ca-com-584-nha-trang-25-do-dam-chai-1-lit-202303141335580600.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_co_phan_xuat_nhap_khau_a_tuan_khang",
+        "companyName": "Cong Ty Co Phan Xuat Nhap Khau A Tuan Khang",
+        "companyFolder": "cong-ty-co-phan-xuat-nhap-khau-a-tuan-khang",
+        "products": [
+          {
+            "productFolder": "Giấm tinh luyện A Tuấn Khang chai 900ml",
+            "name": "Giấm tinh luyện A Tuấn Khang chai 900ml",
+            "images": [
+              "giam-tinh-luyen-a-tuan-khang-chai-900ml-202209010914405238.png",
+              "giam-tinh-luyen-a-tuan-khang-chai-900ml-202209010914418781.jpg",
+              "giam-tinh-luyen-a-tuan-khang-chai-900ml-202209010914440177.jpg",
+              "giam-tinh-luyen-a-tuan-khang-chai-900ml-202209010914449891.jpg",
+              "giam-tinh-luyen-a-tuan-khang-chai-900ml-202209010932076387.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "900ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_cp_vifon",
+        "companyName": "Cong Ty Cp Vifon",
+        "companyFolder": "cong-ty-cp-vifon",
+        "products": [
+          {
+            "productFolder": "Bột canh I-ốt Vifon gói 200g",
+            "name": "Bột canh I-ốt Vifon gói 200g",
+            "images": [
+              "bot-canh-i-ot-vifon-goi-200g-202308181049175249.jpg",
+              "bot-canh-i-ot-vifon-goi-200g-202308181049178527.jpg",
+              "bot-canh-i-ot-vifon-goi-200g-202308181049181922.jpg",
+              "bot-canh-i-ot-vifon-goi-200g-202308181049195397.jpg",
+              "bot-canh-i-ot-vifon-goi-200g-202308181049198518.jpg",
+              "bot-canh-i-ot-vifon-goi-200g-202401290956253065.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Bột canh tôm Vifon gói 200g",
+            "name": "Bột canh tôm Vifon gói 200g",
+            "images": [
+              "bot-canh-tom-vifon-goi-200g-202308181050445655.jpg",
+              "bot-canh-tom-vifon-goi-200g-202308181050449505.jpg",
+              "bot-canh-tom-vifon-goi-200g-202308181050453260.jpg",
+              "bot-canh-tom-vifon-goi-200g-202308181050456770.jpg",
+              "bot-canh-tom-vifon-goi-200g-202308181050460564.jpg",
+              "bot-canh-tom-vifon-goi-200g-202308181050463987.jpg",
+              "bot-canh-tom-vifon-goi-200g-202401290957073381.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Bột canh Vifon gói 200g",
+            "name": "Bột canh Vifon gói 200g",
+            "images": [
+              "bot-canh-vifon-goi-200g-202202110743200655.jpg",
+              "bot-canh-vifon-goi-200g-202304130931509803.jpg",
+              "bot-canh-vifon-goi-200g-202304130931522374.jpg",
+              "bot-canh-vifont-230gam-2-700x467.jpg",
+              "bot-canh-vifont-230gam-3-700x467.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Bột canh Vifon gói 450g",
+            "name": "Bột canh Vifon gói 450g",
+            "images": [
+              "bot-canh-vifon-goi-450g-202304130921347008.jpg",
+              "bot-canh-vifon-goi-450g-202304130921357756.jpg",
+              "bot-canh-vifon-goi-450g-202304130921368633.jpg",
+              "bot-canh-vifon-goi-450g-202304130921377326.jpg",
+              "bot-canh-vifon-goi-450g-202304130921385488.jpg",
+              "bot-canh-vifon-goi-450g-202304130930215145.jpg"
+            ],
+            "sku": "CONG-450G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "450G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_gia_vi_tri_viet_phat",
+        "companyName": "Cong Ty Gia Vi Tri Viet Phat",
+        "companyFolder": "cong-ty-gia-vi-tri-viet-phat",
+        "products": [
+          {
+            "productFolder": "Muối ớt chanh Guyumi chai 200g",
+            "name": "Muối ớt chanh Guyumi chai 200g",
+            "images": [
+              "muoi-ot-chanh-guyumi-chai-200g-202101091732054642.jpg",
+              "muoi-ot-chanh-guyumi-chai-200g-202101091732057704.jpg",
+              "muoi-ot-chanh-guyumi-chai-200g-202101091732061406.jpg",
+              "muoi-ot-chanh-guyumi-chai-200g-202101091732065279.jpg",
+              "muoi-ot-chanh-guyumi-chai-200g-202210260852087729.png"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Muối ớt Kim Quất Guyumi chai 200g",
+            "name": "Muối ớt Kim Quất Guyumi chai 200g",
+            "images": [
+              "muoi-ot-kim-quat-guyumi-chai-200g-202101091730214690.jpg",
+              "muoi-ot-kim-quat-guyumi-chai-200g-202101091730219182.jpg",
+              "muoi-ot-kim-quat-guyumi-chai-200g-202101091730223275.jpg",
+              "muoi-ot-kim-quat-guyumi-chai-200g-202101091730227008.jpg",
+              "sellingpoint (1).jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_nhat_minh_food",
+        "companyName": "Cong Ty Nhat Minh Food",
+        "companyFolder": "cong-ty-nhat-minh-food",
+        "products": [
+          {
+            "productFolder": "Dầu thực vật Good Meall chai 1 lít",
+            "name": "Dầu thực vật Good Meall chai 1 lít",
+            "images": [
+              "bs9a7841_202409251758340030.jpg",
+              "bs9a7842_202409251758342567.jpg",
+              "bs9a7844_202409251758344748.jpg",
+              "dau-an-good-meal-chai-1l-12_202506300958361863.jpg",
+              "dau-an-good-meal-chai-1l-12-4-700x467.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "calofic",
+        "companyName": "Công ty TNHH Calofic",
+        "companyFolder": "cong-ty-tnhh-calofic",
+        "products": [
+          {
+            "productFolder": "2 chai dầu thực vật tinh luyện Orchid 1 lít",
+            "name": "2 chai dầu thực vật tinh luyện Orchid 1 lít",
+            "images": [
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302040906173972.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302040906330849.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959328553.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959338922.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959347842.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959360659.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959375169.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-clone_202512291042146120.jpg"
+            ],
+            "sku": "CALO-D1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu ăn thượng hạng Neptune Light chai 1 lít",
+            "name": "Dầu ăn thượng hạng Neptune Light chai 1 lít",
+            "images": [
+              "226995-slide_202409121350273101.jpg",
+              "dau-an-thuong-hang-neptune-light-chai-1-lit-202203281108116425.jpg",
+              "dau-an-thuong-hang-neptune-light-chai-1-lit-202203281108121125.jpg",
+              "dau-an-thuong-hang-neptune-light-chai-1-lit-202212031020048239.png",
+              "dau-an-thuong-hang-neptune-light-chai-1-lit-202212031020063454.png",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CALO-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu đậu nành nguyên chất Simply can 2 lít",
+            "name": "Dầu đậu nành nguyên chất Simply can 2 lít",
+            "images": [
+              "dau-dau-nanh-nguyen-chat-simply-can-2-lit_202510281012091764.jpg",
+              "dau-dau-nanh-nguyen-chat-simply-can-2-lit_202510281012095176.jpg",
+              "dau-dau-nanh-nguyen-chat-simply-can-2-lit_202510281012099843.jpg",
+              "dau-dau-nanh-nguyen-chat-simply-can-2-lit_202510281012102973.jpg",
+              "dau-dau-nanh-nguyen-chat-simply-can-2-lit_202601081451317715.jpg",
+              "dau-dau-nanh-nguyen-chat-simply-can-2-lit_202601081451327237.jpg"
+            ],
+            "sku": "CALO-N2LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu gạo lứt nguyên chất Simply chai 1 lít",
+            "name": "Dầu gạo lứt nguyên chất Simply chai 1 lít",
+            "images": [
+              "dau-gao-nguyen-chat-simply-chai-1-lit-202106120415504774.jpg",
+              "dau-gao-simply-chai-1l_202510281026243454.jpg",
+              "dau-gao-simply-chai-1l_202510281026248123.jpg",
+              "dau-gao-simply-chai-1l_202510281026253877.jpg",
+              "dau-gao-simply-chai-1l_202510281026256639.jpg",
+              "dau-gao-simply-chai-1l_202601081405420901.jpg"
+            ],
+            "sku": "CALO-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu thực vật tinh luyện Cái Lân chai 1 lít",
+            "name": "Dầu thực vật tinh luyện Cái Lân chai 1 lít",
+            "images": [
+              "dau-an-cai-lan-1l_202601030720374206.jpg",
+              "dau-thuc-vat-tinh-luyen-cai-lan-chai-1-lit-202209082036584963.png",
+              "dau-thuc-vat-tinh-luyen-cai-lan-chai-1-lit-202209082037175335.jpg",
+              "dau-thuc-vat-tinh-luyen-cai-lan-chai-1-lit-202209082037512699.jpg",
+              "dau-thuc-vat-tinh-luyen-cai-lan-chai-1-lit-202209082037522664.jpg"
+            ],
+            "sku": "CALO-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu thực vật tinh luyện Orchid can 2 lít",
+            "name": "Dầu thực vật tinh luyện Orchid can 2 lít",
+            "images": [
+              "dau-thuc-vat-tinh-luyen-orchid-can-2-lit-202302030946279842.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-can-2-lit-202302030946347016.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-can-2-lit-202302171003210280.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-can-2-lit-202302171003222145.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-can-2-lit-202302171003233363.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-can-2-lit-202302171003245324.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-can-2-lit-202302171003255207.jpg"
+            ],
+            "sku": "CALO-N2LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu thực vật tinh luyện Orchid chai 1 lít",
+            "name": "Dầu thực vật tinh luyện Orchid chai 1 lít",
+            "images": [
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302040906173972.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302040906330849.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959328553.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959338922.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959347842.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959360659.jpg",
+              "dau-thuc-vat-tinh-luyen-orchid-chai-1-lit-202302170959375169.jpg"
+            ],
+            "sku": "CALO-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_canh_dong_vang",
+        "companyName": "Cong Ty Tnhh Canh Dong Vang",
+        "companyFolder": "cong-ty-tnhh-canh-dong-vang",
+        "products": [
+          {
+            "productFolder": "Bơ đậu phộng mịn Golden Farm hũ 170g",
+            "name": "Bơ đậu phộng mịn Golden Farm hũ 170g",
+            "images": [
+              "cdntgddvnproductsimages3465174516bhx-202401051416028983_202409271046519124.jpg",
+              "cdntgddvnproductsimages3465174516bhx-202401051416032160_202409271046523591.jpg",
+              "cdntgddvnproductsimages3465174516bhx-202401051416034478_202409271046527666.jpg",
+              "cdntgddvnproductsimages3465174516bhx-202401051416036842_202409271046532154.jpg",
+              "cdntgddvnproductsimages3465174516bhx-202401051416039539_202409271046537953.jpg",
+              "cdntgddvnproductsimages3465174516bhx-202401051416042869_202409271046546230.jpg"
+            ],
+            "sku": "CONG-170G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "170G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_che_bien_dua_luong_quoi",
+        "companyName": "Cong Ty Tnhh Che Bien Dua Luong Quoi",
+        "companyFolder": "cong-ty-tnhh-che-bien-dua-luong-quoi",
+        "products": [
+          {
+            "productFolder": "Dầu dừa nguyên chất tinh luyện Vietcoco chai 1 lít",
+            "name": "Dầu dừa nguyên chất tinh luyện Vietcoco chai 1 lít",
+            "images": [
+              "dau-dua-tinh-luyen-vietcoco-chai-1-lit-202112181104376842.jpg",
+              "dau-dua-tinh-luyen-vietcoco-chai-1-lit-202212070846422261.jpg",
+              "dau-dua-tinh-luyen-vietcoco-chai-1-lit-202212070847173344.jpg",
+              "dau-dua-tinh-luyen-vietcoco-chai-1-lit-202212070848166790.jpg",
+              "dau-dua-tinh-luyen-vietcoco-chai-1-lit-202212070906330054.jpeg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_che_bien_thuc_pham_hanh_phuc",
+        "companyName": "Cong Ty Tnhh Che Bien Thuc Pham Hanh Phuc",
+        "companyFolder": "cong-ty-tnhh-che-bien-thuc-pham-hanh-phuc",
+        "products": [
+          {
+            "productFolder": "Nước mắm cá cơm Hạnh Phúc 60 độ đạm chai 500ml",
+            "name": "Nước mắm cá cơm Hạnh Phúc 60 độ đạm chai 500ml",
+            "images": [
+              "nuoc-mam-ca-com-hanh-phuc-60-do-dam-chai-500ml-202202161450351028.jpg",
+              "nuoc-mam-ca-com-hanh-phuc-60-do-dam-chai-500ml-202212051325110605.png",
+              "nuoc-mam-ca-com-hanh-phuc-60-do-dam-chai-500ml-202212051325132672.png",
+              "nuoc-mam-ca-com-hanh-phuc-60-do-dam-chai-500ml-202212051325137060.png",
+              "nuoc-mam-hanh-phuc-60-do-dam-chai-500ml-201902140917146066.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_hung_viet",
+        "companyName": "Cong Ty Tnhh Hung Viet",
+        "companyFolder": "cong-ty-tnhh-hung-viet",
+        "products": [
+          {
+            "productFolder": "Nước mắm cốt nhĩ 35% Việt Nhĩ 15 độ đạm chai 500ml",
+            "name": "Nước mắm cốt nhĩ 35% Việt Nhĩ 15 độ đạm chai 500ml",
+            "images": [
+              "330245-slide-moi_202411191608252100.jpg",
+              "330245-tem_202411191608254685.jpg",
+              "nuoc-mam-cot-nhi-35-viet-nhi-15-do-dam-chai-500ml_2025032916405649.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_kamereo",
+        "companyName": "Cong Ty Tnhh Kamereo",
+        "companyFolder": "cong-ty-tnhh-kamereo",
+        "products": [
+          {
+            "productFolder": "Đường phèn Hoàng Long gói 500g",
+            "name": "Đường phèn Hoàng Long gói 500g",
+            "images": [
+              "duong-phen-hat-to-hoang-long-goi-500g-201912121527430211.jpg",
+              "duong-phen-hat-to-hoang-long-goi-500g-201912121527433674.jpg",
+              "duong-phen-hat-to-hoang-long-goi-500g-201912121527436425.jpg",
+              "duong-phen-hat-to-hoang-long-goi-500g-201912121527439507.jpg",
+              "duong-phen-hoang-long-goi-500g-202202160900434649.jpg"
+            ],
+            "sku": "CONG-500G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_kewpie_viet_nam",
+        "companyName": "Cong Ty Tnhh Kewpie Viet Nam",
+        "companyFolder": "cong-ty-tnhh-kewpie-viet-nam",
+        "products": [
+          {
+            "productFolder": "Nước chấm mè rang Kewpie chai 180ml",
+            "name": "Nước chấm mè rang Kewpie chai 180ml",
+            "images": [
+              "nuoc-cham-me-rang-kewpie-chai-180ml-202202162256164571.jpg",
+              "nuoc-cham-me-rang-kewpie-chai-180ml-202406261000067784.jpg",
+              "nuoc-cham-me-rang-kewpie-chai-180ml-202406261000070485.jpg",
+              "nuoc-cham-me-rang-kewpie-chai-180ml-202406261000073363.jpg",
+              "nuoc-cham-me-rang-kewpie-chai-180ml-202406261000077655.jpg"
+            ],
+            "sku": "CONG-80ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "180ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước xốt salad mè rang Kewpie chai 210ml",
+            "name": "Nước xốt salad mè rang Kewpie chai 210ml",
+            "images": [
+              "nuoc-xot-me-rang-kewpie-chai-210ml-202202162307238630.jpg",
+              "nuoc-xot-me-rang-kewpie-chai-210ml-202308231618308703.jpg",
+              "nuoc-xot-salad-me-rang-kewpie-chai-210ml-202406261003532539.jpg",
+              "nuoc-xot-salad-me-rang-kewpie-chai-210ml-202406261003546677.jpg"
+            ],
+            "sku": "CONG-10ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "210ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt mayonnaise Kewpie chai 130g",
+            "name": "Xốt mayonnaise Kewpie chai 130g",
+            "images": [
+              "mayonnaise-kewpie-chai-130g-2-700x467.jpg",
+              "mayonnaise-kewpie-chai-130g-4-700x467.jpg",
+              "xot-mayonnaise-kewpie-chai-130g-202202162318053330.jpg",
+              "xot-mayonnaise-kewpie-chua-ngot-chai-130g-201903021549008126.jpg"
+            ],
+            "sku": "CONG-130G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "130G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_meizan_clv_mcc",
+        "companyName": "Cong Ty Tnhh Meizan Clv Mcc",
+        "companyFolder": "cong-ty-tnhh-meizan-clv-mcc",
+        "products": [
+          {
+            "productFolder": "Dầu ăn cao cấp Meizan Gold chai 1 lít",
+            "name": "Dầu ăn cao cấp Meizan Gold chai 1 lít",
+            "images": [
+              "meizan-gold-chai-1lit_202601081340100502.jpg",
+              "meizan-gold-chai-1lit_202601081340104684.jpg",
+              "meizan-gold-chai-1lit_202601081340108883.jpg",
+              "meizan-gold-chai-1lit_202601081340113054.jpg",
+              "meizan-gold-chai-1lit_202601081340116567.jpg",
+              "meizan-gold-chai-1lit_202601081340124139.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu đậu nành Meizan can 2 lít",
+            "name": "Dầu đậu nành Meizan can 2 lít",
+            "images": [
+              "dau-dau-nanh-meizan-2-lit_202601081102326684.jpg",
+              "dau-dau-nanh-meizan-2-lit_202601081102332878.jpg",
+              "dau-dau-nanh-meizan-2-lit_202601081102337090.jpg",
+              "dau-dau-nanh-meizan-2-lit_202601081102342007.jpg",
+              "dau-dau-nanh-meizan-2-lit_202601081102347651.jpg",
+              "dau-dau-nanh-meizan-2-lit_202601081102353290.jpg"
+            ],
+            "sku": "CONG-N2LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu đậu nành Meizan chai 1 lít",
+            "name": "Dầu đậu nành Meizan chai 1 lít",
+            "images": [
+              "dau-nanh-1l-12-meizan_202601081046455660.jpg",
+              "dau-nanh-1l-12-meizan_202601081046460658.jpg",
+              "dau-nanh-1l-12-meizan_202601081046466238.jpg",
+              "dau-nanh-1l-12-meizan_202601081046472356.jpg",
+              "dau-nanh-1l-12-meizan_202601081046475543.jpg",
+              "dau-nanh-1l-12-meizan_202601081046481439.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu hướng dương nguyên chất Meizan chai 1 lít",
+            "name": "Dầu hướng dương nguyên chất Meizan chai 1 lít",
+            "images": [
+              "dau-huong-duong-nguyen-chat-meizan-chai-1-lit_202601081117523821.jpg",
+              "dau-huong-duong-nguyen-chat-meizan-chai-1-lit_202601081117528368.jpg",
+              "dau-huong-duong-nguyen-chat-meizan-chai-1-lit_202601081117532483.jpg",
+              "dau-huong-duong-nguyen-chat-meizan-chai-1-lit_202601081117535986.jpg",
+              "dau-huong-duong-nguyen-chat-meizan-chai-1-lit_202601081117539434.jpg",
+              "dau-huong-duong-nguyen-chat-meizan-chai-1-lit_202601081117546881.jpg"
+            ],
+            "sku": "CONG-I1LT",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "Chai 1",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu mè thơm hảo hạng Meizan chai 250ml",
+            "name": "Dầu mè thơm hảo hạng Meizan chai 250ml",
+            "images": [
+              "79900-mau-moi_202409251407165142.jpg",
+              "79900-slide_202409121327585354.jpg",
+              "79900-slideee_202409251135216047.jpg",
+              "79900-tem_202409251135214130.jpg",
+              "79900-temm_202409251135211627.jpg",
+              "dau-me-thom-hao-hang-meizan-chai-250ml-202209081459148913.jpg"
+            ],
+            "sku": "CONG-50ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "250ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_mtv_phat_trien_dac_san_vung_mien_tran_gia",
+        "companyName": "Cong Ty Tnhh Mtv Phat Trien Dac San Vung Mien Tran Gia",
+        "companyFolder": "cong-ty-tnhh-mtv-phat-trien-dac-san-vung-mien-tran-gia",
+        "products": [
+          {
+            "productFolder": "Đường thốt nốt dạng viên Moun7ains gói 500g",
+            "name": "Đường thốt nốt dạng viên Moun7ains gói 500g",
+            "images": [
+              "duong-thot-not-dang-vien-7-moutains-goi-500g-20190724 (1).jpg",
+              "duong-thot-not-dang-vien-7-moutains-goi-500g-20190724 (2).jpg",
+              "duong-thot-not-dang-vien-7-moutains-goi-500g-20190724 (3).jpg",
+              "duong-thot-not-dang-vien-7-moutains-goi-500g-201907241728.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-500G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_mtv_sx_tm_dv_moi_truong_viet_tin",
+        "companyName": "Cong Ty Tnhh Mtv Sx Tm Dv Moi Truong Viet Tin",
+        "companyFolder": "cong-ty-tnhh-mtv-sx-tm-dv-moi-truong-viet-tin",
+        "products": [
+          {
+            "productFolder": "Sốt ướp đồ nướng Lee Kum Kee gói 45g",
+            "name": "Sốt ướp đồ nướng Lee Kum Kee gói 45g",
+            "images": [
+              "sot-uop-do-nuong-lee-kum-kee-goi-45g-201902281130126885.jpg",
+              "sot-uop-do-nuong-lee-kum-kee-goi-45g-201902281130178778.jpg",
+              "sot-uop-do-nuong-lee-kum-kee-goi-45g-201903181345248203.jpg",
+              "sot-uop-do-nuong-lee-kum-kee-goi-45g-202207201041340522.jpg",
+              "sot-uop-do-nuong-leekumkee-goi-45g-3-700x467.jpg"
+            ],
+            "sku": "CONG-I45G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "45G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_mtv_thuc_pham_hai_hoang",
+        "companyName": "Cong Ty Tnhh Mtv Thuc Pham Hai Hoang",
+        "companyFolder": "cong-ty-tnhh-mtv-thuc-pham-hai-hoang",
+        "products": [
+          {
+            "productFolder": "Đường phèn hạt Hoàng Hải gói 500g",
+            "name": "Đường phèn hạt Hoàng Hải gói 500g",
+            "images": [
+              "duong-phen-hat-hoang-hai-goi-500g-201906251320192270.jpg",
+              "duong-phen-hat-hoang-hai-goi-500g-201906251320194461.jpg",
+              "duong-phen-hat-hoang-hai-goi-500g-202202160901187116.jpg",
+              "duong-phen-hat-hoang-hai-goi-500g-202207181048172207.jpg",
+              "duong-phen-hat-hoang-hai-goi-500g-202207181048178471.jpg"
+            ],
+            "sku": "CONG-500G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_mtv_thuc_pham_tinh_nguyen",
+        "companyName": "Cong Ty Tnhh Mtv Thuc Pham Tinh Nguyen",
+        "companyFolder": "cong-ty-tnhh-mtv-thuc-pham-tinh-nguyen",
+        "products": [
+          {
+            "productFolder": "Bột canh Natafoods gói 250g",
+            "name": "Bột canh Natafoods gói 250g",
+            "images": [
+              "bot-canh-natafoods-goi-250g-202203300953212130.jpg",
+              "bot-canh-natafoods-goi-250g-202203300953218561.jpg",
+              "bot-canh-natafoods-goi-250g-202203300953227637.jpg",
+              "bot-canh-natafoods-goi-250g-202203300953248833.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-250G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "250G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm Natafoods thịt heo gói 1kg",
+            "name": "Hạt nêm Natafoods thịt heo gói 1kg",
+            "images": [
+              "hat-nem-thit-heo-natafoods-goi-1kg-202108141817540320.jpg",
+              "hat-nem-thit-heo-natafoods-goi-1kg-202108141818121703.jpg",
+              "hat-nem-thit-heo-natafoods-goi-1kg-202108141818127352.jpg",
+              "hat-nem-thit-heo-natafoods-goi-1kg-202108141818131435.jpg",
+              "hat-nem-thit-heo-natafoods-goi-1kg-202108141818573008.jpg",
+              "hat-nem-thit-heo-natafoods-goi-1kg-202108141819096039.jpg",
+              "hat-nem-thit-heo-natafoods-goi-1kg-202203161350437396.jpg"
+            ],
+            "sku": "CONG-I1KG",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "1KG",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Muối ớt chanh vị wasabi Fadely chai 200g",
+            "name": "Muối ớt chanh vị wasabi Fadely chai 200g",
+            "images": [
+              "muoi-ot-chanh-vi-wasabi-fadely-tinh-nguyen-chai-200g-202101131427070314.jpg",
+              "muoi-ot-chanh-vi-wasabi-fadely-tinh-nguyen-chai-200g-202101131427074027.jpg",
+              "muoi-ot-chanh-vi-wasabi-fadely-tinh-nguyen-chai-200g-202101131427076679.jpg",
+              "muoi-ot-chanh-vi-wasabi-fadely-tinh-nguyen-chai-200g-202101131427079300.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Muối tiêu lá chanh Tinh Nguyên hũ 90g",
+            "name": "Muối tiêu lá chanh Tinh Nguyên hũ 90g",
+            "images": [
+              "muoi-tieu-la-chanh-tinh-nguyen-hu-90g-202107100232045123.jpg",
+              "muoi-tieu-la-chanh-tinh-nguyen-hu-90g-202107100232047310.jpg",
+              "muoi-tieu-la-chanh-tinh-nguyen-hu-90g-202107100232049654.jpg",
+              "muoi-tieu-la-chanh-tinh-nguyen-hu-90g-202107100232051529.jpg",
+              "muoi-tieu-la-chanh-tinh-nguyen-hu-90g-202107100232053404.jpg",
+              "muoi-tieu-la-chanh-tinh-nguyen-hu-90g-202107211650019653.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-H90G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "90G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Muối tôm siêu cay Fadely hũ 60g",
+            "name": "Muối tôm siêu cay Fadely hũ 60g",
+            "images": [
+              "muoi-tom-sieu-cay-fadely-hu-60g-202211111347145416.png",
+              "muoi-tom-sieu-cay-tinh-nguyen-fadely-hu-60g-202005091309516274.jpg",
+              "muoi-tom-sieu-cay-tinh-nguyen-fadely-hu-60g-202005091309518535.jpg",
+              "muoi-tom-sieu-cay-tinh-nguyen-fadely-hu-60g-202005091309522598.jpg",
+              "muoi-tom-sieu-cay-tinh-nguyen-fadely-hu-60g-202005091309525029.jpg",
+              "muoi-tom-sieu-cay-tinh-nguyen-fadely-hu-60g-202005091309527071.jpg"
+            ],
+            "sku": "CONG-H60G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "60G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Ớt rim xứ nắng Delly Cook chai 290g",
+            "name": "Ớt rim xứ nắng Delly Cook chai 290g",
+            "images": [
+              "ot-rim-xu-nang-delly-cook-chai-290g_202502130912276564.jpg",
+              "ot-rim-xu-nang-delly-cook-chai-290g_202502130912285685.jpg",
+              "ot-rim-xu-nang-delly-cook-chai-290g_202502130912297376.jpg",
+              "ot-rim-xu-nang-delly-cook-chai-290g_202502130958433261.jpg"
+            ],
+            "sku": "CONG-290G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "290G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương cà Delly Cook chai 270g",
+            "name": "Tương cà Delly Cook chai 270g",
+            "images": [
+              "tuong-ca-delly-cook-chai-270g-202402281135149156.jpg",
+              "tuong-ca-delly-cook-chai-270g-202403091013572238.jpg",
+              "tuong-ca-delly-cook-chai-270g-202403091013574626.jpg",
+              "tuong-ca-delly-cook-chai-270g-202403091013576828.jpg",
+              "tuong-ca-delly-cook-chai-270g-202403091013578737.jpg",
+              "tuong-ca-delly-cook-chai-270g-202403091013580962.jpg",
+              "tuong-ca-delly-cook-chai-270g-202403091013585906.jpg"
+            ],
+            "sku": "CONG-270G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "270G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Delly Cook chai 270g",
+            "name": "Tương ớt Delly Cook chai 270g",
+            "images": [
+              "tuong-ot-delly-cook-chai-270g-202402281313504579.jpg",
+              "tuong-ot-delly-cook-chai-270g-202403091015080668.jpg",
+              "tuong-ot-delly-cook-chai-270g-202403091015082892.jpg",
+              "tuong-ot-delly-cook-chai-270g-202403091015084981.jpg",
+              "tuong-ot-delly-cook-chai-270g-202403091015086886.jpg",
+              "tuong-ot-delly-cook-chai-270g-202403091015088958.jpg",
+              "tuong-ot-delly-cook-chai-270g-202403091015091031.jpg",
+              "tuong-ot-delly-cook-chai-270g-202403091015093243.jpg"
+            ],
+            "sku": "CONG-270G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "270G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_muoi_tom_tran_lam_food",
+        "companyName": "Cong Ty Tnhh Muoi Tom Tran Lam Food",
+        "companyFolder": "cong-ty-tnhh-muoi-tom-tran-lam-food",
+        "products": [
+          {
+            "productFolder": "Muối tôm Trần Lâm Food hũ 100g",
+            "name": "Muối tôm Trần Lâm Food hũ 100g",
+            "images": [
+              "muoi-tom-thuong-hang-my-lien-food-hu-100g_202509191046178629.jpg",
+              "muoi-tom-thuong-hang-my-lien-food-hu-100g-202106030923188312.jpg"
+            ],
+            "sku": "CONG-100G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "100G",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_nestle_viet_nam",
+        "companyName": "Cong Ty Tnhh Nestle Viet Nam",
+        "companyFolder": "cong-ty-tnhh-nestle-viet-nam",
+        "products": [
+          {
+            "productFolder": "Dầu hào cao cấp Maggi bào ngư chai 350g",
+            "name": "Dầu hào cao cấp Maggi bào ngư chai 350g",
+            "images": [
+              "330490-ksp_202410091036036305.jpg",
+              "330490-slide_202410091034198513.jpg",
+              "dau-hao-cao-cap-maggi-bao-ngu-chai-350g_202504240914558440.jpg",
+              "dau-hao-cao-cap-maggi-bao-ngu-chai-350g_202504240914561682.jpg"
+            ],
+            "sku": "CONG-350G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "350G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu hào chay Maggi nấm hương chai 350g",
+            "name": "Dầu hào chay Maggi nấm hương chai 350g",
+            "images": [
+              "dau-hao-chay-maggi-nam-huong-chai-350g-202407081619315495.jpg",
+              "dau-hao-chay-maggi-nam-huong-chai-350g-202407081619356896.jpg",
+              "dau-hao-chay-maggi-nam-huong-chai-350g-202407081619362262.jpg",
+              "dau-hao-chay-maggi-nam-huong-chai-350g-202407081620083128.jpg",
+              "dau-hao-chay-maggi-tu-nam-huong-chai-350g-202206221328140376.jpg"
+            ],
+            "sku": "CONG-350G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "350G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu hào Maggi đậm đặc chai 150g",
+            "name": "Dầu hào Maggi đậm đặc chai 150g",
+            "images": [
+              "dau-hao-dam-dac-maggi-chai-150g_202504241405434576.jpg",
+              "dau-hao-dam-dac-maggi-chai-150g_202504241405437107.jpg",
+              "dau-hao-dam-dac-maggi-chai-150g_202504241407233147.jpg",
+              "dau-hao-dam-dac-maggi-chai-150g-202303281026294246.jpg",
+              "dau-hao-maggi-dam-dac-chai-150g-202407081530224311.jpg"
+            ],
+            "sku": "CONG-150G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "150G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu hào Maggi đậm đặc chai 350g",
+            "name": "Dầu hào Maggi đậm đặc chai 350g",
+            "images": [
+              "dau-hao-maggi-chai-350g_202504240944569141.jpg",
+              "dau-hao-maggi-chai-350g_202504240944571368.jpg",
+              "dau-hao-maggi-chai-350g_202504240944573933.jpg",
+              "dau-hao-maggi-dam-dac-chai-350g-202407121838553102.jpg"
+            ],
+            "sku": "CONG-350G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "350G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Dầu hào Maggi đậm đặc chai 530g",
+            "name": "Dầu hào Maggi đậm đặc chai 530g",
+            "images": [
+              "dau-hao-dam-dac-maggi-chai-530g-202208151601542889.jpg",
+              "dau-hao-maggi-dam-dac-chai-530g-202407081524119542.jpg",
+              "dau-hao-maggi-dam-dac-chai-530g-202407081524296440.jpg",
+              "dau-hao-maggi-dam-dac-chai-530g-202407081524304356.jpg",
+              "dau-hao-maggi-dam-dac-chai-530g-202407081525008915.jpg",
+              "dau-hao-maggi-dam-dac-chai-530g-202407081525020187.jpg"
+            ],
+            "sku": "CONG-530G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "530G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm cao cấp Maggi nấm hương gói 450g",
+            "name": "Hạt nêm cao cấp Maggi nấm hương gói 450g",
+            "images": [
+              "hat-nem-cao-cap-vi-nam-huong-maggi-goi-450g-202207291104146361.jpg",
+              "hat-nem-cao-cap-vi-nam-huong-maggi-goi-450g-202207291104150491.jpg",
+              "hat-nem-cao-cap-vi-nam-huong-maggi-goi-450g-202207291104153777.jpg",
+              "hat-nem-cao-cap-vi-nam-huong-maggi-goi-450g-202207291104156962.jpg",
+              "hat-nem-cao-cap-vi-nam-huong-maggi-goi-450g-202207291105505226.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-450G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "450G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương đậu nành Maggi đậm đặc chai 300ml",
+            "name": "Nước tương đậu nành Maggi đậm đặc chai 300ml",
+            "images": [
+              "nuoc-tuong-dau-nanh-dam-dac-maggi-chai-300ml-202308111726136740.jpg",
+              "nuoc-tuong-maggi-dam-dac-24-300ml_202509240928075955.jpg",
+              "nuoc-tuong-maggi-dam-dac-24-300ml_202509240928079925.jpg",
+              "nuoc-tuong-maggi-dam-dac-24-300ml_202509240928083759.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "300ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương đậu nành Maggi đậm đặc chai 700ml",
+            "name": "Nước tương đậu nành Maggi đậm đặc chai 700ml",
+            "images": [
+              "nuoc-tuong-dau-nanh-dam-dac-maggi-chai-700ml-202208011926482044.jpg",
+              "nuoc-tuong-maggi-dam-dac-12x700ml_202509240921306324.jpg",
+              "nuoc-tuong-maggi-dam-dac-12x700ml_202509240921311156.jpg",
+              "nuoc-tuong-maggi-dam-dac-12x700ml_202509240921315566.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "700ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương đậu nành Maggi thanh dịu chai 300ml",
+            "name": "Nước tương đậu nành Maggi thanh dịu chai 300ml",
+            "images": [
+              "nuoc-tuong-dau-nanh-maggi-thanh-diu-chai-300ml-202310031647172034.jpg",
+              "nuoc-tuong-maggi-dau-nanh-300ml_202509231639586165.jpg",
+              "nuoc-tuong-maggi-dau-nanh-300ml_202509231639591549.jpg",
+              "nuoc-tuong-maggi-dau-nanh-300ml_202509231639595819.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "300ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương hảo hạng Maggi chai 200ml",
+            "name": "Nước tương hảo hạng Maggi chai 200ml",
+            "images": [
+              "nuoc-tuong-hao-hang-200ml_202510091005305994.jpg",
+              "nuoc-tuong-hao-hang-200ml_202510091006220311.jpg",
+              "nuoc-tuong-hao-hang-maggi-chai-200ml-202110192035482059.jpeg",
+              "nuoc-tuong-hao-hang-maggi-chai-200ml-202110192035487016.jpeg",
+              "nuoc-tuong-hao-hang-maggi-chai-200ml-202110192035489695.jpeg",
+              "nuoc-tuong-hao-hang-maggi-chai-200ml-202110192035496901.jpeg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt gia vị nền kho sả ớt Maggi gói 60g",
+            "name": "Xốt gia vị nền kho sả ớt Maggi gói 60g",
+            "images": [
+              "xot-gia-vi-nen-kho-sa-ot-maggi-goi-60g_202502251329180921.jpg",
+              "xot-gia-vi-nen-kho-sa-ot-maggi-goi-60g_202502251329186613.jpg",
+              "xot-gia-vi-nen-kho-sa-ot-maggi-goi-60g_202502251329190048.jpg"
+            ],
+            "sku": "CONG-I60G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "60G",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_ottogi_viet_nam",
+        "companyName": "Cong Ty Tnhh Ottogi Viet Nam",
+        "companyFolder": "cong-ty-tnhh-ottogi-viet-nam",
+        "products": [
+          {
+            "productFolder": "Xốt mì Spaghetti thịt bằm Ottogi gói 110g",
+            "name": "Xốt mì Spaghetti thịt bằm Ottogi gói 110g",
+            "images": [
+              "xot-mi-spaghetti-thit-bam-ottogi-goi-110g-202403091550307539.jpg",
+              "xot-mi-spaghetti-thit-bam-ottogi-goi-110g-202403091550309980.jpg",
+              "xot-mi-spaghetti-thit-bam-ottogi-goi-110g-202403091550312450.jpg",
+              "xot-mi-spaghetti-thit-bam-ottogi-goi-110g-202403091550314778.jpg",
+              "xot-mi-spaghetti-thit-bam-ottogi-goi-110g-202407021432065960.jpg"
+            ],
+            "sku": "CONG-110G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "110G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt ướp sườn nướng Ottogi đậm vị đưa cơm gói 80g",
+            "name": "Xốt ướp sườn nướng Ottogi đậm vị đưa cơm gói 80g",
+            "images": [
+              "sellingpoint.jpg",
+              "xot-uop-suon-nuong-dam-vi-dua-com-ottogi-goi-80g-202204131027532339.jpg",
+              "xot-uop-suon-nuong-dam-vi-dua-com-ottogi-goi-80g-202204131027548940.jpg",
+              "xot-uop-suon-nuong-dam-vi-dua-com-ottogi-goi-80g-202204131027561250.jpg",
+              "xot-uop-suon-nuong-dam-vi-dua-com-ottogi-goi-80g-202204131027567705.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt ướp thịt truyền thống Ottogi gói 80g",
+            "name": "Xốt ướp thịt truyền thống Ottogi gói 80g",
+            "images": [
+              "xot-uop-thit-truyen-thong-ottogi-80g-202111301006205944.jpg",
+              "xot-uop-thit-truyen-thong-ottogi-80g-202111301006212583.jpg",
+              "xot-uop-thit-truyen-thong-ottogi-80g-202111301006218161.jpg",
+              "xot-uop-thit-truyen-thong-ottogi-80g-202111301006224041.jpg",
+              "xot-uop-thit-truyen-thong-ottogi-80g-202203141411573090.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_quoc_te_unilever_viet_nam",
+        "companyName": "Cong Ty Tnhh Quoc Te Unilever Viet Nam",
+        "companyFolder": "cong-ty-tnhh-quoc-te-unilever-viet-nam",
+        "products": [
+          {
+            "productFolder": "Gia vị hoàn chỉnh cá kho Knorr cho món kho ngon đúng điệu gói 28g",
+            "name": "Gia vị hoàn chỉnh cá kho Knorr cho món kho ngon đúng điệu gói 28g",
+            "images": [
+              "gia-vi-hoan-chinh-ca-kho-cho-mon-kho-ngon-dung-dieu (1).jpg",
+              "gia-vi-hoan-chinh-ca-kho-cho-mon-kho-ngon-dung-dieu (2).jpg",
+              "gia-vi-hoan-chinh-ca-kho-cho-mon-kho-ngon-dung-dieu-kno.jpg",
+              "gia-vi-hoan-chinh-ca-kho-cho-mon-kho-ngon-dung-dieu.jpg"
+            ],
+            "sku": "CONG-I28G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "28G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Gia vị hoàn chỉnh nấu canh chua Knorr cho món canh ngon đúng điệu gói 30g",
+            "name": "Gia vị hoàn chỉnh nấu canh chua Knorr cho món canh ngon đúng điệu gói 30g",
+            "images": [
+              "gia-vi-hoan-chinh-nau-canh-chua-cho-mon-can (1).jpg",
+              "gia-vi-hoan-chinh-nau-canh-chua-cho-mon-can (2).jpg",
+              "gia-vi-hoan-chinh-nau-canh-chua-cho-mon-can (3).jpg",
+              "gia-vi-hoan-chinh-nau-canh-chua-cho-mon-can.jpg",
+              "gia-vi-hoan-chinh-nau-canh-chua-cho-mon-canh-ng.jpg"
+            ],
+            "sku": "CONG-I30G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "30G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Gia vị hoàn chỉnh thịt kho Knorr gói 28g",
+            "name": "Gia vị hoàn chỉnh thịt kho Knorr gói 28g",
+            "images": [
+              "gia-vi-hoan-chinh-kho-thit-knorr-goi-28g-202202.jpg",
+              "gia-vi-hoan-chinh-thit-kho-knorr-goi-28g-202211042106490408.jpg",
+              "gia-vi-hoan-chinh-thit-kho-knorr-goi-28g-202211042107154101.jpg",
+              "gia-vi-hoan-chinh-thit-kho-knorr-goi-28g-202211042107174633.jpg",
+              "gia-vi-hoan-chinh-thit-kho-knorr-goi-28g-202211042107187433.jpg",
+              "gia-vi-hoan-chinh-thit-kho-knorr-goi-28g-202211042107202212.jpg"
+            ],
+            "sku": "CONG-I28G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "28G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm Best Foods xương, thịt và tôm gói 900g",
+            "name": "Hạt nêm Best Foods xương, thịt và tôm gói 900g",
+            "images": [
+              "anh-slide-2_202510201016037018.jpg"
+            ],
+            "sku": "CONG-900G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "900G",
+            "aiStatus": "Missing"
+          },
+          {
+            "productFolder": "Hạt nêm chay Knorr nấm hương organic gói 380g",
+            "name": "Hạt nêm chay Knorr nấm hương organic gói 380g",
+            "images": [
+              "hat-nem-chay-nam-huong-knorr-goi-380g-202202281311576634.jpg",
+              "hat-nem-chay-nam-huong-knorr-goi-380g-202203301952215258.jpg",
+              "hat-nem-chay-nam-huong-knorr-goi-380g-202203301952218395.jpg",
+              "hat-nem-knorr-nam-huong-goi-400g_202601061511398606.jpg"
+            ],
+            "sku": "CONG-380G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "380G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm Knorr nấm hương organic gói 800g",
+            "name": "Hạt nêm Knorr nấm hương organic gói 800g",
+            "images": [
+              "hat-nem-nam-huong-knorr-goi-800g-202309071019519840.jpg",
+              "hat-nem-nam-huong-knorr-goi-800g-202309071019523728.jpg",
+              "hat-nem-nam-huong-knorr-goi-800g-202309071019527059.jpg",
+              "hat-nem-nam-huong-knorr-goi-800g-202309071019530223.jpg",
+              "hat-nem-nam-huong-knorr-goi-800g-202309071019533653.jpg",
+              "hat-nem-nam-huong-knorr-goi-800g-202309071029194321.png"
+            ],
+            "sku": "CONG-800G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "800G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm Knorr thịt thăn, xương ống, tủy gói 170g",
+            "name": "Hạt nêm Knorr thịt thăn, xương ống, tủy gói 170g",
+            "images": [
+              "195880-slide-moi_202501211125515213.jpg",
+              "bs9a3153_202411191625232527.jpg",
+              "bs9a3156_202411191625237348.jpg",
+              "bs9a3157_202411191625241814.jpg",
+              "hat-nem-thit-than-xuong-ong-tuy-knorr-goi-170g-202202162002591225.jpg"
+            ],
+            "sku": "CONG-170G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "170G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm Knorr thịt thăn, xương ống, tủy gói 400g",
+            "name": "Hạt nêm Knorr thịt thăn, xương ống, tủy gói 400g",
+            "images": [
+              "77241-tem_202409301037462451.jpg",
+              "77241-tem1_202409301037458191.jpg",
+              "82271-slide_202409241054430157.jpg",
+              "82271-slide-moi_202409301037454217.jpg",
+              "hat-nem-thit-than-xuong-ong-tuy-knorr-goi-400g-202202161925416725.jpg"
+            ],
+            "sku": "CONG-400G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "400G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Hạt nêm Knorr thịt thăn, xương ống, tủy gói 900g",
+            "name": "Hạt nêm Knorr thịt thăn, xương ống, tủy gói 900g",
+            "images": [
+              "77241-slide-moi_202409241043597461.jpg",
+              "77241-slidee_202409241045482216.jpg",
+              "77241-tem_202409301034578440.jpg",
+              "77241-tem1_202409301034573203.jpg",
+              "hat-nem-thit-than-xuong-ong-tuy-knorr-goi-900g-202303061326393622.jpg"
+            ],
+            "sku": "CONG-900G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "900G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm cá cơm than Knorr 15 độ đạm chai 242ml",
+            "name": "Nước mắm cá cơm than Knorr 15 độ đạm chai 242ml",
+            "images": [
+              "nuoc-mam-ca-com-than-knorr-15-do-dam-chai-242ml_202505271010544834.jpg",
+              "nuoc-mam-ca-com-than-knorr-15-do-dam-chai-242ml_202505271010547514.jpg",
+              "nuoc-mam-ca-com-than-knorr-15-do-dam-chai-242ml_202505271010550336.jpg",
+              "nuoc-mam-ca-com-than-knorr-15-do-dam-chai-242ml-202405131017167788.jpg"
+            ],
+            "sku": "CONG-42ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "242ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm cá cơm than Knorr 15 độ đạm chai 750ml",
+            "name": "Nước mắm cá cơm than Knorr 15 độ đạm chai 750ml",
+            "images": [
+              "nuoc-mam-knorr-ngon-tron-vi-chai-750ml_202505271012011408.jpg",
+              "nuoc-mam-knorr-ngon-tron-vi-chai-750ml_202505271012014126.jpg",
+              "nuoc-mam-knorr-ngon-tron-vi-chai-750ml-202209160853318894.jpg"
+            ],
+            "sku": "CONG-50ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "750ML",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Tương ớt tròn 5 vị Knorr chai 450g",
+            "name": "Tương ớt tròn 5 vị Knorr chai 450g",
+            "images": [
+              "tuong-ot-tron-5-vi-cay-dam-knorr-chai-450g_202601061458552314.jpg",
+              "tuong-ot-tron-5-vi-cay-dam-knorr-chai-450g-202209010838155563.jpg",
+              "tuong-ot-tron-5-vi-cay-dam-knorr-chai-450g-202209010838280709.jpg",
+              "tuong-ot-tron-5-vi-cay-dam-knorr-chai-450g-202209010838285761.jpg",
+              "tuong-ot-tron-5-vi-cay-dam-knorr-chai-450g-202209010838293132.jpg"
+            ],
+            "sku": "CONG-450G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "450G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_san_xuat_thuong_mai_xuat_nhap_khau_ngoc_han",
+        "companyName": "Cong Ty Tnhh San Xuat Thuong Mai Xuat Nhap Khau Ngoc Han",
+        "companyFolder": "cong-ty-tnhh-san-xuat-thuong-mai-xuat-nhap-khau-ngoc-han",
+        "products": [
+          {
+            "productFolder": "Nước cốt lẩu Tomyum chua cay Haidilao gói 200g",
+            "name": "Nước cốt lẩu Tomyum chua cay Haidilao gói 200g",
+            "images": [
+              "nuoc-cot-lau-vi-ca-chua-hadilao-goi-200g-clone_202507081334592999.jpg"
+            ],
+            "sku": "CONG-200G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "200G",
+            "aiStatus": "Missing"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_san_xuat_va_kinh_doanh_nuoc_mam_thanh_quoc",
+        "companyName": "Cong Ty Tnhh San Xuat Va Kinh Doanh Nuoc Mam Thanh Quoc",
+        "companyFolder": "cong-ty-tnhh-san-xuat-va-kinh-doanh-nuoc-mam-thanh-quoc",
+        "products": [
+          {
+            "productFolder": "Nước mắm Phú Quốc Thanh Quốc 35 độ đạm chai 520ml",
+            "name": "Nước mắm Phú Quốc Thanh Quốc 35 độ đạm chai 520ml",
+            "images": [
+              "329948-ksp_202409171122062007.jpg",
+              "329948-slide_202409171107519358.jpg",
+              "329948-tem_202411191506327158.jpg"
+            ],
+            "sku": "CONG-20ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "520ML",
+            "aiStatus": "Review"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_sx_kd_nuoc_mam_hung_thinh",
+        "companyName": "Cong Ty Tnhh Sx Kd Nuoc Mam Hung Thinh",
+        "companyFolder": "cong-ty-tnhh-sx-kd-nuoc-mam-hung-thinh",
+        "products": [
+          {
+            "productFolder": "Nước mắm cá cơm đặc sản Hưng Thịnh 40 độ đạm chai 750ml",
+            "name": "Nước mắm cá cơm đặc sản Hưng Thịnh 40 độ đạm chai 750ml",
+            "images": [
+              "nmam-dac-san-40-do-750ml-3-700x467.jpg",
+              "nmam-dac-san-40-do-750ml-4-700x467.jpg",
+              "nuoc-mam-ca-com-dac-san-hung-thinh-40-do-dam-chai-750ml-202202161412291.jpg",
+              "nuoc-mam-hung-thinh-dac-san-40-do-dam-chai-750ml-20190214212806.jpg",
+              "nuoc-mam-hung-thinh-dac-san-40-do-dam-chai-750ml-20190214212812.jpg",
+              "nuoc-mam-hung-thinh-dac-san-40-do-dam-chai-750ml-20190315102114.jpg"
+            ],
+            "sku": "CONG-50ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "750ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm cá cơm Hưng Thịnh 38 độ đạm chai 750ml",
+            "name": "Nước mắm cá cơm Hưng Thịnh 38 độ đạm chai 750ml",
+            "images": [
+              "nmam-nhi-lon-38-do-750ml-3-700x467.jpg",
+              "nuoc-mam-nhi-hung-thinh-thuong-hao-hang-38-do-dam-chai-750ml-201902 (1).jpg",
+              "nuoc-mam-nhi-hung-thinh-thuong-hao-hang-38-do-dam-chai-750ml-2019021409.jpg",
+              "nuoc-mam-nhi-hung-thinh-thuong-hao-hang-38-do-dam-chai-750ml-2019030722.jpg",
+              "sellingpoint.jpg"
+            ],
+            "sku": "CONG-50ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "750ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước mắm cá cơm siêu hạng Hưng Thịnh 35 độ đạm chai 620ml",
+            "name": "Nước mắm cá cơm siêu hạng Hưng Thịnh 35 độ đạm chai 620ml",
+            "images": [
+              "nuoc-mam-ca-com-sieu-hang-hung-thinh-35-do-dam-chai-620ml (1).jpg",
+              "nuoc-mam-ca-com-sieu-hang-hung-thinh-35-do-dam-chai-620ml (2).jpg",
+              "nuoc-mam-ca-com-sieu-hang-hung-thinh-35-do-dam-chai-620ml (3).jpg",
+              "nuoc-mam-ca-com-sieu-hang-hung-thinh-35-do-dam-chai-620ml (4).jpg",
+              "nuoc-mam-ca-com-sieu-hang-hung-thinh-35-do-dam-chai-620ml (5).jpg",
+              "nuoc-mam-ca-com-sieu-hang-hung-thinh-35-do-dam-chai-620ml-202.jpg",
+              "nuoc-mam-ca-com-sieu-hang-hung-thinh-35-do-dam-chai-620ml-20220.jpg"
+            ],
+            "sku": "CONG-20ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "620ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_thuc_pham_gia_truyen",
+        "companyName": "Cong Ty Tnhh Thuc Pham Gia Truyen",
+        "companyFolder": "cong-ty-tnhh-thuc-pham-gia-truyen",
+        "products": [
+          {
+            "productFolder": "Dầu ớt Nguyên Bảo hũ 120g",
+            "name": "Dầu ớt Nguyên Bảo hũ 120g",
+            "images": [
+              "bs9a8634_202412241555311781.jpg",
+              "bs9a8635_202412241555314147.jpg",
+              "bs9a8636_202412241555318367.jpg"
+            ],
+            "sku": "CONG-120G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "120G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Dầu tỏi phi Nguyên Bảo hũ 120g",
+            "name": "Dầu tỏi phi Nguyên Bảo hũ 120g",
+            "images": [
+              "bs9a8630_202412241555533596.jpg",
+              "bs9a8631_202412241555535771.jpg",
+              "bs9a8632_202412241555538302.jpg"
+            ],
+            "sku": "CONG-120G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "120G",
+            "aiStatus": "Review"
+          },
+          {
+            "productFolder": "Hành phi Nguyên Bảo gói 50g",
+            "name": "Hành phi Nguyên Bảo gói 50g",
+            "images": [
+              "hanh-phi-tui-50g-202101260035550745.jpg",
+              "hanh-phi-tui-50g-202101260035554317.jpg",
+              "hanh-phi-tui-50g-202101260035557259.jpg",
+              "sellingpoint (1).jpg"
+            ],
+            "sku": "CONG-I50G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "50G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tỏi phi Nguyên Bảo gói 50g",
+            "name": "Tỏi phi Nguyên Bảo gói 50g",
+            "images": [
+              "sellingpoint.jpg",
+              "toi-phi-tui-50g-202101260032288093.jpg",
+              "toi-phi-tui-50g-202101260032290945.jpg",
+              "toi-phi-tui-50g-202101260032294788.jpg"
+            ],
+            "sku": "CONG-I50G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "50G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_thuc_pham_minh_khanh_long",
+        "companyName": "Cong Ty Tnhh Thuc Pham Minh Khanh Long",
+        "companyFolder": "cong-ty-tnhh-thuc-pham-minh-khanh-long",
+        "products": [
+          {
+            "productFolder": "Sốt muối kim chi Hàn Quốc O'food gói 180g",
+            "name": "Sốt muối kim chi Hàn Quốc O'food gói 180g",
+            "images": [
+              "sot-muoi-kim-chi-han-quoc-ofood-goi-180g-202207152212459403.jpg",
+              "sot-muoi-kim-chi-han-quoc-ofood-goi-180g-202207281318475629.jpg",
+              "sot-muoi-kim-chi-han-quoc-ofood-goi-180g-202207281318481879.jpg",
+              "sot-muoi-kim-chi-han-quoc-ofood-goi-180g-202207281318492067.jpg",
+              "sot-muoi-kim-chi-han-quoc-ofood-goi-180g-202207281318509573.jpg"
+            ],
+            "sku": "CONG-180G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "180G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Sốt spaghetti O'food Bolognese thịt bằm gói 120g",
+            "name": "Sốt spaghetti O'food Bolognese thịt bằm gói 120g",
+            "images": [
+              "sot-spaghetti-ofood-bolognese-thit-bam-goi-120g-202310211556398531.jpg",
+              "sot-spaghetti-ofood-bolognese-thit-bam-goi-120g-202310211556401856.jpg",
+              "sot-spaghetti-ofood-bolognese-thit-bam-goi-120g-202310311019439773.jpg",
+              "sot-spaghetti-ofood-bolognese-thit-bam-goi-120g-202310311019444221.jpg",
+              "sot-spaghetti-ofood-bolognese-thit-bam-goi-120g-202310311019447001.jpg"
+            ],
+            "sku": "CONG-120G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "120G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Sốt spaghetti O'food phô mai kem gói 120g",
+            "name": "Sốt spaghetti O'food phô mai kem gói 120g",
+            "images": [
+              "sot-spaghetti-ofood-pho-mai-kem-goi-120g-202310211545099099.jpg",
+              "sot-spaghetti-ofood-pho-mai-kem-goi-120g-202310211545103082.jpg",
+              "sot-spaghetti-ofood-pho-mai-kem-goi-120g-202310311021039547.jpg",
+              "sot-spaghetti-ofood-pho-mai-kem-goi-120g-202310311021042777.jpg",
+              "sot-spaghetti-ofood-pho-mai-kem-goi-120g-202310311021045692.jpg"
+            ],
+            "sku": "CONG-120G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "120G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Sốt ướp thịt Hàn Quốc O'food vị cay gói 80g",
+            "name": "Sốt ướp thịt Hàn Quốc O'food vị cay gói 80g",
+            "images": [
+              "sot-uop-thit-han-quoc-vi-cay-ofood-goi-80g-202006061627123051.jpg",
+              "sot-uop-thit-han-quoc-vi-cay-ofood-goi-80g-202006061627128745.jpg",
+              "sot-uop-thit-han-quoc-vi-cay-ofood-goi-80g-202006061627135579.jpg",
+              "sot-uop-thit-han-quoc-vi-cay-ofood-goi-80g-202006061627142773.jpg",
+              "sot-uop-thit-han-quoc-vi-cay-ofood-goi-80g-202203111547354613.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Sốt ướp thịt Hàn Quốc O'food vị truyền thống gói 80g",
+            "name": "Sốt ướp thịt Hàn Quốc O'food vị truyền thống gói 80g",
+            "images": [
+              "sot-uop-thit-han-quoc-vi-truyen-thong-ofood-goi-80g-2020060616280993.jpg",
+              "sot-uop-thit-han-quoc-vi-truyen-thong-ofood-goi-80g-2020060616281047.jpg",
+              "sot-uop-thit-han-quoc-vi-truyen-thong-ofood-goi-80g-2022031113370745.jpg",
+              "sot-uop-thit-han-quoc-vi-truyen-thong-ofood-goi-80g-202203111337074515.jpg"
+            ],
+            "sku": "CONG-I80G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "80G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_tnhh_thuc_pham_quoc_te_nam_duong",
+        "companyName": "Cong Ty Tnhh Thuc Pham Quoc Te Nam Duong",
+        "companyFolder": "cong-ty-tnhh-thuc-pham-quoc-te-nam-duong",
+        "products": [
+          {
+            "productFolder": "Hạt nêm Neptune 4 trong 1 vị heo gói 380g",
+            "name": "Hạt nêm Neptune 4 trong 1 vị heo gói 380g",
+            "images": [
+              "174509-slide_202409121428039930.jpg",
+              "hat-nem-4-trong-1-vi-heo-neptune-goi-380g-202202162041325998.jpg",
+              "hat-nem-4-trong-1-vi-heo-neptune-goi-380g-202305271007148667.jpg",
+              "hat-nem-4-trong-1-vi-heo-neptune-goi-380g-202305271007151694.jpg"
+            ],
+            "sku": "CONG-380G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "380G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước chấm Hàng Việt chai 500ml",
+            "name": "Nước chấm Hàng Việt chai 500ml",
+            "images": [
+              "174520-slide_202409121412551795.jpg",
+              "nuoc-cham-hang-viet-chai-500ml-202303250931075794.jpg",
+              "nuoc-cham-hang-viet-chai-500ml-202305131430039814.jpg",
+              "nuoc-cham-hang-viet-chai-500ml-202305131430042448.jpg",
+              "nuoc-cham-hang-viet-chai-500ml-202305131430044955.jpg",
+              "nuoc-cham-hang-viet-chai-500ml-202305131430047483.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Nước tương đậm đặc Nam Dương chính hiệu Con Mèo Đen chai 500ml",
+            "name": "Nước tương đậm đặc Nam Dương chính hiệu Con Mèo Đen chai 500ml",
+            "images": [
+              "174521-mau-moi_202409251349455990.jpg",
+              "174521-slide-moi_202409251349401341.jpg",
+              "nuoc-tuong-dam-dac-nam-duong-chai-500ml-2020021712051409.jpg",
+              "nuoc-tuong-dam-dac-nam-duong-chinh-hieu-con-meo-den-cha.jpeg",
+              "nuoc-tuong-dam-dac-nam-duong-chinh-hieu-con-meo-den-chai.jpg"
+            ],
+            "sku": "CONG-00ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "500ML",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương cà Nam Dương chai 255g",
+            "name": "Tương cà Nam Dương chai 255g",
+            "images": [
+              "209459-slide_202409121504527722.jpg",
+              "tuong-ca-nam-duong-chai-265g-202407121739168604.jpg",
+              "tuong-ca-nam-duong-chai-265g-202407121739171844.jpg",
+              "tuong-ca-nam-duong-chai-265g-202407121739173496.jpg",
+              "tuong-ca-nam-duong-chai-265g-202407121739175487.jpg",
+              "tuong-ca-nam-duong-chai-265g-202407121739177115.jpg"
+            ],
+            "sku": "CONG-255G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "255G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Nam Dương chai 255g",
+            "name": "Tương ớt Nam Dương chai 255g",
+            "images": [
+              "283101-slide_202409121503053080.jpg",
+              "283101-slidee_202409121503050830.jpg",
+              "tuong-ot-cay-vua-nam-duong-chai-255g-202206210911365679.jpg",
+              "tuong-ot-cay-vua-nam-duong-chai-255g-202206210911376943.jpg",
+              "tuong-ot-cay-vua-nam-duong-chai-255g-202207081039317137.png",
+              "tuong-ot-cay-vua-nam-duong-chai-255g-202207081046071974.png"
+            ],
+            "sku": "CONG-255G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "255G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Nam Dương chai 470g",
+            "name": "Tương ớt Nam Dương chai 470g",
+            "images": [
+              "sellingpoint.jpg",
+              "tuong-ot-nam-duong-chai-470g-201908131458298307.jpg",
+              "tuong-ot-nam-duong-chai-470g-201908131458300468.jpg",
+              "tuong-ot-nam-duong-chai-470g-201908131458310394.jpg",
+              "tuong-ot-nam-duong-chai-470g-201908131458378324.jpg",
+              "tuong-ot-nam-duong-chai-470g-201908131458382556.jpg"
+            ],
+            "sku": "CONG-470G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "470G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Tương ớt Nam Dương Hàng Việt chai 800g",
+            "name": "Tương ớt Nam Dương Hàng Việt chai 800g",
+            "images": [
+              "224531-mau-moi_202409251405303358.jpg",
+              "224531-slide-moi_202409251331023609.jpg",
+              "224531-tem_202411191456371294.jpg",
+              "224531-tem-1_202411191456360151.jpg"
+            ],
+            "sku": "CONG-800G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "800G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt mayonnaise Simply chai 230g",
+            "name": "Xốt mayonnaise Simply chai 230g",
+            "images": [
+              "sot-mayonnaise-simply-chai-230g-202011230919287610.jpg",
+              "sot-mayonnaise-simply-chai-230g-202011230919291292.jpg",
+              "sot-mayonnaise-simply-chai-230g-202011230919295175.jpg",
+              "sot-mayonnaise-simply-chai-230g-202011230919299367.jpg",
+              "sot-mayonnaise-simply-chai-230g-202202162304124110.jpg"
+            ],
+            "sku": "CONG-230G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "230G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Xốt mayonnaise Simply hương gạo rang chai 230g",
+            "name": "Xốt mayonnaise Simply hương gạo rang chai 230g",
+            "images": [
+              "sot-mayonnaise-simply-huong-gao-rang-chai-230g-202011230918243369.jpg",
+              "sot-mayonnaise-simply-huong-gao-rang-chai-230g-202011230918249723.jpg",
+              "sot-mayonnaise-simply-huong-gao-rang-chai-230g-202011230918255226.jpg",
+              "sot-mayonnaise-simply-huong-gao-rang-chai-230g-202011230918259189.jpg",
+              "sot-mayonnaise-simply-huong-gao-rang-chai-230g-202201181602051532.jpg",
+              "sot-mayonnaise-simply-huong-gao-rang-chai-230g-202203101326532196.jpg"
+            ],
+            "sku": "CONG-230G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "230G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_trach_nhiem_huu_han_tap_hoa_viet",
+        "companyName": "Cong Ty Trach Nhiem Huu Han Tap Hoa Viet",
+        "companyFolder": "cong-ty-trach-nhiem-huu-han-tap-hoa-viet",
+        "products": [
+          {
+            "productFolder": "Xốt nấu lẩu Thái Thuận Phát chai 250g",
+            "name": "Xốt nấu lẩu Thái Thuận Phát chai 250g",
+            "images": [
+              "xot-lau-thai-thuan-phat-chai-250g-202004241217030485.jpg",
+              "xot-lau-thai-thuan-phat-chai-250g-202004241217035578.jpg",
+              "xot-lau-thai-thuan-phat-chai-250g-202004241217040591.jpg",
+              "xot-lau-thai-thuan-phat-chai-250g-202004241217046135.jpg",
+              "xot-lau-thai-thuan-phat-chai-250g-202004241217055591.jpg",
+              "xot-nau-lau-thai-thuan-phat-chai-250g-202207191447138428.png"
+            ],
+            "sku": "CONG-250G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "250G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "cong_ty_trach_nhiem_huu_han_thien_thanh",
+        "companyName": "Cong Ty Trach Nhiem Huu Han Thien Thanh",
+        "companyFolder": "cong-ty-trach-nhiem-huu-han-thien-thanh",
+        "products": [
+          {
+            "productFolder": "Bột cà ri Thiên Thành gói 10g",
+            "name": "Bột cà ri Thiên Thành gói 10g",
+            "images": [
+              "bot-ca-ri-thien-thanh-goi-10g-2-700x467.jpg",
+              "bot-ca-ri-thien-thanh-goi-10g-201902282135506466.jpg",
+              "bot-ca-ri-thien-thanh-goi-10g-201902282136139764.jpg",
+              "bot-ca-ri-thien-thanh-goi-10g-202203141540589715.jpg"
+            ],
+            "sku": "CONG-I10G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "10G",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "tap_doan_ottogi_han_quoc",
+        "companyName": "Tap Doan Ottogi Han Quoc",
+        "companyFolder": "tap-doan-ottogi-han-quoc",
+        "products": [
+          {
+            "productFolder": "Giấm táo Ottogi chai 450ml",
+            "name": "Giấm táo Ottogi chai 450ml",
+            "images": [
+              "giam-tao-ottogi-chai-450ml-202202141531163082.jpg",
+              "giam-tao-ottogi-chai-450ml-202407051639120222.jpg",
+              "giam-tao-ottogi-chai-450ml-202407051639131215.jpg",
+              "giam-tao-ottogi-chai-450ml-202407051639146031.jpg",
+              "giam-tao-ottogi-chai-450ml-202407051639165640.jpg",
+              "giam-tao-ottogi-chai-450ml-202407051639204232.jpg",
+              "giam-tao-ottogi-chai-450ml-202407051639227205.jpg"
+            ],
+            "sku": "TAPD-50ML",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "450ML",
+            "aiStatus": "Matched"
+          }
+        ]
+      },
+      {
+        "companyKey": "xi_nghiep_lien_doanh_vianco_ltd",
+        "companyName": "Xi Nghiep Lien Doanh Vianco Ltd",
+        "companyFolder": "xi-nghiep-lien-doanh-vianco-ltd",
+        "products": [
+          {
+            "productFolder": "Bột cà ri Vianco gói 10g",
+            "name": "Bột cà ri Vianco gói 10g",
+            "images": [
+              "bot-ca-ri-vianco-goi-10g-202308110932238003.jpg",
+              "bot-ca-ri-vianco-goi-10g-202308110933284905.jpg",
+              "bot-ca-ri-vianco-goi-10g-202308110934025778.jpg",
+              "bot-ca-ri-vianco-goi-10g-202308110935397316.jpg",
+              "bot-ca-ri-vianco-goi-10g-202308110942035301.jpg"
+            ],
+            "sku": "XING-I10G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "10G",
+            "aiStatus": "Matched"
+          },
+          {
+            "productFolder": "Bột gia vị nấu bò kho Vianco gói 18g",
+            "name": "Bột gia vị nấu bò kho Vianco gói 18g",
+            "images": [
+              "bot-gia-vi-nau-bo-kho-vianco-goi-18g-202307141828291541.jpg",
+              "bot-gia-vi-nau-bo-kho-vianco-goi-18g-202406110948422154.jpg",
+              "bot-gia-vi-nau-bo-kho-vianco-goi-18g-202406110948424356.jpg",
+              "bot-gia-vi-nau-bo-kho-vianco-goi-18g-202406110948426421.jpg",
+              "bot-gia-vi-nau-bo-kho-vianco-goi-18g-202406110948428810.jpg",
+              "bot-gia-vi-nau-bo-kho-vianco-goi-18g-202406280843402956.jpg"
+            ],
+            "sku": "XING-I18G",
+            "category": "Dầu ăn, nước chấm, gia vị",
+            "packSpec": "18G",
+            "aiStatus": "Matched"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "groupKey": "dairy",
+    "groupName": "Sữa và sản phẩm từ sữa",
+    "groupFolder": "sua-va-san-pham-tu-sua",
+    "companies": []
+  },
+  {
+    "groupKey": "dry_instant",
+    "groupName": "Thực phẩm khô, đồ ăn liền",
+    "groupFolder": "thuc-pham-kho-do-an-lien",
+    "companies": []
+  }
+]
