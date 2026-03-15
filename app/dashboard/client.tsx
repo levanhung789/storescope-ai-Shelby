@@ -5,6 +5,12 @@ import Link from "next/link";
 import { useMemo, useState, type ChangeEvent } from "react";
 
 import type { CompanyWithProducts, GroupWithProducts, ProductRecord } from "./types";
+import {
+  createProductKey,
+  formatCurrency,
+  getBasePrice,
+  getImpactDescriptor,
+} from "./pricing-helpers";
 
 type Language = "en" | "vi" | "zh";
 
@@ -38,6 +44,8 @@ const content = {
     productTitle: "AI Suggested Product Display",
     productDesc:
       "Products below are loaded from your local folder structure for the selected company.",
+    priceLabel: "Product price",
+    impactLabel: "Impact",
     matched: "Matched",
     review: "Review",
     missing: "Missing",
@@ -80,11 +88,13 @@ const content = {
     productTitle: "Sản phẩm AI gợi ý hiển thị",
     productDesc:
       "Các sản phẩm bên dưới được lấy từ cấu trúc thư mục local của công ty đang chọn.",
+    priceLabel: "Giá sản phẩm",
+    impactLabel: "Ảnh hưởng",
     matched: "Khớp",
     review: "Cần kiểm tra",
     missing: "Thiếu dữ liệu",
     packSpec: "Quy cách",
-    sku: "Mã SKU",
+    sku: "SKU",
     category: "Danh mục",
     companyList: "Danh sách công ty",
     companyListDesc: "Hiển thị đầy đủ danh sách công ty của nhóm ngành đang chọn.",
@@ -121,6 +131,8 @@ const content = {
       "此版本从你保存的本地文件夹结构读取图片，目前先准确配置 Ajinomoto 用于验证。",
     productTitle: "AI 建议商品展示",
     productDesc: "下方商品根据当前公司从本地文件夹结构中读取。",
+    priceLabel: "商品价格",
+    impactLabel: "影响",
     matched: "已匹配",
     review: "需检查",
     missing: "缺少数据",
@@ -510,60 +522,81 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
 
                 <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                   {productCards.length > 0 ? (
-                    productCards.map((product) => (
-                      <div
-                        key={`${currentCompany.companyKey}-${product.productFolder}`}
-                        data-testid="product-card"
-                        className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-                      >
-                        <ProductImageViewer
-                          images={product.images}
-                          alt={product.name}
-                          badgeText={`${product.images.length} ${t.imageCount}`}
-                          emptyText={t.noImage}
-                        />
+                    productCards.map((product) => {
+                      const productKey = createProductKey(
+                        currentGroup.groupKey,
+                        currentCompany.companyKey,
+                        product.productFolder
+                      );
+                      const estimatedPrice = getBasePrice(productKey);
+                      const priceDisplay = formatCurrency(estimatedPrice);
+                      const impactDescriptor = getImpactDescriptor(productKey);
+                      const priceHref = `/dashboard/pricing/${encodeURIComponent(
+                        currentGroup.groupKey
+                      )}/${encodeURIComponent(currentCompany.companyKey)}/${encodeURIComponent(
+                        product.productFolder
+                      )}`;
 
-                        <div className="p-5">
-                          <div className="mb-3 flex items-start justify-between gap-3">
-                            <h4
-                              data-testid="product-title"
-                              className="line-clamp-2 text-base font-bold text-slate-900"
+                      return (
+                        <div
+                          key={`${currentCompany.companyKey}-${product.productFolder}`}
+                          data-testid="product-card"
+                          className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                        >
+                          <ProductImageViewer
+                            images={product.images}
+                            alt={product.name}
+                            badgeText={`${product.images.length} ${t.imageCount}`}
+                            emptyText={t.noImage}
+                          />
+
+                          <div className="p-5">
+                            <div className="mb-3 flex items-start justify-between gap-3">
+                              <h4
+                                data-testid="product-title"
+                                className="line-clamp-2 text-base font-bold text-slate-900"
+                              >
+                                {product.name}
+                              </h4>
+                              <span
+                                className={`rounded-full border px-3 py-1 text-xs font-semibold ${statusClass(
+                                  product.aiStatus
+                                )}`}
+                              >
+                                {localizedStatus(product.aiStatus)}
+                              </span>
+                            </div>
+
+                            <div className="space-y-2 text-sm text-slate-600">
+                              <p>
+                                <span className="font-semibold text-slate-800">{t.priceLabel}:</span>{" "}
+                                <Link
+                                  href={priceHref}
+                                  className="font-semibold text-cyan-600 underline-offset-2 hover:text-cyan-700 hover:underline"
+                                >
+                                  {priceDisplay}
+                                </Link>
+                              </p>
+                              <p>
+                                <span className="font-semibold text-slate-800">{t.impactLabel}:</span>{" "}
+                                {impactDescriptor}
+                              </p>
+                              <p>
+                                <span className="font-semibold text-slate-800">{t.sku}:</span>{" "}
+                                {product.sku}
+                              </p>
+                            </div>
+
+                            <Link
+                              href={priceHref}
+                              className="mt-3 block w-full rounded-2xl bg-slate-900 px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-slate-800"
                             >
-                              {product.name}
-                            </h4>
-                            <span
-                              className={`rounded-full border px-3 py-1 text-xs font-semibold ${statusClass(
-                                product.aiStatus
-                              )}`}
-                            >
-                              {localizedStatus(product.aiStatus)}
-                            </span>
+                              {t.open}
+                            </Link>
                           </div>
-
-                          <div className="space-y-2 text-sm text-slate-600">
-                            <p>
-                              <span className="font-semibold text-slate-800">{t.sku}:</span>{" "}
-                              {product.sku}
-                            </p>
-                            <p>
-                              <span className="font-semibold text-slate-800">{t.category}:</span>{" "}
-                              {product.category}
-                            </p>
-                            <p>
-                              <span className="font-semibold text-slate-800">{t.packSpec}:</span>{" "}
-                              {product.packSpec ?? "—"}
-                            </p>
-                          </div>
-
-                          <button
-                            type="button"
-                            className="mt-3 w-full rounded-2xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-                          >
-                            {t.open}
-                          </button>
                         </div>
-                      </div>
-                    ))
+                      );
+                    })
                   ) : (
                     <div className="col-span-full rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-10 text-center text-slate-500">
                       {t.noProducts}
