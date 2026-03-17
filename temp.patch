@@ -1,0 +1,22 @@
+diff --git a/app/dashboard/pricing/[groupKey]/[companyKey]/[productFolder]/page.tsx b/app/dashboard/pricing/[groupKey]/[companyKey]/[productFolder]/page.tsx
+index 0d8d9b0..25be4b3 100644
+--- a/app/dashboard/pricing/[groupKey]/[companyKey]/[productFolder]/page.tsx
++++ b/app/dashboard/pricing/[groupKey]/[companyKey]/[productFolder]/page.tsx
+@@
+ interface PricingPageProps {
+   params: Promise<PricingPageParams>;
+ }
++
++type RetailerDisplayMap = Record<
++  RetailerKey,
++  {
++    hasUrl: boolean;
++    url?: string;
++    label?: string;
++  }
++>;
+ 
+ export default async function PricingPage({ params }: PricingPageProps) {
+   const manifest = buildProductManifest(groups);
+@@
+*** End Patch

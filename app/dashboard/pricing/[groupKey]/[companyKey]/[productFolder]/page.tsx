@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import PriceHistoryCard from "@/app/dashboard/pricing/_components/price-history-card";
 import { groups } from "@/app/dashboard/groups-data";
 import { buildProductManifest } from "@/app/dashboard/load-products";
+import { findCatalogRecord, type ProductCatalogRecord } from "@/app/dashboard/pricing/catalog-data";
 import {
   RETAILERS,
   type RetailerKey,
@@ -28,6 +29,16 @@ interface PricingPageProps {
   params: Promise<PricingPageParams>;
 }
 
+type RetailerDisplayMap = Record<
+  RetailerKey,
+  {
+    hasUrl: boolean;
+    url?: string;
+    label?: string;
+  }
+>;
+
+
 export default async function PricingPage({ params }: PricingPageProps) {
   const manifest = buildProductManifest(groups);
   const resolvedParams = await params;
@@ -50,6 +61,9 @@ export default async function PricingPage({ params }: PricingPageProps) {
     notFound();
   }
 
+  const catalogRecord = findCatalogRecord(groupKey, companyKey, productFolder);
+  const retailerDisplay = buildRetailerDisplayMap(catalogRecord);
+
   const productKey = createProductKey(groupKey, companyKey, productFolder);
   const basePrice = getBasePrice(productKey);
   const impactDescriptor = getImpactDescriptor(productKey);
@@ -57,6 +71,9 @@ export default async function PricingPage({ params }: PricingPageProps) {
   const latestPrices = getLatestRetailerPrices(history);
   const referencePrice = latestPrices.bhx || basePrice;
   const gridLines = buildGridLines(referencePrice);
+  const disabledRetailers = RETAILERS.filter((retailer) => !retailerDisplay[retailer.key].hasUrl).map(
+    (retailer) => retailer.key
+  );
   const heroImageFile = product.images[0];
   const heroImageSrc = heroImageFile
     ? buildProductImagePath(
@@ -88,6 +105,7 @@ export default async function PricingPage({ params }: PricingPageProps) {
           basePrice={basePrice}
           impactDescriptor={impactDescriptor}
           latestPrices={latestPrices}
+          retailerDisplay={retailerDisplay}
           heroImageSrc={heroImageSrc}
         />
 
@@ -97,6 +115,7 @@ export default async function PricingPage({ params }: PricingPageProps) {
               history={history}
               gridLines={gridLines}
               referencePrice={referencePrice}
+              disabledRetailers={disabledRetailers}
             />
 
             <ImpactTrendCard
@@ -104,6 +123,7 @@ export default async function PricingPage({ params }: PricingPageProps) {
               referencePrice={referencePrice}
               impactDescriptor={impactDescriptor}
               latestPrices={latestPrices}
+              disabledRetailers={disabledRetailers}
             />
           </div>
 
@@ -125,6 +145,7 @@ function ProductSnapshot({
   impactDescriptor,
   latestPrices,
   heroImageSrc,
+  retailerDisplay,
 }: {
   productName: string;
   sku: string;
@@ -134,6 +155,7 @@ function ProductSnapshot({
   impactDescriptor: string;
   latestPrices: Record<RetailerKey, number>;
   heroImageSrc: string | null;
+  retailerDisplay: RetailerDisplayMap;
 }) {
   return (
     <section className="rounded-[32px] bg-gradient-to-br from-white via-slate-50 to-slate-100 p-8 shadow-lg ring-1 ring-slate-100">
@@ -185,10 +207,19 @@ function ProductSnapshot({
                     <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                       {retailer.shortLabel}
                     </p>
-                    <p className="text-xl font-bold text-slate-900">
-                      {formatCurrency(latestPrices[retailer.key])}
+                    <p
+                      className={
+                        "text-xl font-bold " +
+                        (retailerDisplay[retailer.key].hasUrl ? "text-slate-900" : "text-amber-600")
+                      }
+                    >
+                      {retailerDisplay[retailer.key].hasUrl
+                        ? retailerDisplay[retailer.key].label ?? formatCurrency(latestPrices[retailer.key])
+                        : "Ch?a c?p nh?t"}
                     </p>
-                    <p className="text-[11px] text-slate-400">Bản cập nhật mới nhất</p>
+                    <p className="text-[11px] text-slate-400">
+                      {retailerDisplay[retailer.key].hasUrl ? "B?n c?p nh?t m?i nh?t" : "Ch?a co URL ?? theo doi"}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -222,16 +253,28 @@ type ImpactTrendCardProps = {
   referencePrice: number;
   impactDescriptor: string;
   latestPrices: Record<RetailerKey, number>;
+  disabledRetailers?: RetailerKey[];
 };
 
-function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPrices }: ImpactTrendCardProps) {
+function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPrices, disabledRetailers = [] }: ImpactTrendCardProps) {
   if (history.length === 0) {
     return null;
   }
 
+  const disabledSet = new Set(disabledRetailers);
+  const activeRetailers = RETAILERS.filter((retailer) => !disabledSet.has(retailer.key));
+
+  if (activeRetailers.length === 0) {
+    return (
+      <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+        <p className="text-sm text-slate-500">Ch?a th? hi?n th? bi?u ?? ?nh h??ng vi t?t c? URL ??u tr?ng.</p>
+      </section>
+    );
+  }
+
   const safeReference = referencePrice || 1;
   const series = history.map((point) => {
-    const values = Object.values(point.values);
+    const values = activeRetailers.map((retailer) => point.values[retailer.key]);
     const spread = Math.max(...values) - Math.min(...values);
     const score = Math.max(1, Math.round((spread / safeReference) * 100));
     return { date: point.date, score };
@@ -242,17 +285,20 @@ function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPric
   const avgScore = Math.round(scores.reduce((sum, value) => sum + value, 0) / scores.length);
   const latestScore = scores[scores.length - 1] || 0;
 
-  const volatileRetailerEntry = Object.entries(latestPrices).reduce(
-    (acc, [key, price]) => {
+  const volatileRetailerEntry = activeRetailers.reduce(
+    (acc, retailer) => {
+      const price = latestPrices[retailer.key];
       const delta = Math.abs(price - safeReference);
-      if (delta > acc.delta) {
-        return { key: key as RetailerKey, delta, price };
+      if (!acc || delta > acc.delta) {
+        return { key: retailer.key, delta, price };
       }
       return acc;
     },
-    { key: "bhx" as RetailerKey, delta: -1, price: latestPrices.bhx }
+    null as null | { key: RetailerKey; delta: number; price: number }
   );
-  const volatileRetailer = RETAILERS.find((retailer) => retailer.key === volatileRetailerEntry.key);
+  const volatileRetailer = volatileRetailerEntry
+    ? RETAILERS.find((retailer) => retailer.key === volatileRetailerEntry.key)
+    : undefined;
 
   const width = 420;
   const height = 200;
@@ -315,16 +361,58 @@ function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPric
         </div>
         <div>
           <p className="text-xs uppercase tracking-[0.25em] text-slate-400">NHÀ BÁN LẺ CẦN LƯU Ý</p>
-          <p className="mt-1 text-xl font-bold text-slate-900">{volatileRetailer?.shortLabel}</p>
-          <p>
-            {formatCurrency(volatileRetailerEntry.price)} · lệch {formatCurrency(
-              Math.abs(volatileRetailerEntry.price - safeReference)
-            )}
+          <p className="mt-1 text-xl font-bold text-slate-900">{volatileRetailer?.shortLabel ?? "�X"}</p>
+          {volatileRetailerEntry ? (
+            <p>
+              {formatCurrency(volatileRetailerEntry.price)} �P l?ch {formatCurrency(
+                Math.abs(volatileRetailerEntry.price - safeReference)
+              )}
+            </p>
+          ) : (
+            <p>Ch?a co d? li?u.</p>
+          )}
           </p>
         </div>
       </div>
     </section>
   );
+}
+
+function buildRetailerDisplayMap(record?: ProductCatalogRecord): RetailerDisplayMap {
+  const base = RETAILERS.reduce((acc, retailer) => {
+    acc[retailer.key] = { hasUrl: false };
+    return acc;
+  }, {} as RetailerDisplayMap);
+
+  if (!record) {
+    return base;
+  }
+
+  const fieldMap: Record<RetailerKey, { urlField: string; priceField?: string }> = {
+    bhx: { urlField: "BHX", priceField: "bhxPrice" },
+    winmart: { urlField: "Winmart" },
+    coopmart: { urlField: "Coop Mart" },
+    mega: { urlField: "MEgA" },
+    satra: { urlField: "satrafood" },
+  };
+
+  (Object.keys(fieldMap) as RetailerKey[]).forEach((key) => {
+    const map = fieldMap[key];
+    const rawUrl = map.urlField ? record[map.urlField] : undefined;
+    const cleanedUrl = rawUrl?.trim();
+    if (!cleanedUrl) {
+      return;
+    }
+
+    const priceLabel = map.priceField ? record[map.priceField]?.trim() : undefined;
+    base[key] = {
+      hasUrl: true,
+      url: cleanedUrl,
+      label: priceLabel && priceLabel.length > 0 ? priceLabel : undefined,
+    };
+  });
+
+  return base;
 }
 
 function PromoBoard({ promotions }: { promotions: PromotionInfo[] }) {

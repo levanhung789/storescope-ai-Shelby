@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 
@@ -10,9 +10,9 @@ import {
 } from "@/app/dashboard/pricing-helpers";
 
 const RANGE_OPTIONS = {
-  "3d": { label: "3 ngày", points: 3 },
-  "1w": { label: "1 tuần", points: 7 },
-  "1m": { label: "1 tháng", points: 30 },
+  "3d": { label: "3 ng?y", points: 3 },
+  "1w": { label: "1 tu廕吵", points: 7 },
+  "1m": { label: "1 th獺ng", points: 30 },
 } as const;
 
 type RangeKey = keyof typeof RANGE_OPTIONS;
@@ -21,9 +21,10 @@ type PriceHistoryCardProps = {
   history: PriceHistoryPoint[];
   gridLines: number[];
   referencePrice: number;
+  disabledRetailers?: RetailerKey[];
 };
 
-export default function PriceHistoryCard({ history, gridLines, referencePrice }: PriceHistoryCardProps) {
+export default function PriceHistoryCard({ history, gridLines, referencePrice, disabledRetailers = [] }: PriceHistoryCardProps) {
   const [range, setRange] = useState<RangeKey>("1m");
 
   const filteredHistory = useMemo(() => {
@@ -38,10 +39,10 @@ export default function PriceHistoryCard({ history, gridLines, referencePrice }:
     <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-600">Biểu đồ giá</p>
-          <h2 className="text-xl font-bold text-slate-900">Chọn phạm vi quan sát</h2>
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-600">Bi廙 ?廙?gi獺</p>
+          <h2 className="text-xl font-bold text-slate-900">Ch廙 ph廕《 vi quan s獺t</h2>
           <p className="text-sm text-slate-500">
-            So sánh biến động giá giữa các nhà bán lẻ theo từng mốc thời gian.
+            So s獺nh bi廕積 ?廙g gi獺 gi廙畝 c獺c nh? b獺n l廕?theo t廙南g m廙 th廙 gian.
           </p>
         </div>
         <div className="rounded-2xl bg-slate-100 p-1 text-sm font-semibold text-slate-600">
@@ -70,6 +71,7 @@ export default function PriceHistoryCard({ history, gridLines, referencePrice }:
             history={filteredHistory}
             gridLines={gridLines}
             referencePrice={referencePrice}
+            disabledRetailers={disabledRetailers}
           />
         </div>
       </div>
@@ -81,13 +83,20 @@ function PriceChart({
   history,
   gridLines,
   referencePrice,
+  disabledRetailers = [],
 }: {
   history: PriceHistoryPoint[];
   gridLines: number[];
   referencePrice: number;
+  disabledRetailers?: RetailerKey[];
 }) {
-  if (history.length === 0) {
-    return <div className="py-20 text-center text-sm text-slate-500">Chưa có dữ liệu giá.</div>;
+  const disabledSet = new Set(disabledRetailers);
+  const activeRetailers = RETAILERS.filter((retailer) => !disabledSet.has(retailer.key));
+
+  if (history.length === 0 || activeRetailers.length === 0) {
+    return (
+      <div className="py-20 text-center text-sm text-slate-500">Chưa có dữ liệu vì thiếu URL theo dõi.</div>
+    );
   }
 
   const width = 720;
@@ -97,7 +106,9 @@ function PriceChart({
   const chartWidth = width - paddingX * 2;
   const chartHeight = height - paddingY * 2;
 
-  const allValues = history.flatMap((point) => Object.values(point.values));
+  const allValues = history.flatMap((point) =>
+    activeRetailers.map((retailer) => point.values[retailer.key])
+  );
   const actualMin = Math.min(...allValues);
   const actualMax = Math.max(...allValues);
   const base = referencePrice || (actualMax + actualMin) / 2;
@@ -152,7 +163,7 @@ function PriceChart({
         );
       })}
 
-      {RETAILERS.map((retailer) => (
+      {activeRetailers.map((retailer) => (
         <polyline
           key={retailer.key}
           fill="none"
@@ -178,3 +189,4 @@ function PriceChart({
     </svg>
   );
 }
+
