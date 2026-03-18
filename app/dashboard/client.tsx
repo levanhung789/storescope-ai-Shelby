@@ -1,8 +1,9 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState, type ChangeEvent } from "react";
+import { ShelbyUploader } from "./_components/ShelbyUploader";
 
 import type { CompanyWithProducts, GroupWithProducts, ProductRecord } from "./types";
 import {
@@ -450,6 +451,7 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
           </header>
 
           <div className="p-6 lg:p-8">
+            <ShelbyUploader />
             <div className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
               <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
                 <h3 className="text-xl font-bold text-slate-900">{t.groupsTitle}</h3>
