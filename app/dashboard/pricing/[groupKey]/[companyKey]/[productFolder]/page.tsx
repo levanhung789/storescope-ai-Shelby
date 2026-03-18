@@ -19,6 +19,140 @@ import {
   getLatestRetailerPrices,
 } from "@/app/dashboard/pricing-helpers";
 
+const PRODUCT_LANGUAGES = ["vi", "en", "zh"] as const;
+type Language = (typeof PRODUCT_LANGUAGES)[number];
+type RangeLabelMap = Record<"3d" | "1w" | "1m", string>;
+type SnapshotCopy = {
+  referencePrice: string;
+  impact: string;
+  company: string;
+  group: string;
+  retailerUpdated: string;
+  retailerMissingUrl: string;
+  retailerMissingPrice: string;
+  heroNoImage: string;
+};
+type ChartCopy = {
+  title: string;
+  description: string;
+  rangeLabels: RangeLabelMap;
+  noData: string;
+};
+type ImpactCopy = {
+  title: string;
+  subtitle: string;
+  description: string;
+  avgLabel: string;
+  avgDescription: string;
+  currentLabel: string;
+  currentDescription: string;
+  focusLabel: string;
+  focusDescription: string;
+  focusNoData: string;
+};
+type ProductCopy = {
+  backLink: string;
+  snapshot: SnapshotCopy;
+  chart: ChartCopy;
+  impact: ImpactCopy;
+};
+
+const PRODUCT_COPY: Record<Language, ProductCopy> = {
+  vi: {
+    backLink: "Quay lại Dashboard",
+    snapshot: {
+      referencePrice: "Giá tham chiếu",
+      impact: "Mức độ ảnh hưởng",
+      company: "Công ty",
+      group: "Nhóm ngành",
+      retailerUpdated: "Bản cập nhật mới nhất",
+      retailerMissingUrl: "Chưa có URL để theo dõi",
+      retailerMissingPrice: "Chưa cập nhật",
+      heroNoImage: "Chưa có hình sản phẩm",
+    },
+    chart: {
+      title: "Biểu đồ giá",
+      description: "So sánh biến động giá giữa các nhà bán lẻ theo từng mốc thời gian.",
+      rangeLabels: { "3d": "3 ngày", "1w": "1 tuần", "1m": "1 tháng" },
+      noData: "Chưa có dữ liệu vì thiếu URL theo dõi.",
+    },
+    impact: {
+      title: "Mức độ ảnh hưởng",
+      subtitle: "Chỉ số biến động giữa nhà bán lẻ",
+      description: "Dựa trên chênh lệch giá cao nhất và thấp nhất tại mỗi mốc thời gian.",
+      avgLabel: "ĐIỂM TRUNG BÌNH",
+      avgDescription: "Biên độ dao động trung bình toàn thị trường.",
+      currentLabel: "CHỈ SỐ HIỆN TẠI",
+      currentDescription: "Mức ảnh hưởng ở mốc cập nhật mới nhất.",
+      focusLabel: "NHÀ BÁN LẺ CẦN LƯU Ý",
+      focusDescription: "Hiển thị nhà bán có mức chênh lệch lớn nhất so với giá tham chiếu.",
+      focusNoData: "Chưa có dữ liệu.",
+    },
+  },
+  en: {
+    backLink: "Back to Dashboard",
+    snapshot: {
+      referencePrice: "Reference price",
+      impact: "Impact level",
+      company: "Company",
+      group: "Sector",
+      retailerUpdated: "Latest update",
+      retailerMissingUrl: "URL not configured yet",
+      retailerMissingPrice: "Not updated",
+      heroNoImage: "No product image",
+    },
+    chart: {
+      title: "Price chart",
+      description: "Compare price movement across retailers over time.",
+      rangeLabels: { "3d": "3 days", "1w": "1 week", "1m": "1 month" },
+      noData: "No price data yet because the retailer URL is missing.",
+    },
+    impact: {
+      title: "Impact index",
+      subtitle: "Inter-retailer variability",
+      description: "Based on the highest and lowest price spread at each timestamp.",
+      avgLabel: "AVERAGE",
+      avgDescription: "Market-wide average spread.",
+      currentLabel: "CURRENT INDEX",
+      currentDescription: "Latest recorded impact level.",
+      focusLabel: "RETAILER TO WATCH",
+      focusDescription: "Shows the retailer furthest away from the reference price.",
+      focusNoData: "No data yet.",
+    },
+  },
+  zh: {
+    backLink: "返回仪表板",
+    snapshot: {
+      referencePrice: "参考价格",
+      impact: "影响程度",
+      company: "公司",
+      group: "品类",
+      retailerUpdated: "最近更新",
+      retailerMissingUrl: "暂未配置链接",
+      retailerMissingPrice: "尚未更新",
+      heroNoImage: "暂无产品图片",
+    },
+    chart: {
+      title: "价格走势",
+      description: "比较各零售渠道在不同时间点的价格波动。",
+      rangeLabels: { "3d": "3 天", "1w": "1 周", "1m": "1 个月" },
+      noData: "因为缺少零售链接，暂时没有价格数据。",
+    },
+    impact: {
+      title: "影响指数",
+      subtitle: "渠道波动指数",
+      description: "基于每个时间点最高价与最低价的差值。",
+      avgLabel: "平均值",
+      avgDescription: "全渠道平均波动幅度。",
+      currentLabel: "当前指数",
+      currentDescription: "最新时间点的影响程度。",
+      focusLabel: "需关注的渠道",
+      focusDescription: "显示偏离参考价最多的渠道。",
+      focusNoData: "暂无数据。",
+    },
+  },
+};
+
 interface PricingPageParams {
   groupKey: string;
   companyKey: string;
@@ -27,6 +161,7 @@ interface PricingPageParams {
 
 interface PricingPageProps {
   params: Promise<PricingPageParams>;
+  searchParams?: { lang?: string };
 }
 
 type RetailerDisplayMap = Record<
@@ -39,9 +174,16 @@ type RetailerDisplayMap = Record<
 >;
 
 
-export default async function PricingPage({ params }: PricingPageProps) {
+export default async function PricingPage({ params, searchParams }: PricingPageProps) {
   const manifest = buildProductManifest(groups);
   const resolvedParams = await params;
+  const resolvedSearchParams = searchParams ?? {};
+  const requestedLanguage = resolvedSearchParams.lang ?? "vi";
+  const language: Language = PRODUCT_LANGUAGES.includes(requestedLanguage as Language)
+    ? (requestedLanguage as Language)
+    : "vi";
+  const copy = PRODUCT_COPY[language];
+
   const groupKey = decodeURIComponent(resolvedParams.groupKey);
   const companyKey = decodeURIComponent(resolvedParams.companyKey);
   const productFolder = decodeURIComponent(resolvedParams.productFolder);
@@ -94,8 +236,15 @@ export default async function PricingPage({ params }: PricingPageProps) {
           href="/dashboard"
           className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-700 hover:text-cyan-900"
         >
-          <span aria-hidden>←</span> Quay lại Dashboard
+          <span aria-hidden>←</span> {copy.backLink}
         </Link>
+
+        <LanguageSwitcher
+          language={language}
+          groupKey={groupKey}
+          companyKey={companyKey}
+          productFolder={productFolder}
+        />
 
         <ProductSnapshot
           productName={product.name}
@@ -107,6 +256,7 @@ export default async function PricingPage({ params }: PricingPageProps) {
           latestPrices={latestPrices}
           retailerDisplay={retailerDisplay}
           heroImageSrc={heroImageSrc}
+          copy={copy.snapshot}
         />
 
         <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
@@ -116,6 +266,7 @@ export default async function PricingPage({ params }: PricingPageProps) {
               gridLines={gridLines}
               referencePrice={referencePrice}
               disabledRetailers={disabledRetailers}
+              copy={copy.chart}
             />
 
             <ImpactTrendCard
@@ -124,6 +275,7 @@ export default async function PricingPage({ params }: PricingPageProps) {
               impactDescriptor={impactDescriptor}
               latestPrices={latestPrices}
               disabledRetailers={disabledRetailers}
+              copy={copy.impact}
             />
           </div>
 
@@ -132,6 +284,47 @@ export default async function PricingPage({ params }: PricingPageProps) {
 
         <CompetitorShelf competitors={competitorProducts} />
       </div>
+    </div>
+  );
+}
+
+const LANGUAGE_OPTIONS: { code: Language; label: string }[] = [
+  { code: "vi", label: "VI" },
+  { code: "en", label: "EN" },
+  { code: "zh", label: "中文" },
+];
+
+function LanguageSwitcher({
+  language,
+  groupKey,
+  companyKey,
+  productFolder,
+}: {
+  language: Language;
+  groupKey: string;
+  companyKey: string;
+  productFolder: string;
+}) {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {LANGUAGE_OPTIONS.map((option) => {
+        const href = `/dashboard/pricing/${encodeURIComponent(groupKey)}/${encodeURIComponent(companyKey)}/${encodeURIComponent(
+          productFolder
+        )}?lang=${option.code}`;
+        const isActive = option.code === language;
+
+        return (
+          <Link
+            key={option.code}
+            href={href}
+            className={`rounded-xl px-3 py-1 text-sm font-semibold transition ${
+              isActive ? "bg-slate-900 text-white shadow" : "text-slate-600 hover:bg-white"
+            }`}
+          >
+            {option.label}
+          </Link>
+        );
+      })}
     </div>
   );
 }
@@ -146,6 +339,7 @@ function ProductSnapshot({
   latestPrices,
   heroImageSrc,
   retailerDisplay,
+  copy,
 }: {
   productName: string;
   sku: string;
@@ -156,6 +350,7 @@ function ProductSnapshot({
   latestPrices: Record<RetailerKey, number>;
   heroImageSrc: string | null;
   retailerDisplay: RetailerDisplayMap;
+  copy: SnapshotCopy;
 }) {
   return (
     <section className="rounded-[32px] bg-gradient-to-br from-white via-slate-50 to-slate-100 p-8 shadow-lg ring-1 ring-slate-100">
@@ -171,20 +366,20 @@ function ProductSnapshot({
 
           <dl className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
-              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Giá tham chiếu</dt>
+              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{copy.referencePrice}</dt>
               <dd className="text-2xl font-bold text-slate-900">{formatCurrency(basePrice)}</dd>
             </div>
             <div className="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 shadow-sm">
-              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">Mức độ ảnh hưởng</dt>
+              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">{copy.impact}</dt>
               <dd className="text-2xl font-bold text-amber-800">{impactDescriptor}</dd>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
-              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Công ty</dt>
+              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{copy.company}</dt>
               <dd className="text-lg font-semibold text-slate-900">{companyName}</dd>
               <p className="text-xs text-slate-400">Nhà sản xuất</p>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 shadow-sm">
-              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Nhóm ngành</dt>
+              <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{copy.group}</dt>
               <dd className="text-lg font-semibold text-slate-900">{groupName}</dd>
               <p className="text-xs text-slate-400">Danh mục quan trắc</p>
             </div>
@@ -215,10 +410,10 @@ function ProductSnapshot({
                     >
                       {retailerDisplay[retailer.key].hasUrl
                         ? retailerDisplay[retailer.key].label ?? formatCurrency(latestPrices[retailer.key])
-                        : "Ch?a c?p nh?t"}
+                        : copy.retailerMissingPrice}
                     </p>
                     <p className="text-[11px] text-slate-400">
-                      {retailerDisplay[retailer.key].hasUrl ? "B?n c?p nh?t m?i nh?t" : "Ch?a co URL ?? theo doi"}
+                      {retailerDisplay[retailer.key].hasUrl ? copy.retailerUpdated : copy.retailerMissingUrl}
                     </p>
                   </div>
                 </div>
@@ -239,7 +434,7 @@ function ProductSnapshot({
             />
           ) : (
             <div className="flex h-full items-center justify-center text-sm text-slate-400">
-              Chưa có hình sản phẩm
+              {copy.heroNoImage}
             </div>
           )}
         </div>
@@ -254,9 +449,10 @@ type ImpactTrendCardProps = {
   impactDescriptor: string;
   latestPrices: Record<RetailerKey, number>;
   disabledRetailers?: RetailerKey[];
+  copy: ImpactCopy;
 };
 
-function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPrices, disabledRetailers = [] }: ImpactTrendCardProps) {
+function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPrices, disabledRetailers = [], copy }: ImpactTrendCardProps) {
   if (history.length === 0) {
     return null;
   }
@@ -267,7 +463,7 @@ function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPric
   if (activeRetailers.length === 0) {
     return (
       <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-        <p className="text-sm text-slate-500">Ch?a th? hi?n th? bi?u ?? ?nh h??ng vi t?t c? URL ??u tr?ng.</p>
+        <p className="text-sm text-slate-500">{copy.focusNoData}</p>
       </section>
     );
   }
@@ -321,9 +517,9 @@ function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPric
     <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-600">Mức độ ảnh hưởng</p>
-          <h2 className="text-xl font-bold text-slate-900">Chỉ số biến động giữa nhà bán lẻ</h2>
-          <p className="text-sm text-slate-500">Dựa trên chênh lệch giá cao nhất và thấp nhất tại mỗi mốc thời gian.</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-600">{copy.title}</p>
+          <h2 className="text-xl font-bold text-slate-900">{copy.subtitle}</h2>
+          <p className="text-sm text-slate-500">{copy.description}</p>
         </div>
         <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
           {impactDescriptor}
@@ -350,28 +546,26 @@ function ImpactTrendCard({ history, referencePrice, impactDescriptor, latestPric
 
       <div className="mt-6 grid gap-4 text-sm text-slate-600 sm:grid-cols-3">
         <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">ĐIỂM TRUNG BÌNH</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">{copy.avgLabel}</p>
           <p className="mt-1 text-2xl font-bold text-slate-900">{avgScore}%</p>
-          <p>Biên độ dao động trung bình toàn thị trường.</p>
+          <p>{copy.avgDescription}</p>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">CHỈ SỐ HIỆN TẠI</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">{copy.currentLabel}</p>
           <p className="mt-1 text-2xl font-bold text-slate-900">{latestScore}%</p>
-          <p>Mức ảnh hưởng ở mốc cập nhật mới nhất.</p>
+          <p>{copy.currentDescription}</p>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">NHÀ BÁN LẺ CẦN LƯU Ý</p>
-          <p className="mt-1 text-xl font-bold text-slate-900">{volatileRetailer?.shortLabel ?? "�X"}</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-slate-400">{copy.focusLabel}</p>
+          <p className="mt-1 text-xl font-bold text-slate-900">{volatileRetailer?.shortLabel ?? "—"}</p>
           {volatileRetailerEntry ? (
             <p>
-              {formatCurrency(volatileRetailerEntry.price)} �P l?ch {formatCurrency(
-                Math.abs(volatileRetailerEntry.price - safeReference)
-              )}
+              {formatCurrency(volatileRetailerEntry.price)} · lệch{" "}
+              {formatCurrency(Math.abs(volatileRetailerEntry.price - safeReference))}
             </p>
           ) : (
-            <p>Ch?a co d? li?u.</p>
+            <p>{copy.focusNoData}</p>
           )}
-          </p>
         </div>
       </div>
     </section>

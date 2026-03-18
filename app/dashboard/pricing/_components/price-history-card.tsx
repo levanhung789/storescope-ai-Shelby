@@ -7,6 +7,7 @@ import {
   formatCurrency,
   formatDateLabel,
   type PriceHistoryPoint,
+  type RetailerKey,
 } from "@/app/dashboard/pricing-helpers";
 
 const RANGE_OPTIONS = {
@@ -22,9 +23,15 @@ type PriceHistoryCardProps = {
   gridLines: number[];
   referencePrice: number;
   disabledRetailers?: RetailerKey[];
+  copy: {
+    title: string;
+    description: string;
+    rangeLabels: Record<RangeKey, string>;
+    noData: string;
+  };
 };
 
-export default function PriceHistoryCard({ history, gridLines, referencePrice, disabledRetailers = [] }: PriceHistoryCardProps) {
+export default function PriceHistoryCard({ history, gridLines, referencePrice, disabledRetailers = [], copy }: PriceHistoryCardProps) {
   const [range, setRange] = useState<RangeKey>("1m");
 
   const filteredHistory = useMemo(() => {
@@ -39,15 +46,14 @@ export default function PriceHistoryCard({ history, gridLines, referencePrice, d
     <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-600">Bi廙 ?廙?gi獺</p>
-          <h2 className="text-xl font-bold text-slate-900">Ch廙 ph廕《 vi quan s獺t</h2>
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-600">{copy.title}</p>
+          <h2 className="text-xl font-bold text-slate-900">{copy.title}</h2>
           <p className="text-sm text-slate-500">
-            So s獺nh bi廕積 ?廙g gi獺 gi廙畝 c獺c nh? b獺n l廕?theo t廙南g m廙 th廙 gian.
+            {copy.description}
           </p>
         </div>
         <div className="rounded-2xl bg-slate-100 p-1 text-sm font-semibold text-slate-600">
           {(Object.keys(RANGE_OPTIONS) as RangeKey[]).map((key) => {
-            const option = RANGE_OPTIONS[key];
             const isActive = range === key;
             return (
               <button
@@ -58,7 +64,7 @@ export default function PriceHistoryCard({ history, gridLines, referencePrice, d
                   isActive ? "bg-slate-900 text-white shadow" : "hover:bg-white"
                 }`}
               >
-                {option.label}
+                {copy.rangeLabels[key]}
               </button>
             );
           })}
@@ -72,6 +78,7 @@ export default function PriceHistoryCard({ history, gridLines, referencePrice, d
             gridLines={gridLines}
             referencePrice={referencePrice}
             disabledRetailers={disabledRetailers}
+            noDataMessage={copy.noData}
           />
         </div>
       </div>
@@ -84,18 +91,20 @@ function PriceChart({
   gridLines,
   referencePrice,
   disabledRetailers = [],
+  noDataMessage,
 }: {
   history: PriceHistoryPoint[];
   gridLines: number[];
   referencePrice: number;
   disabledRetailers?: RetailerKey[];
+  noDataMessage: string;
 }) {
   const disabledSet = new Set(disabledRetailers);
   const activeRetailers = RETAILERS.filter((retailer) => !disabledSet.has(retailer.key));
 
   if (history.length === 0 || activeRetailers.length === 0) {
     return (
-      <div className="py-20 text-center text-sm text-slate-500">Chưa có dữ liệu vì thiếu URL theo dõi.</div>
+      <div className="py-20 text-center text-sm text-slate-500">{noDataMessage}</div>
     );
   }
 
