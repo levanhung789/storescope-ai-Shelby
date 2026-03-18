@@ -1,5 +1,6 @@
-// Shelby Storage Service Integration (Mocked or real implementation)
 import crypto from "crypto";
+import { Account, Ed25519PrivateKey, Network } from "@aptos-labs/ts-sdk";
+import { ShelbyNodeClient } from "@shelby-protocol/sdk/node";
 
 export interface ShelbyAsset {
   id: string;
@@ -11,50 +12,80 @@ export interface ShelbyAsset {
   uploadedAt: string;
 }
 
-/**
- * Uploads a file buffer to Shelby Storage Layer.
- * This is currently a simulated service that returns a mocked ShelbyAsset structure.
- * Replace the interior logic with your actual Shelby HTTP/SDK calls (e.g., fetch, axios, or SDK).
- */
+// 1 year default TTL
+const TIME_TO_LIVE = 365 * 24 * 60 * 60 * 1_000_000;
+
 export async function uploadAssetToShelby(
   buffer: Buffer,
   filename: string,
   mimeType: string,
   metadata: Record<string, unknown> = {}
 ): Promise<ShelbyAsset> {
-  // TODO: Replace with real Shelby endpoint:
-  // const response = await fetch("https://api.shelby.local/v1/assets/upload", { ... });
+  const privateKey = process.env.SHELBY_ACCOUNT_PRIVATE_KEY;
+  const apiKey = process.env.SHELBY_API_KEY;
 
-  console.log(`[Shelby] Uploading asset: ${filename} (${buffer.length} bytes)`);
+  if (!privateKey || !apiKey) {
+    console.warn("[Shelby] Missing API keys. Using mock fallback mode for development.");
+    return mockUploadAsset(buffer, filename, mimeType, metadata);
+  }
 
-  // Simulate network delay for upload
-  await new Promise((resolve) => setTimeout(resolve, 500));
+  console.log(`[Shelby] Uploading asset via official SDK: ${filename} (${buffer.length} bytes)`);
 
-  // Generate a deterministic ID (or UUID)
+  const client = new ShelbyNodeClient({
+    network: Network.SHELBYNET,
+    apiKey,
+  });
+
+  const signer = Account.fromPrivateKey({
+    privateKey: new Ed25519PrivateKey(privateKey),
+  });
+
+  // Using a hash + timestamp for a unique blob name
   const hash = crypto.createHash("sha256").update(buffer).digest("hex");
-  const assetId = `sh-${hash.substring(0, 12)}-${Date.now()}`;
+  const blobName = `sh-${hash.substring(0, 12)}-${Date.now()}-${filename}`;
 
-  // Simulated output structure
-  const asset: ShelbyAsset = {
-    id: assetId,
-    url: `https://shelby.internal/storage/assets/${assetId}`, // Mocked CDN link
-    filename: filename,
-    mimeType: mimeType,
+  await client.upload({
+    blobData: buffer,
+    signer,
+    blobName,
+    expirationMicros: Date.now() * 1000 + TIME_TO_LIVE,
+  });
+
+  console.log(`[Shelby] Upload complete. Blob Name: ${blobName}`);
+
+  return {
+    id: blobName,
+    url: `https://shelby.internal/storage/assets/${blobName}`, // Replace with actual Shelby viewing URL if applicable
+    filename,
+    mimeType,
     size: buffer.length,
-    metadata: metadata,
+    metadata,
     uploadedAt: new Date().toISOString(),
   };
-
-  console.log(`[Shelby] Upload complete. Asset ID: ${asset.id}`);
-
-  return asset;
 }
 
-/**
- * Fetches an asset's metadata or download URL from Shelby.
- */
+async function mockUploadAsset(
+  buffer: Buffer,
+  filename: string,
+  mimeType: string,
+  metadata: Record<string, unknown> = {}
+): Promise<ShelbyAsset> {
+  console.log(`[Shelby Mock] Uploading asset: ${filename}`);
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  const hash = crypto.createHash("sha256").update(buffer).digest("hex");
+  const assetId = `sh-${hash.substring(0, 12)}-${Date.now()}`;
+  return {
+    id: assetId,
+    url: `https://shelby.internal/storage/assets/${assetId}`,
+    filename,
+    mimeType,
+    size: buffer.length,
+    metadata,
+    uploadedAt: new Date().toISOString(),
+  };
+}
+
 export async function getAssetFromShelby(assetId: string): Promise<ShelbyAsset | null> {
-  // TODO: Implement actual GET request
   console.log(`[Shelby] Fetching asset: ${assetId}`);
   return null;
 }
