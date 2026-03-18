@@ -23,7 +23,7 @@ const content = {
     overviewDesc:
       "Manage food and beverage companies by sector and verify local product image mapping.",
     navDashboard: "Dashboard",
-    navStores: "Companies",
+    navStores: "Image Analysis",
     navZones: "Sectors",
     navInventory: "Products",
     navReports: "Reports",
@@ -67,7 +67,7 @@ const content = {
     overviewDesc:
       "Quản lý các công ty thực phẩm - đồ uống theo nhóm ngành và kiểm tra ánh xạ hình ảnh sản phẩm local.",
     navDashboard: "Dashboard",
-    navStores: "Công ty",
+    navStores: "Phân tích hình ảnh",
     navZones: "Nhóm ngành",
     navInventory: "Sản phẩm",
     navReports: "Báo cáo",
@@ -111,7 +111,7 @@ const content = {
     overviewDesc:
       "按行业管理食品饮料公司，并检查本地商品图片映射。",
     navDashboard: "仪表板",
-    navStores: "公司",
+    navStores: "图像分析",
     navZones: "行业组",
     navInventory: "商品",
     navReports: "报告",
