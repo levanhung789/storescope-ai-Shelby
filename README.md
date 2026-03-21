@@ -209,6 +209,16 @@ In this project, Shelby is used for:
 * AI output retention
 * Retrieval support for downstream analysis
 
+## Move Smart Contracts
+
+This platform includes Move smart contracts for the Aptos blockchain to provide on-chain storage and verification of image blobs. The contracts are located in the `contracts/aptos/` directory and include:
+
+* `blob_store.move` - Main contract for storing image blobs with metadata
+* Event-based tracking of uploads
+* Asset verification on-chain
+
+See `contracts/aptos/README.md` for detailed contract documentation and `docs/deployment-guide.md` for deployment instructions.
+
 ---
 
 ## Repository Structure
@@ -229,9 +239,17 @@ retail-image-intelligence/
 │   ├── schemas/              # Shared data models and types
 │   ├── utils/                # Shared utilities
 │   └── config/               # Shared configuration
+├── contracts/
+│   └── aptos/               # Move smart contracts for Aptos blockchain
+│       ├── blob_store.move  # Main blob storage contract
+│       ├── Move.toml        # Contract configuration
+│       ├── README.md        # Contract documentation
+│       └── tests/           # Contract tests
 ├── docs/
 │   ├── architecture.md
 │   ├── api.md
+│   ├── deployment-guide.md  # Guide for deploying contracts
+│   ├── frontend-integration.md  # Guide for frontend integration
 │   └── roadmap.md
 ├── examples/
 │   └── sample-data/

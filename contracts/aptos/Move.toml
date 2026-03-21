@@ -1,0 +1,10 @@
+[package]
+name = "ShelbyBlobStore"
+version = "1.0.0"
+authors = ["StoreScope AI Team"]
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "mainnet" }
+
+[addresses]
+shelby_blob_store = "_"
