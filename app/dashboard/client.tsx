@@ -367,9 +367,9 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
               <div className="rounded-2xl bg-white/10 px-4 py-3 font-semibold text-cyan-200">
                 {t.navDashboard}
               </div>
-              <div className="rounded-2xl px-4 py-3 text-slate-300 transition hover:bg-white/5">
+              <Link href="/image-analysis" className="block rounded-2xl px-4 py-3 text-slate-300 transition hover:bg-white/5">
                 {t.navStores}
-              </div>
+              </Link>
               <div className="rounded-2xl px-4 py-3 text-slate-300 transition hover:bg-white/5">
                 {t.navZones}
               </div>
