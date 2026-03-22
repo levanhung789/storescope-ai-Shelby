@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { useWallet } from "@aptos-labs/wallet-adapter-react";
 import { Download, Globe2, ImagePlus, Languages, ScanSearch, ShieldCheck, Sparkles, TableProperties } from "lucide-react";
 import * as XLSX from "xlsx";
 
@@ -29,6 +30,13 @@ type AnalysisResult = {
   rows: AnalysisRow[];
 };
 
+type UploadInfo = {
+  txHash: string | null;
+  blobUrl: string | null;
+  explorerUrl: string | null;
+  blobName: string | null;
+};
+
 const content = {
   en: {
     title: "Professional Image Analysis",
@@ -47,6 +55,14 @@ const content = {
     summary: "Analysis summary",
     recommendations: "Recommendations",
     table: "Structured result table",
+    uploadShelby: "Upload to Shelby",
+    uploadingShelby: "Uploading to Shelby...",
+    walletRequired: "Please connect Petra wallet before uploading to Shelby.",
+    uploadSuccess: "Image uploaded to Shelby successfully.",
+    uploadFailed: "Shelby upload failed.",
+    viewAptos: "View on Aptos Explorer",
+    viewBlob: "View Blob on Shelby",
+    viewShelby: "View Blobs on Shelby",
     empty: "No analysis yet. Upload an image to begin.",
     metaImage: "Image",
     metaQuality: "Quality",
@@ -94,6 +110,14 @@ const content = {
     summary: "Tóm tắt phân tích",
     recommendations: "Khuyến nghị",
     table: "Bảng kết quả có cấu trúc",
+    uploadShelby: "Tải lên Shelby",
+    uploadingShelby: "Đang tải lên Shelby...",
+    walletRequired: "Vui lòng kết nối ví Petra trước khi tải lên Shelby.",
+    uploadSuccess: "Đã tải hình lên Shelby thành công.",
+    uploadFailed: "Tải lên Shelby thất bại.",
+    viewAptos: "Xem trên Aptos Explorer",
+    viewBlob: "Xem blob trên Shelby",
+    viewShelby: "Xem blobs trên Shelby",
     empty: "Chưa có kết quả phân tích. Hãy tải ảnh lên để bắt đầu.",
     metaImage: "Hình ảnh",
     metaQuality: "Chất lượng",
@@ -141,6 +165,14 @@ const content = {
     summary: "分析摘要",
     recommendations: "建议",
     table: "结构化结果表",
+    uploadShelby: "上传到 Shelby",
+    uploadingShelby: "正在上传到 Shelby...",
+    walletRequired: "上传到 Shelby 前请先连接 Petra 钱包。",
+    uploadSuccess: "图像已成功上传到 Shelby。",
+    uploadFailed: "上传到 Shelby 失败。",
+    viewAptos: "在 Aptos Explorer 中查看",
+    viewBlob: "查看 Shelby Blob",
+    viewShelby: "查看 Shelby Blobs",
     empty: "暂无分析结果。请先上传图像。",
     metaImage: "图像",
     metaQuality: "质量",
@@ -185,17 +217,21 @@ function inferScene(fileName: string, t: (typeof content)[Language]) {
 }
 
 export default function ImageAnalysisPage() {
+  const { connected, connect, account, disconnect } = useWallet();
   const [language, setLanguage] = useState<Language>("en");
   const t = useMemo(() => content[language], [language]);
   const [file, setFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [result, setResult] = useState<AnalysisResult | null>(null);
+  const [uploadInfo, setUploadInfo] = useState<UploadInfo>({ txHash: null, blobUrl: null, explorerUrl: null, blobName: null });
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [isUploadingShelby, setIsUploadingShelby] = useState(false);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selected = event.target.files?.[0] ?? null;
     setFile(selected);
     setResult(null);
+    setUploadInfo({ txHash: null, blobUrl: null, explorerUrl: null, blobName: null });
 
     if (previewUrl) {
       URL.revokeObjectURL(previewUrl);
@@ -271,6 +307,60 @@ export default function ImageAnalysisPage() {
     XLSX.writeFile(workbook, `${safeName}-analysis.xlsx`);
   };
 
+  const handleConnectWallet = async () => {
+    try {
+      await connect("Petra" as any);
+      window.open("https://explorer.shelby.xyz/shelbynet", "_blank", "noopener,noreferrer");
+    } catch (error) {
+      console.error("Wallet connection rejected or failed:", error);
+    }
+  };
+
+  const uploadToShelby = async () => {
+    if (!file) return;
+    if (!connected || !account) {
+      alert(t.walletRequired);
+      return;
+    }
+
+    setIsUploadingShelby(true);
+
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("metadata", JSON.stringify({ source: "image-analysis", uploader: account.address.toString() }));
+
+      const res = await fetch("/api/blockchain-upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || t.uploadFailed);
+      }
+
+      const originalNameNoExt = file.name.replace(/\.[^/.]+$/, "");
+      const blobName = data?.data?.blobName ?? `${originalNameNoExt}.webp`;
+      const blobUrl = data?.data?.url ?? `https://api.shelbynet.shelby.xyz/shelby/v1/blobs/${account.address}/${originalNameNoExt}.webp`;
+      const explorerUrl = data?.data?.explorerUrl ?? `https://explorer.shelby.xyz/shelbynet/account/${account.address}/blobs?name=${originalNameNoExt}.webp`;
+
+      setUploadInfo({
+        txHash: data?.data?.transactionHash ?? null,
+        blobUrl,
+        explorerUrl,
+        blobName,
+      });
+
+      alert(t.uploadSuccess);
+    } catch (error) {
+      console.error(error);
+      alert(t.uploadFailed);
+    } finally {
+      setIsUploadingShelby(false);
+    }
+  };
+
   const statCards = result
     ? [
         { icon: ImagePlus, label: t.metaImage, value: result.fileName },
@@ -310,6 +400,27 @@ export default function ImageAnalysisPage() {
                 </button>
               ))}
             </div>
+            <div className="flex items-center gap-2 z-[100]">
+              {!connected ? (
+                <button
+                  type="button"
+                  onClick={handleConnectWallet}
+                  className="rounded-2xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700 flex items-center gap-2 shadow-sm"
+                >
+                  Connect Petra Wallet
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => disconnect()}
+                  className="rounded-2xl border border-cyan-600 bg-cyan-50 px-5 py-3 text-sm font-semibold text-cyan-800 transition hover:bg-cyan-100 flex items-center gap-2 group relative shadow-sm"
+                >
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.8)] animate-pulse"></span>
+                  {account?.address?.toString().slice(0, 4)}...{account?.address?.toString().slice(-4)}
+                  <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 rounded bg-slate-800 px-2 py-1 text-[10px] text-white opacity-0 transition group-hover:opacity-100 whitespace-nowrap z-[100]">Disconnect wallet</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
@@ -341,6 +452,14 @@ export default function ImageAnalysisPage() {
               </button>
               <button
                 type="button"
+                onClick={uploadToShelby}
+                disabled={!file || isUploadingShelby}
+                className="rounded-2xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700 disabled:cursor-not-allowed disabled:bg-cyan-300"
+              >
+                {isUploadingShelby ? t.uploadingShelby : t.uploadShelby}
+              </button>
+              <button
+                type="button"
                 onClick={exportExcel}
                 disabled={!result}
                 className="inline-flex items-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
@@ -365,6 +484,26 @@ export default function ImageAnalysisPage() {
 
         <section className="mt-6 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
           <h2 className="mb-5 text-xl font-bold">{t.summary}</h2>
+          {uploadInfo.blobUrl && (
+            <div className="mb-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800">
+              <div className="font-semibold">{t.uploadSuccess}</div>
+              <div className="mt-3 flex flex-wrap gap-3">
+                {uploadInfo.txHash && (
+                  <a href={`https://explorer.aptoslabs.com/txn/${uploadInfo.txHash}?network=shelbynet`} target="_blank" rel="noopener noreferrer" className="underline">
+                    {t.viewAptos}
+                  </a>
+                )}
+                <a href={uploadInfo.blobUrl} target="_blank" rel="noopener noreferrer" className="underline">
+                  {t.viewBlob}
+                </a>
+                {uploadInfo.explorerUrl && (
+                  <a href={uploadInfo.explorerUrl} target="_blank" rel="noopener noreferrer" className="underline">
+                    {t.viewShelby}
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
           {result ? (
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
               {statCards.map((card) => (

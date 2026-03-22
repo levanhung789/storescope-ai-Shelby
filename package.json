@@ -14,7 +14,14 @@
         "move:test": "cd contracts/aptos && aptos move test",
         "move:publish": "cd contracts/aptos && aptos move publish",
         "move:deploy": "scripts/deploy-contract.sh",
-        "move:deploy:win": "powershell -ExecutionPolicy Bypass -File scripts/deploy-contract.ps1"
+        "move:deploy:win": "powershell -ExecutionPolicy Bypass -File scripts/deploy-contract.ps1",
+        "move:test-blob": "node scripts/test-blob-upload.js",
+        "move:test-blob:win": "powershell -ExecutionPolicy Bypass -File scripts/test-blob-upload.ps1",
+        "move:check-tx": "node scripts/check-transaction.js",
+        "move:check-tx:win": "powershell -ExecutionPolicy Bypass -File scripts/check-transaction.ps1",
+        "move:upload-images": "node scripts/upload-images-to-shelbynet.js",
+        "move:upload-images:win": "powershell -ExecutionPolicy Bypass -File scripts/upload-images-to-shelbynet.ps1",
+        "move:test-direct-upload": "node scripts/test-direct-upload.js"
     },
     "dependencies": {
         "@aptos-labs/ts-sdk": "^5.1.1",

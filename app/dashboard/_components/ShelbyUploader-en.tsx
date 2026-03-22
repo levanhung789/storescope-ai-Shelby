@@ -4,23 +4,20 @@ import { useState, useRef } from "react";
 import { UploadCloud, CheckCircle, XCircle, Wallet } from "lucide-react";
 import { useWallet } from "@aptos-labs/wallet-adapter-react";
 
-export function ShelbyUploader() {
+export function ShelbyUploaderEn() {
   const { connected, signAndSubmitTransaction, account } = useWallet();
   const [isUploading, setIsUploading] = useState(false);
   const [uploadStatus, setUploadStatus] = useState<"idle" | "success" | "error">("idle");
   const [assetId, setAssetId] = useState<string | null>(null);
   const [txHash, setTxHash] = useState<string | null>(null);
-  const [originalFileName, setOriginalFileName] = useState<string | null>(null); // State to store original filename
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
 
-    setOriginalFileName(file.name); // Store the original file name
-
     if (!connected || !account) {
-      alert("Please connect Petra wallet before uploading images for analysis!");
+      alert("Please connect your Petra wallet before uploading images for analysis!");
       return;
     }
 
@@ -29,7 +26,7 @@ export function ShelbyUploader() {
     setAssetId(null);
     setTxHash(null);
 
-    // STEP 1: Send Petra wallet to pay fee (0.5 shelbyUSD) and network gas (APT)
+    // STEP 1: Send payment via Petra wallet (0.5 shelbyUSD) and network gas fee (APT)
     try {
       const payload = {
         data: {
@@ -38,13 +35,13 @@ export function ShelbyUploader() {
           functionArguments: [account.address, 10], // Send 10 octas (Aptos) testnet as proof of action. Later will call smart contract to pay real fee.
         }
       };
-
+      
       const response = await signAndSubmitTransaction(payload as any);
       console.log("Payment successful. Tx Hash:", response.hash);
       setTxHash(response.hash);
-
+      
       // Here you can use AptosClient to wait for transaction confirmation before uploading image.
-
+      
     } catch (error) {
       console.error("Payment failed or canceled by user:", error);
       setUploadStatus("error");
@@ -52,13 +49,13 @@ export function ShelbyUploader() {
       return; // Stop upload process if payment not successful
     }
 
-    // STEP 2: Upload image directly to Shelby blobs after successful payment
+    // STEP 2: Upload image to system after successful payment
     const formData = new FormData();
     formData.append("file", file);
     formData.append("metadata", JSON.stringify({ source: "dashboard", uploader: "admin" }));
 
     try {
-      const res = await fetch("/api/blockchain-upload", {
+      const res = await fetch("/api/upload", {
         method: "POST",
         body: formData,
       });
@@ -66,7 +63,7 @@ export function ShelbyUploader() {
       const data = await res.json();
       if (res.ok) {
         setUploadStatus("success");
-        setAssetId(data.data.blobName ?? data.data.id ?? file.name);
+        setAssetId(data.data.id);
       } else {
         throw new Error(data.error || "Upload failed");
       }
@@ -86,8 +83,8 @@ export function ShelbyUploader() {
     <div className="w-full rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 mt-6">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h2 className="text-lg font-bold text-slate-900">Upload Image to Shelby</h2>
-          <p className="text-sm text-slate-500">Push shelf images or receipts to the storage server.</p>
+          <h2 className="text-lg font-bold text-slate-900">Upload Images to Shelby</h2>
+          <p className="text-sm text-slate-500">Upload shelf or receipt images to the storage server.</p>
         </div>
       </div>
 
@@ -100,7 +97,7 @@ export function ShelbyUploader() {
           disabled={isUploading}
           ref={fileInputRef}
         />
-
+        
         <div className="flex flex-col items-center text-slate-500">
           <UploadCloud className={`w-8 h-8 mb-2 ${isUploading ? 'animate-bounce text-cyan-500' : 'text-slate-400'}`} />
           <p className="text-sm font-semibold">{isUploading ? "Uploading..." : "Drag and drop image files or click to select"}</p>
@@ -113,41 +110,17 @@ export function ShelbyUploader() {
             <CheckCircle className="w-4 h-4 mr-2" />
             Upload successful! (Asset ID: {assetId})
           </div>
-
-          {assetId && account && originalFileName && (
-            <div className="mt-2 text-xs">
-              <span className="font-medium">Asset ID:</span>
-              <div className="font-mono text-emerald-800 truncate">{assetId}</div>
-              <a
-                href={`https://api.shelbynet.shelby.xyz/shelby/v1/blobs/${account?.address}/${originalFileName.replace(/\.[^/.]+$/, "")}.webp`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-emerald-700 hover:text-emerald-900 underline mt-1 inline-block"
-              >
-                View Blob on Shelby
-              </a>
-            </div>
-          )}
-
-          {txHash && account && originalFileName && (
+          {txHash && (
             <div className="mt-2 text-xs">
               <span className="font-medium">Transaction Hash:</span>
               <div className="font-mono text-emerald-800 truncate">{txHash}</div>
-              <a
-                href={`https://explorer.aptoslabs.com/txn/${txHash}?network=shelbynet`}
-                target="_blank"
+              <a 
+                href={`https://explorer.aptos.dev/txn/${txHash}`} 
+                target="_blank" 
                 rel="noopener noreferrer"
                 className="text-emerald-700 hover:text-emerald-900 underline mt-1 inline-block"
               >
                 View on Aptos Explorer
-              </a>
-              <a
-                href={`https://explorer.shelby.xyz/shelbynet/account/${account?.address}/blobs?name=${originalFileName.replace(/\.[^/.]+$/, "")}.webp`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-emerald-700 hover:text-emerald-900 underline mt-1 inline-block ml-4"
-              >
-                View Blobs on Shelby
               </a>
             </div>
           )}

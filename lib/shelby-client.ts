@@ -10,10 +10,19 @@ export interface ShelbyAsset {
   size: number;
   metadata: Record<string, unknown>;
   uploadedAt: string;
+  accountAddress?: string;
+  blobName?: string;
+  explorerUrl?: string;
 }
 
 // 1 year default TTL
 const TIME_TO_LIVE = 365 * 24 * 60 * 60 * 1_000_000;
+
+function normalizeBlobFileName(filename: string) {
+  const baseName = filename.replace(/\.[^/.]+$/, "");
+  const sanitized = baseName.replace(/[^a-zA-Z0-9-_ ]/g, "").trim() || "upload";
+  return `${sanitized}.webp`;
+}
 
 export async function uploadAssetToShelby(
   buffer: Buffer,
@@ -40,27 +49,29 @@ export async function uploadAssetToShelby(
     privateKey: new Ed25519PrivateKey(privateKey),
   });
 
-  // Using a hash + timestamp for a unique blob name
-  const hash = crypto.createHash("sha256").update(buffer).digest("hex");
-  const blobName = `sh-${hash.substring(0, 12)}-${Date.now()}-${filename}`;
+  const normalizedFileName = normalizeBlobFileName(filename);
+  const accountAddress = signer.accountAddress.toString();
 
   await client.upload({
     blobData: buffer,
     signer,
-    blobName,
+    blobName: normalizedFileName,
     expirationMicros: Date.now() * 1000 + TIME_TO_LIVE,
   });
 
-  console.log(`[Shelby] Upload complete. Blob Name: ${blobName}`);
+  console.log(`[Shelby] Upload complete. Blob Name: ${normalizedFileName}`);
 
   return {
-    id: blobName,
-    url: `https://shelby.internal/storage/assets/${blobName}`, // Replace with actual Shelby viewing URL if applicable
+    id: normalizedFileName,
+    url: `https://api.shelbynet.shelby.xyz/shelby/v1/blobs/${accountAddress}/${normalizedFileName}`,
     filename,
     mimeType,
     size: buffer.length,
     metadata,
     uploadedAt: new Date().toISOString(),
+    accountAddress,
+    blobName: normalizedFileName,
+    explorerUrl: `https://explorer.shelby.xyz/shelbynet/account/${accountAddress}/blobs?name=${encodeURIComponent(normalizedFileName)}`,
   };
 }
 
@@ -72,16 +83,32 @@ async function mockUploadAsset(
 ): Promise<ShelbyAsset> {
   console.log(`[Shelby Mock] Uploading asset: ${filename}`);
   await new Promise((resolve) => setTimeout(resolve, 500));
-  const hash = crypto.createHash("sha256").update(buffer).digest("hex");
-  const assetId = `sh-${hash.substring(0, 12)}-${Date.now()}`;
+  const assetId = normalizeBlobFileName(filename);
+  
+  // Save file to mock storage for development
+  const fs = require("fs");
+  const path = require("path");
+  const MOCK_STORAGE_DIR = path.join(process.cwd(), "data", "mock-uploads");
+  
+  // Ensure the mock storage directory exists
+  if (!fs.existsSync(MOCK_STORAGE_DIR)) {
+    fs.mkdirSync(MOCK_STORAGE_DIR, { recursive: true });
+  }
+  
+  // Save the file
+  const filePath = path.join(MOCK_STORAGE_DIR, assetId);
+  fs.writeFileSync(filePath, buffer);
+  
   return {
     id: assetId,
-    url: `https://shelby.internal/storage/assets/${assetId}`,
+    url: `http://localhost:3000/api/assets/${assetId}`,
     filename,
     mimeType,
     size: buffer.length,
     metadata,
     uploadedAt: new Date().toISOString(),
+    blobName: assetId,
+    explorerUrl: `https://explorer.shelby.xyz/shelbynet/account/mock/blobs?name=${encodeURIComponent(assetId)}`,
   };
 }
 

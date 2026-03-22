@@ -1,5 +1,5 @@
 const fs = require('fs');
-let text = fs.readFileSync('app/dashboard/_components/ShelbyUploader.tsx', 'utf8');
+let text = fs.readFileSync('C:/Users/Admin/.openclaw/workspace/storescope-ai-Shelby/app/dashboard/_components/ShelbyUploader.tsx', 'utf8');
 
 text = text.replace(
   'import { UploadCloud, CheckCircle, XCircle } from "lucide-react";',
@@ -105,5 +105,5 @@ text = text.replace(
   errorDiv
 );
 
-fs.writeFileSync('app/dashboard/_components/ShelbyUploader.tsx', text);
+fs.writeFileSync('C:/Users/Admin/.openclaw/workspace/storescope-ai-Shelby/app/dashboard/_components/ShelbyUploader.tsx', text);
 console.log('ShelbyUploader updated with dual-token payment flow!');

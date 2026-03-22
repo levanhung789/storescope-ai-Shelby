@@ -402,6 +402,30 @@ To capture weekly retail prices for oil / sauce / seasoning SKUs, maintain `data
 
 ---
 
+## Testing Blob Upload
+
+To test the blob upload functionality on the Aptos blockchain:
+
+1. Ensure the contract is deployed (see deployment guide in `docs/deployment-guide.md`)
+2. Run the test script: `npm run move:test-blob` (Node.js) or `npm run move:test-blob:win` (Windows PowerShell)
+3. The script will create a test account, fund it, and upload a sample blob
+4. View the transaction on the [Aptos Explorer](https://explorer.aptos.dev/)
+
+See `docs/blob-upload-test-guide.md` for detailed instructions and troubleshooting.
+
+## Direct Image Upload to ShelbyNet
+
+To upload images directly to the ShelbyNet network using the `blob_metadata::register_multiple_blobs` transaction:
+
+1. Ensure the contract is deployed
+2. Run the upload script: `npm run move:upload-images path/to/image1.jpg path/to/image2.png` (Node.js) or `npm run move:upload-images:win` (Windows PowerShell)
+3. The script will process the images and submit them to the blockchain
+4. View the transaction on the [Aptos Explorer](https://explorer.aptos.dev/)
+
+See `docs/direct-image-upload-to-shelbynet.md` for detailed instructions and troubleshooting.
+
+---
+
 ## Mission
 
 To help FMCG and distribution teams transform photos from passive evidence into active retail intelligence.

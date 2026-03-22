@@ -1,5 +1,5 @@
 const fs = require('fs');
-let text = fs.readFileSync('app/dashboard/_components/ShelbyUploader.tsx', 'utf8');
+let text = fs.readFileSync('C:/Users/Admin/.openclaw/workspace/storescope-ai-Shelby/app/dashboard/_components/ShelbyUploader.tsx', 'utf8');
 
 // 1. Add txHash state
 text = text.replace(
@@ -28,12 +28,12 @@ const successDivOld = `<div className="pl-7 text-emerald-700/80 font-normal">
 const successDivNew = `<div className="pl-7 text-emerald-700/80 font-normal">
             Phi ?a tr?: 0.5 shelbyUSD <br/>
             Ma l?u tr?: <span className="font-mono">{assetId}</span><br/>
-            Ma giao d?ch: <a href={\`https://explorer.aptoslabs.com/txn/\${txHash}?network=testnet\`} target="_blank" rel="noopener noreferrer" className="font-mono text-cyan-600 hover:underline hover:text-cyan-800">
+            Ma giao d?ch: <a href={\`https://explorer.aptoslabs.com/txn/\${txHash}?network=shelbynet\`} target="_blank" rel="noopener noreferrer" className="font-mono text-cyan-600 hover:underline hover:text-cyan-800">
               {txHash ? \`\${txHash.slice(0, 8)}...\${txHash.slice(-6)}\` : ""}
             </a>
           </div>`;
 
 text = text.replace(successDivOld, successDivNew);
 
-fs.writeFileSync('app/dashboard/_components/ShelbyUploader.tsx', text);
+fs.writeFileSync('C:/Users/Admin/.openclaw/workspace/storescope-ai-Shelby/app/dashboard/_components/ShelbyUploader.tsx', text);
 console.log('ShelbyUploader updated with Tx Hash!');

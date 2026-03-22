@@ -329,6 +329,15 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
     return t.missing;
   };
 
+  const handleConnectWallet = async () => {
+    try {
+      await connect("Petra" as any);
+      window.open("https://explorer.shelby.xyz/shelbynet", "_blank", "noopener,noreferrer");
+    } catch (error) {
+      console.error("Wallet connection rejected or failed:", error);
+    }
+  };
+
   if (!manifest.length || !currentGroup || !currentCompany) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-slate-100 text-slate-600">
@@ -447,7 +456,7 @@ export default function DashboardClient({ manifest }: DashboardClientProps) {
                   {!connected ? (
                     <button
                       type="button"
-                      onClick={() => connect("Petra" as any)}
+                      onClick={handleConnectWallet}
                       className="rounded-2xl bg-cyan-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700 flex items-center gap-2 shadow-sm"
                     >
                       Lien k?t vi Petra
