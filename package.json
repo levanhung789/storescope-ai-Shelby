@@ -19,7 +19,7 @@
         "move:test-blob:win": "powershell -ExecutionPolicy Bypass -File scripts/test-blob-upload.ps1",
         "move:check-tx": "node scripts/check-transaction.js",
         "move:check-tx:win": "powershell -ExecutionPolicy Bypass -File scripts/check-transaction.ps1",
-        "move:upload-images": "node scripts/upload-images-to-shelbynet.js",
+        "move:upload-images": "node scripts/upload-images-to-shelbynet.mjs",
         "move:upload-images:win": "powershell -ExecutionPolicy Bypass -File scripts/upload-images-to-shelbynet.ps1",
         "move:test-direct-upload": "node scripts/test-direct-upload.js"
     },
